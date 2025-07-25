@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ABMS>
+  <CCN>IM6728468734</CCN>
+  <Policy>
+    <PolNbr>76824676783264243</PolNbr>
+    <PolTyp>GW</PolTyp>
+    <incCustOffice>P02A6</incCustOffice>
+    <Surety>2147483647</Surety>
+    <Issuance>2020-09-09</Issuance>
+    <Expiry>2020-12-31</Expiry>
+    <Amount>22333</Amount>
+  </Policy>
+</ABMS>

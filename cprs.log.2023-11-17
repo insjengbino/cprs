@@ -1,0 +1,45 @@
+16:42:52 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:42:52 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:42:52 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+16:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT119
+16:43:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:43:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing deleteProfile
+16:43:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:43:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:43:59 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+16:43:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT119
+16:44:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:44:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:44:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT119
+16:47:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:47:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:47:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT119
+16:47:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:47:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+16:48:25 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:48:25 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing businessForm
+16:48:25 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+16:48:25 DEBUG[com.ins.registration.web.ProfilesController:349]	BR
+16:59:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:59:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:59:01 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+16:59:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT1
+16:59:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:59:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+16:59:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:59:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing businessForm
+16:59:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+16:59:35 DEBUG[com.ins.registration.web.ProfilesController:349]	BR
+17:00:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391
+17:00:11 WARN [com.ins.registration.web.ProfilesController:522]	
+17:00:11 WARN [com.ins.registration.web.ProfilesController:523]	
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+17:00:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+17:00:11 WARN [com.ins.registration.web.ProfilesController:527]	BR
+17:00:11 WARN [com.ins.registration.web.ProfilesController:528]	IND
+17:00:11 WARN [com.ins.registration.web.ProfilesController:529]	6391

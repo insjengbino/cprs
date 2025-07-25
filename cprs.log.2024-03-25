@@ -1,0 +1,23 @@
+10:19:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:19:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:19:27 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+10:19:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TCGAYETAB
+10:19:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:19:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+10:19:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:19:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing businessForm
+10:19:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+10:19:37 DEBUG[com.ins.registration.web.ProfilesController:349]	EX
+10:19:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:46422
+10:19:56 WARN [com.ins.registration.web.ProfilesController:522]	
+10:19:56 WARN [com.ins.registration.web.ProfilesController:523]	
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:46422
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:19:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+10:19:56 WARN [com.ins.registration.web.ProfilesController:527]	EX
+10:19:56 WARN [com.ins.registration.web.ProfilesController:528]	CORP
+10:19:56 WARN [com.ins.registration.web.ProfilesController:529]	46422

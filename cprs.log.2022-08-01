@@ -1,0 +1,6 @@
+13:38:52 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:38:52 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:38:52 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:38:52 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+13:38:52 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:38:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null

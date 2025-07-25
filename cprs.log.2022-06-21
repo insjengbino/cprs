@@ -1,0 +1,513 @@
+06:41:57 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:41:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:41:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:41:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:41:57 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315608
+06:41:57 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@100d6ea
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@1dca4c
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@1cc678a
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@a1bced
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@7a7f6b
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@436cec
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@a41dfd
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@214904
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@140de18
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@1b52041
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@589375
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@1390546
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@896573
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@63a0e5
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@d82aff
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@1ef032c
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@b970f5
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@a7166f
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@1b1e956
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@14ddacc
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@579515
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@1fca022
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@751932
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@1c95b4c
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@88e6c7
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@1e7258e
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@5299e4
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@f56cd4
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@bbe647
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@b5d71
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@23a8d0
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@c25346
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@1e95386
+06:41:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@16a9d0a
+06:41:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:41:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:41:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:41:59 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:41:59 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+06:42:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+06:42:22 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315608
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@186b489
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@b69969
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@11dca9
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@14c86cf
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@12688e8
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@e653a1
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@17c9157
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@129f6e7
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@10cdd4
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@139425c
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@33e745
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@1946738
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@4916b
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@1e71839
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@e74c49
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@e73af3
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@cf323d
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@eb7058
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@11ca701
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@18678a
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@359a33
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@11eaf4e
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@1874627
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@ecb06
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@1331ce6
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@ae48dc
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@317d82
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@3f02bd
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@ccec5f
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@1b289cd
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@751a9b
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@25e068
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@afceff
+06:42:22 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@3ed81c
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:22 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:27 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:42:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing cancel
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+06:42:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+06:42:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+06:42:32 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+06:42:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+06:42:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+06:42:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+06:42:40 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315608
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@e1a690
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@7e668d
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@7ebd7d
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@ca9651
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@52ded2
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@a2b249
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@166fad9
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@1deef8a
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@1408d95
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@10f4d89
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1ad263
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@ea9d22
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@f229cd
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@9692d7
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@1828889
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@d1f3c3
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@1dac112
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@b9ba02
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@162ffa1
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@7cd80e
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@4c89a4
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@e07658
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@799410
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@170010d
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@551f11
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@6acdae
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@1e56601
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@18beb66
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@10b85b8
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@17800e7
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@18346a6
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@1936c40
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@1a809a4
+06:42:40 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@1110fa8
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+06:42:41 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+06:42:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+06:42:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+06:42:44 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:44 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+06:42:52 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:52 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315608
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@1e40a47
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@5ef3ae
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@1d02ffb
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@fe2250
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@7ec736
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@148cd5b
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@a2423c
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@aa83ee
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@bb8ae8
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@9cb7fc
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@f304c8
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@bef44a
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@8a5cf3
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@1dc652f
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@76f7c5
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@84a6c0
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@df888a
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@17d4687
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@1a172dc
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@7c06e0
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@a7607a
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@aeecff
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@4985ce
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@efd40d
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@1dbb4d1
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@13c3ba2
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@16f356c
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@1c5fd5
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@d7bef6
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@3a0f10
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@1b2f811
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@bc6389
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@2ac92f
+06:42:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@fe6d5f
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+06:42:57 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:42:57 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:57 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing cancel
+06:42:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:42:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:42:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:42:57 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+06:42:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+06:42:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:42:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+06:42:58 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+06:42:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+06:43:08 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:08 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing deleteProfile
+06:43:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+06:43:10 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+06:43:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+06:43:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+06:43:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing businessForm
+06:43:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:14 DEBUG[com.ins.registration.web.ProfilesController:349]	BR
+06:43:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:43:19 WARN [com.ins.registration.web.ProfilesController:522]	
+06:43:19 WARN [com.ins.registration.web.ProfilesController:523]	
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:43:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:19 WARN [com.ins.registration.web.ProfilesController:527]	BR
+06:43:19 WARN [com.ins.registration.web.ProfilesController:528]	IND
+06:43:19 WARN [com.ins.registration.web.ProfilesController:529]	0000
+06:43:39 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:43:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@156d3a9
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@1622a11
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@1b7ecdb
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@1f47c7
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@1a15ae7
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@571e96
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@12b479b
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@6a2534
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@b07e43
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@13180dc
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@10306cc
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@1b35e79
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@ff7fbc
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@1b1f8a
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@b3a963
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@135b14d
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@b62f6
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@18e0793
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@8f612f
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@13579e0
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@1d48085
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@419cb3
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@196bf64
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@1ef4d69
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@1c332b8
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@36f0c9
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@fa3f1b
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@1454096
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@1933da1
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@1b34e41
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@19cf2df
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@10d3126
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@115f1d3
+06:43:39 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@1b76edf
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:43:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+06:43:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@19c9533
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@1077e76
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@ffb100
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@bd9750
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@119079e
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@2401c1
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@1ef303b
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@479662
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@1e21096
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@af2349
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@35ce99
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@8ead47
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@11218cf
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@11ac1a9
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@1a0597b
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@52d37e
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@1baf976
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@1a9fe14
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@167e86a
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@cbb3fa
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@19516cf
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@10c94c0
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@f9cff1
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@c2f262
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@b73feb
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@c58fee
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@6c8a0c
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@1db296e
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@17d2a06
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@5223f7
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@4e2899
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@14b70a9
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@1d18ac9
+06:43:58 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@1eec137
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+06:43:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+09:57:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:57:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:57:13 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+09:57:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:40:02 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+10:40:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@10cc4c1
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@1496198
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@a663a4
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@1d7c10a
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@1c2921d
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@106bb21
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@e78eb9
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@4b3b20
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@116ee8c
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@874cc3
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@c0c9c4
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@fe9baa
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@1c63ba6
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@1764cb8
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@1a7014d
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@146a399
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@9ecdf5
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@1e3c996
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@1c7bcc0
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@38e644
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@19586c8
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@1c3d514
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@1da4e65
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@1510241
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@16f8b90
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@33b96c
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@1d26ddd
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@2aff78
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@ea423e
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@1a3272e
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@613dd8
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@2370ba
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@bdd4d8
+10:40:02 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@e0d42a
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+10:40:18 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:40:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:40:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:40:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+10:40:21 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:40:21 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@4f6910
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.imp_exp_tin = [Ljava.lang.String;@17a9eb9
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@14ab6b5
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@fe8d80
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@1fbfb1e
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@23a0d3
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@113b108
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@1cb9b56
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@436056
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@dc19a8
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@189646
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@31d6f2
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@16b01f
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@184d1a1
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@deac10
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@f270bc
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@c75ba4
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@518f42
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@9475d1
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@c314a4
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@18056df
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@b08b13
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@7a9f36
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@6ab453
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@164b55b
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@be9943
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@1403eb7
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@d56a40
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@132c064
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@f4ec00
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@1b2351e
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@bd4570
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@19ea9a
+10:40:21 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@1794556
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:2340
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:1700
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_73ad7444_181801065f4__8000_00000668.tmp Resized to: 850x1170
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:1170
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:850
+10:40:21 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_73ad7444_181801065f4__8000_00000668.tmp Resized to: 425x585
+10:40:22 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:585
+10:40:22 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:425
+10:40:22 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_73ad7444_181801065f4__8000_00000668.tmp Resized to: 212x292
+10:40:22 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:292
+10:40:22 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:212
+10:40:22 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_73ad7444_181801065f4__8000_00000668.tmp Resized to: 106x146
+10:40:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:40:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:40:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+10:40:22 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file profilePictureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_73ad7444_181801065f4__8000_00000668.tmp
+10:40:32 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:40:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:40:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing cancel
+10:40:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:40:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:40:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+10:40:32 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:40:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:40:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:40:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:40:33 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:40:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:40:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:40:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+10:40:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:40:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing businessForm
+10:40:47 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:40:47 DEBUG[com.ins.registration.web.ProfilesController:349]	BR
+10:51:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:51:26 WARN [com.ins.registration.web.ProfilesController:522]	
+10:51:26 WARN [com.ins.registration.web.ProfilesController:523]	
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:51:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:51:26 WARN [com.ins.registration.web.ProfilesController:527]	BR
+10:51:26 WARN [com.ins.registration.web.ProfilesController:528]	IND
+10:51:26 WARN [com.ins.registration.web.ProfilesController:529]	7412
+10:51:30 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:51:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:51:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing cancel
+10:51:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+10:51:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:51:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:51:30 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:51:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:51:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:51:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:51:31 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:51:31 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:51:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:51:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:51:33 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:51:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:52:13 DEBUG[com.ins.registration.web.ProfileHistoryController:67]	Preparing listProfileHistory
+10:52:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:52:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:52:16 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:52:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+10:52:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:52:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+10:52:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:52:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:52:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+10:52:30 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+10:52:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+14:10:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:10:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm
+14:10:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:10:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:10:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+14:10:37 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+14:10:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+14:15:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:15:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing sendProfile
+14:15:53 DEBUG[com.ins.registration.web.ProfilesController:1012]	
+14:15:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:15:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:15:56 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+14:15:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa

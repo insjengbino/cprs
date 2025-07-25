@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<ABMSConfimationMessage>
+<UpdateInstruction>
+<MessageDesc>Bond Examination</MessageDesc>
+<OtherRemarks>Bond Examination Successful</OtherRemarks>
+</UpdateInstruction>
+<ABMS>
+<CCN>IM0003067270</CCN>
+<Policy>
+<PolTyp>CT</PolTyp>
+<PolNbr>TESTCCTTIR15C</PolNbr>
+<Surety>MILESTONE GUARANTY AND ASSURANCE</Surety>
+<Issuance>2020-10-26</Issuance>
+<Expiry>2021-01-31</Expiry>
+<Amount>200000</Amount>
+</Policy>
+</ABMS>
+</ABMSConfimationMessage>

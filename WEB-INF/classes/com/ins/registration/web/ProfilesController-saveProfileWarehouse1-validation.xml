@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	
+	<field name="profile.insClientNo">
+		<field-validator type="requiredstring">
+		<message key="You can not leave this field empty."/>
+		</field-validator>	
+	</field>
+	<field name="profile.company">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9 /'.&amp;-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/'.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">35</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>						
+	</field>
+	
+	<field name="profile.firstName">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z ]*</param>
+			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">35</param>
+			<param name="trim">true</param>
+			<message>Exceeded maximum field length of ${maxLength} characters.</message>
+		</field-validator>						
+	</field>
+	
+	<field name="profile.middleName">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z ]*</param>
+			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">35</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>						
+	</field>
+	
+	<field name="profile.lastName">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z ]*</param>
+			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">35</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>						
+	</field>	 
+	
+	<field name="profile.citizenship">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+	</field>	
+	
+	<field name="profile.address">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9 /,.-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/,.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">70</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+	
+	<field name="profile.city">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9 /,.-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/,.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">25</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+	
+	<field name="profile.zipCode">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">^[0-9]*$</param>
+			<message key="Only alphanumeric and space are allowed. Other special characters as well as any non-English alphabet are not accepted." />
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">4</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>							
+	</field>
+	
+	<field name="profile.country">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>		
+	</field>
+	
+	<field name="profile.telephone">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits." />
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">7</param>
+        	<param name="maxLength">15</param>
+        	<param name="trim">true</param>
+        	<message>Number needs to be between ${minLength} and ${maxLength} digits. </message>
+        </field-validator>						
+	</field>
+	 
+	<field name="profile.altTelephone">
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits." />
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">7</param>
+        	<param name="maxLength">15</param>
+        	<param name="trim">true</param>
+        	<message>Number needs to be between ${minLength} and ${maxLength} digits. </message>
+        </field-validator>	
+	</field>
+	 
+	<field name="profile.fax">
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits." />
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">7</param>
+        	<param name="maxLength">15</param>
+        	<param name="trim">true</param>
+        	<message>Number needs to be between ${minLength} and ${maxLength} digits. </message>
+        </field-validator>		
+	</field>
+	
+	<field name="profile.mobile">
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits." />
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">10</param>
+        	<param name="maxLength">15</param>
+        	<param name="trim">true</param>
+        	<message>Number needs to be between ${minLength} and ${maxLength} digits. </message>
+        </field-validator>	
+	</field>
+	 
+	<field name="profile.email">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+		<field-validator type="email">
+			<message key="Please enter a valid Email Address."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">88</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>			
+	</field>
+	
+	<field name="profile.website">
+		<field-validator type="url">
+			<message key="Please enter a valid Website."/>
+		</field-validator>	
+		<field-validator type="stringlength">
+        	<param name="maxLength">100</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>					
+	</field>
+	
+	<field name="profile.customBondedWarehouseType">
+		<field-validator type="requiredstring">
+			<message key="Select Custom Bonded Warehouse Type"/>
+		</field-validator>	
+	</field>
+	
+	<field name="profile.tinNo">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>			
+	</field>
+	
+	<field name="profile.sssIdNo">
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">17</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>	
+	</field>
+	
+	<field name="profile.prcIdNo">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">17</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>					
+	</field>
+	
+	<field name="profile.passportIdNo">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">17</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>	
+	</field>
+	
+	<field name="profile.driverLicenseIdNo">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">17</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>	
+	</field>
+		
+	<field name="profile.vaspPrimaryCcn">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>						
+	</field>
+	
+	<field name="profile.vaspSecondaryCcn">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>						
+	</field>
+	
+	<field name="profile.pezaIdNo">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9-]*</param>
+			<message key="Only alphanumeric characters and dash are allowed. Other special characters as well as any non-English alphabet are not accepted." />
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">2</param>
+        	<param name="maxLength">17</param>
+        	<param name="trim">true</param>
+        	<message>Number needs to be between ${minLength} and ${maxLength} digits. </message>
+        </field-validator>						
+	</field>
+	
+	<!--<field name="profile.jo291">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9 /,.-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/,.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">17</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>-->
+<!-- 	
+	<field name="periodOfEffectivity">
+		<field-validator type="required">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+	</field>
+-->	
+	<!--<field name="profile.underWritingCapacity">
+		<field-validator type="regex">
+			<param name="expression">[0-9.]*</param>
+			<message key="Only numeric and special character (.) are accepted. Other special characters as well as any English and non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">16</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>	
+	</field>-->
+
+	<field name="profile.relatedCompanyName1">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9/.' -]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/'.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">100</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>	
+	</field>
+
+	<field name="profile.relatedCompanyName2">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9/.' -]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/'.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">100</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+	
+	<field name="profile.relatedCompanyName3">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9/.' -]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/'.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">100</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+	
+	<!--<field name="profile.priBrokerTaxpayerIdNo">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>						
+	</field>
+	
+	<field name="profile.priBrokerCCN">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>
+		</field-validator>	
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric, space, and some special characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>							
+	</field>
+	
+	<field name="profile.secBrokerTaxpayerIdNo">
+		<field-validator type="regex">
+			<param name="expression">[0-9]*</param>
+			<message key="Only numeric characters are accepted. Do not use a dash to separate digits."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>						
+	</field>
+	<field name="profile.secBrokerCCN">
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are accepted. Special characters as well as any non-English alphabet are not accepted."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="minLength">12</param>
+        	<param name="maxLength">12</param>
+        	<param name="trim">true</param>
+        	<message>Field length should be exactly ${maxLength} characters.</message>
+        </field-validator>							
+	</field>-->
+
+</validators>

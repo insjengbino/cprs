@@ -1,0 +1,12 @@
+20:42:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+20:42:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+20:42:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+20:42:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT120
+20:50:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+20:50:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+20:50:37 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+20:50:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:119
+23:41:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+23:41:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+23:41:39 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+23:41:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:118

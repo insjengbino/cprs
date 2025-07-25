@@ -1,0 +1,60 @@
+<@s.if test="(profile.id != null )">
+<table border=2 align=center rules=none frame=box  bgcolor="#7F8081" cellpadding=8>
+<tr><td>
+
+	<@s.if test="(clientType == 'IM') || (clientType == 'EX') || (clientType == 'WO')">	
+		<@s.url id="commodityURL" action="listCommodities" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${commodityURL}'">Commodities</button>
+	</@s.if>
+	
+	<@s.if test="(clientType == 'AW') || (clientType == 'CY') || (clientType == 'IM') || (clientType == 'WO')">	
+		<@s.url id="importersURL" action="listImporters" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${importersURL}'">Plant / Warehouse</button>
+	</@s.if>
+	<@s.if test="(clientType == 'EX')">	
+		<@s.url id="exportersURL" action="listExporters" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${exportersURL}'">Plant / Warehouse</button>
+	</@s.if>
+	<@s.if test="(businessType == 'PART' ) || (businessType ==  'CORP' ) || (businessType ==  'CMP' )">
+		<@s.url id="stockholdersURL" action="listStockholders" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${stockholdersURL}'">Stockholders</button>
+	</@s.if>
+	
+	<@s.if test="(clientType != 'BR')">	
+		<@s.url id="principalsURL" action="listPrincipalOfficers" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${principalsURL}'">Principals</button>
+	</@s.if>
+
+	<@s.if test="(clientType != 'BR')">		
+		<@s.url id="equivRespsURL" action="listEquivRespOfficers" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${equivRespsURL}'">Responsible Officers</button>
+	</@s.if>
+
+	<@s.if test="(clientType == 'IM') || (clientType == 'EX')">			
+		<@s.url id="suppliersURL" action="listSuppliers" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${suppliersURL}'">Suppliers</button>
+	</@s.if>
+	
+	<@s.if test="(clientType != 'IM') && (clientType != 'EX')">				
+		<@s.url id="clientsURL" action="listClient" includeParams="none">
+			<@s.param name="currentProfileID" value="profile.id"/>
+		</@s.url>		
+		<button onClick="window.location='${clientsURL}'">Clients</button>
+	</@s.if>
+</td></tr>
+</table><br/>
+</@s.if>

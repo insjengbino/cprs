@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<meta name="tab" content="profile"/>
+		<@s.head theme="ajax"/>
+	</head>
+	<body>
+	<div class="profileForm">
+	
+	<@s.form theme="simple" method="POST" enctype="multipart/form-data">
+	<@s.tabbedPanel id="test" theme="ajax">
+	
+	<@s.div id="1" label="General Info" theme="ajax" labelposition="top">
+	<table>   
+		  <@s.hidden name="profile.id" theme="ajax"/>
+		  <@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true" theme="ajax"/>
+		  <@s.textfield label="INS Client Number" name="profile.insClientNo" required="true" theme="ajax"/> 
+		
+		  <@s.if test="(clientType != 'BR' ) && (clientType != 'occassional')">
+		   	<@s.textfield label="Business Name/Company Name" name="profile.company" required="true" theme="ajax"/>
+		  </@s.if>
+		
+		  <@s.if test="(clientType == 'BR' ) || (clientType == 'occassional')">
+		  	<@s.textfield label="First Name" name="profile.firstName" required="true" theme="ajax"/> 
+		  	<@s.textfield label="Middle Name" name="profile.middleName" required="true" theme="ajax"/> 
+		  	<@s.textfield label="Last Name " name="profile.lastName" required="true" theme="ajax"/>
+		  	<@s.textfield label="Citizenship" name="profile.citizenship" required="true" theme="ajax"/>
+		  </@s.if>
+		
+		  	<@s.textfield label="Address" name="profile.address" required="true" theme="ajax"/>
+		  	<@s.textfield label="City" name="profile.city" required="true" theme="ajax"/>
+		  	<@s.textfield label="Zip Code" name="profile.zipCode" required="true" theme="ajax"/>
+
+		  	<@s.autocompleter label="Country" keyName="profile.country" indicator="indicator"  
+		  					list="%{countries}" cssStyle="width: 200px;" required="true" 
+		  					autoComplete="false" loadOnTextChange="true" loadMinimumCount="3" 
+		  					showDownArrow="false" forceValidOption="true" required="true" theme="xhtml" preload="false"/>
+		  
+		  	<@s.textfield label="Telephone Number" name="profile.telephone" required="true" theme="ajax"/>
+		  	<@s.textfield label="Alternate Telephone Number" name="profile.altTelephone" theme="ajax"/>
+		  	<@s.textfield label="Fax" name="profile.fax" theme="ajax"/>
+		
+		  <@s.if test="(clientType == 'BR' ) || (clientType == 'forwarder') || (clientType == 'occassional')">
+		  	<@s.textfield label="Mobile Number" name="profile.mobile" theme="ajax" />
+		  </@s.if>
+		
+		  	<@s.textfield label="Email Address" name="profile.email" required="true" theme="ajax"/>
+		  	<@s.textfield label="Website" name="profile.website" theme="ajax"/>
+		
+		  <@s.if test="(clientType != 'BR' ) && (clientType != 'occassional')">
+		  	<@s.autocompleter label="Nature Of Business" keyName="profile.natureOfBusiness" indicator="indicator" 
+		  					list="%{natureOfBusiness}" cssStyle="width: 200px;" required="true"   
+		  					autoComplete="false" loadOnTextChange="true" loadMinimumCount="3" 
+		  					showDownArrow="false" forceValidOption="true" required="true" theme="xhtml" preload="false"/>
+		  
+		  	<@s.autocompleter label="Type of Business Entity" keyName="profile.businessType" indicator="indicator" 
+		  					list="%{businessType}" cssStyle="width: 200px;" required="true"    
+		  					autoComplete="false" loadOnTextChange="true" loadMinimumCount="3" 
+		  					showDownArrow="false" forceValidOption="true" required="true" theme="xhtml" preload="false"/>
+		  </@s.if>																		
+		  <@s.if test="(clientType == 'WO')">
+			<@s.textfield label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" required="true" theme="ajax" />
+		  </@s.if>
+		  <@s.if test="(clientType == 'AW' ) || (clientType == 'arrastre')
+		   			|| (clientType == 'CY')|| (clientType == 'WO')">
+		  	<@s.autocompleter label="Custom Bonded Warehouse" keyName="profile.customBondedWarehouse" indicator="indicator" 
+		  					list="%{customBondedWarehouse}" cssStyle="width: 200px;" required="true" 
+		  					autoComplete="false" loadOnTextChange="true" loadMinimumCount="3" 
+		  					showDownArrow="false" forceValidOption="true" required="true" theme="xhtml" preload="false"/>
+		  </@s.if>
+		  
+		  <@s.if test="(clientType == 'IM' ) || (clientType == 'exporter') || (clientType == 'SU')">
+		  	<@s.textfield label="J0 2-91 Reference No." name="profile.jo291" required="true" theme="ajax" />
+		  	<@s.textfield label="Certificate of Authority" name="profile.certificateOfAuthority" required="true" theme="ajax" />
+		  	<@s.datetimepicker  name="profile.periodOfEffectivity" label="Period of Effectivity" required="true" theme="ajax" />		
+		  	<@s.textfield label="Under Writing Capacity" name="profile.underWritingCapacity" required="true" theme="ajax" />
+		  </@s.if>
+		 
+		  	<@s.textfield label="TIN Number" name="profile.tinNo" required="true" theme="ajax" />
+		  
+		  <@s.if test="(clientType == 'BR' ) || (clientType == 'forwarder') || (clientType == 'occassional')">
+		  	<@s.textfield label="SSS Number" name="profile.sssIdNo" theme="ajax"/>
+		  </@s.if>
+		 
+		  <@s.if test="(clientType == 'occassional')">
+		  	<@s.textfield label="Passport Number" name="profile.passportIdNo" theme="ajax" />
+		  	<@s.textfield label="Driver's License" name="profile.driverLicenseIdNo" theme="ajax"/>
+     	  </@s.if>
+		  
+		  <@s.if test="(clientType == 'BR')">
+		  	<@s.textfield label="PRC Id Number" name="profile.prcIdNo" required="true" theme="ajax"  />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType != 'occassional') && (clientType != 'vasp')">
+		  	<@s.textfield label="VASP Primary CCN" name="profile.vaspPrimaryCcn" required="true" theme="ajax" />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType != 'occassional') && (clientType != 'vasp')">
+		  	<@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" required="true" theme="ajax" />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType != 'BR' ) && (clientType != 'occassional')">
+		  	<@s.textfield label="PEZA BOI Registration Number" name="profile.pezaIdNo" required="true" theme="ajax" />
+		  	<@s.textfield label="SEC Registration Number" name="profile.secIdNo" required="true" theme="ajax" />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType == 'airlines' ) || (clientType == 'arrastre') 
+		  			|| (clientType == 'consolidator') || (clientType == 'IM') || (clientType == 'exporter')
+		  			|| (clientType == 'shipping')|| (clientType == 'vasp')">
+		  	<@s.textfield label="Amount of Authorized Capital Stock" name="profile.capitalStockAmount" required="true" theme="ajax" />
+		  	<@s.textfield label="Amount of Paid Up Capital" name="profile.paidUpCapitalAmount" required="true" theme="ajax" />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType == 'aab')">
+		  	<@s.textfield label="AAB Reference Code" name="profile.aabAssignedBankRefNo" required="true" theme="ajax" />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType == 'airlines' ) || (clientType == 'AW') || (clientType == 'WO') 
+		  			|| (clientType == 'arrastre') || (clientType == 'consolidator')
+		  			|| (clientType == 'CY') || (clientType == 'IM') || (clientType == 'exporter') || (clientType == 'shipping')">
+		  	<@s.textfield label="Related Domestic/Foreign Company 1" name="profile.relatedCompanyName1" required="true" theme="ajax" />
+		  	<@s.textfield label="Related Domestic/Foreign Company 2" name="profile.relatedCompanyName2" required="true" theme="ajax" />
+		  	<@s.textfield label="Related Domestic/Foreign Company 3" name="profile.relatedCompanyName3" required="true" theme="ajax" />
+		  </@s.if>
+		  
+		  <@s.if test="(clientType == 'IM') || (clientType == 'exporter') || (clientType == 'WO')">
+			<@s.textfield label="Primary Broker TIN Number" name="profile.priBrokerTaxpayerIdNo" required="true" theme="ajax"/>
+			<@s.textfield label="Primary Broker CCN" name="profile.priBrokerCCN" required="true" theme="ajax" />
+			<@s.autocompleter label="Primary Broker Port Entry" keyName="profile.priBrokerPortOfEntry" indicator="indicator" 
+			 		list="%{portOfEntry}" cssStyle="width: 200px;" required="true" 
+		  					autoComplete="false" loadOnTextChange="true" loadMinimumCount="3" 
+		  					showDownArrow="false" forceValidOption="true" required="true" theme="xhtml" preload="false"/>
+		
+			<@s.textfield label="Secondary Broker TIN Number" name="profile.secBrokerTaxpayerIdNo" required="true" theme="ajax"/>
+			<@s.textfield label="Secondary Broker CCN" name="profile.secBrokerCCN" required="true" theme="ajax"/>
+			<@s.autocompleter label="Secondary Broker Port Entry" keyName="profile.secBrokerPortOfEntry" indicator="indicator" 
+			 		list="%{portOfEntry}" cssStyle="width: 200px;" required="true" 
+		  					autoComplete="false" loadOnTextChange="true" loadMinimumCount="3" 
+		  					showDownArrow="false" forceValidOption="true" required="true" theme="xhtml" preload="false"/>	
+		  	
+		  	<@s.file name="profileImportedCommoditiesFile" label="Importable Commodities" accept="text/*" size="35" theme="ajax"/>
+	   	 </@s.if>
+	   	 
+	   	 <@s.if test="(clientType == 'BR' ) || (clientType == 'IM' ) || (clientType == 'exporter' ) 
+		  			|| (clientType == 'forwarder') || (clientType == 'occassional' )">
+
+		  	<@s.file name="profilePictureFile" label="Scanned Picture/s" accept="text/*" size="35" theme="ajax"/>
+			<@s.file name="profileSignatureFile" label="Scanned Signature/s" accept="text/*" size="35" theme="ajax"/>
+		 </@s.if>
+			<@s.textfield label="Last Date of Transaction" name="profile.lastDateOfTransaction" 
+			displayFormat="MM/dd/yyyy" cssStyle="width: 100px;" theme="ajax" readonly="true"/>
+			
+   	</tr>
+    <br>
+    </table>
+   	</@s.div>
+	</@s.tabbedPanel>
+	
+	<br>
+		 <@s.submit value="Save" action="officersListForm" theme="simple"/>
+	</@s.form>
+		
+		 </div>
+	</body>  	
+</html>

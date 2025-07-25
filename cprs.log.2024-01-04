@@ -1,0 +1,24 @@
+11:53:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+11:53:05 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+11:53:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+11:53:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+11:53:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+11:53:39 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+11:53:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+11:53:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+11:53:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+11:53:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+11:53:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+11:53:42 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+11:53:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+11:53:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing completeProfile
+11:53:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:53:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+11:53:49 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+11:53:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa

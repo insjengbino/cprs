@@ -1,0 +1,22 @@
+07:12:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:12:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+07:12:11 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+07:12:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+07:13:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:13:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+07:13:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:13:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+07:13:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:13:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+07:15:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:15:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+07:15:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:15:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+07:15:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:15:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+07:19:33 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+07:19:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+07:19:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+07:19:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+07:19:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+07:19:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000

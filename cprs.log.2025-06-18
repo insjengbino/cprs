@@ -1,0 +1,697 @@
+08:11:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:11:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:11:41 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+08:11:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:11:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:11:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+08:12:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:12:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:12:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:14:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:14:20 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:14:20 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+08:14:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:14:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:14:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:14:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:21:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:21:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:21:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:22:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:22:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:22:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:26:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:26:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:26:51 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:51 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+08:26:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+08:26:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:26:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:27:03 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:27:03 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+08:27:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:27:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:27:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:42:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:42:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:42:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:42:25 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:42:25 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:42:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:42:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:42:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:42:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:46:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:46:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:46:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+08:57:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:57:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:57:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:29:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:29:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:29:47 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:29:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:29:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+09:31:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:31:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:31:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:31:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:31:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+09:37:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:37:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:37:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:37:25 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:37:25 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:37:25 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:38:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:38:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:38:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:38:51 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:38:51 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:38:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:47:04 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:47:04 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:47:04 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:47:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:47:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:47:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:48:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:48:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:48:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:49:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:49:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:49:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:50:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:50:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:50:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:50:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:50:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:50:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:53:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:53:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:53:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:55:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:55:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:55:07 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:56:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:56:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+09:56:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:56:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:56:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+09:56:44 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:56:44 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+09:57:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:57:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+09:57:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:01:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:01:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:01:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:02:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:02:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:02:28 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+10:02:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:02:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:02:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:02:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:03:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:03:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:03:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:05:52 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:05:52 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:05:52 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:08:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:08:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+10:08:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:08:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:08:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:11:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:11:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+10:11:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:11:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:11:47 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+10:11:47 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:12:51 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:12:51 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:12:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:15:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:15:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+10:15:57 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:15:57 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:15:57 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+10:15:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:20:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:20:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:20:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:20:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:20:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:20:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:21:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:21:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:21:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:21:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:21:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:21:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:22:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:22:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:22:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:25:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:25:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:25:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:25:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:25:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:25:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:25:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:25:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:25:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:25:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:25:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:25:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:31:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:31:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:31:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+10:31:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:31:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+10:36:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+10:36:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+10:36:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+11:27:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:27:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+11:27:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:00:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:00:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+13:10:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:10:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:10:32 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:10:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:10:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:10:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:10:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:11:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:11:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:11:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:12:04 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:04 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+13:12:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:12:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:12:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:12:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:13:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:13:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:13:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:14:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:14:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:14:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:16:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:16:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:16:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:21:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:21:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:21:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:24:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:24:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:24:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:24:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:25:03 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:25:03 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:25:03 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:44 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:44 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:44 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:47 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:47 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:47 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:48 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:48 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:48 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:29:48 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:48 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:48 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:30:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:30:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:30:55 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:30:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:31:08 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:31:08 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+13:31:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:31:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:31:40 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:31:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:45:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:45:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:45:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:48:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:48:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:48:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:48:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:48:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:48:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:49:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:49:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:49:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:53:04 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:53:04 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:53:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:54:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:54:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:54:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:55:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:55:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:55:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:55:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:55:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:55:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:56:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:56:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:56:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:56:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:56:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:56:31 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+13:58:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:58:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:58:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:03:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:03:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:03:50 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:03:54 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:03:54 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:03:54 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:04:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:04:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:04:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:05:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:05:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:05:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:05:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:05:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:05:31 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:05:31 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:05:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:05:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:05:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:07:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:07:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:07:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:12:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:12:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:12:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:14:50 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:14:50 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:14:50 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:16:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:16:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:16:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:17:03 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:17:03 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:17:03 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:20:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:20:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:20:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:20:29 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:20:29 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:20:29 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:20:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:22:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:22:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:22:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:22:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:22:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:22:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:23:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:23:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:23:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:25:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:25:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:25:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:26:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:26:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:26:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:26:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:26:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:26:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:26:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:26:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:26:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:26:21 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:26:21 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:26:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:28:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:28:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:28:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:28:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:28:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:28:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:29:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:29:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:29:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:40:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:40:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:40:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:41:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:41:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:41:32 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:41:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:42:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:42:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:42:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:44:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:44:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:44:12 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:44:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:44:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:44:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:44:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:45:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:45:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:45:43 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:45:43 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:49:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:49:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:49:50 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:49:50 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:50:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:50:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:50:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:51:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:51:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:51:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:51:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:51:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:51:34 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:51:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:52:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:52:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:52:23 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:52:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:53:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:53:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:53:49 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:53:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:54:04 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:54:04 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:54:04 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:54:04 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+14:54:07 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:54:07 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+14:54:07 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+14:54:07 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:08:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:08:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:08:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:09:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:09:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:09:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:11:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:11:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:11:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:11:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:11:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:11:49 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:11:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:11:54 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:11:54 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:11:54 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:12:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:12:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:12:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:12:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:12:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:12:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:13:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:13:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:13:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:20:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:20:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:20:31 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:20:31 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:20:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:20:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:20:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:21:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:21:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:21:10 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:21:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:21:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:21:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+15:21:22 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:21:22 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:21:22 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:21:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:21:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:21:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:22:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:22:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:22:16 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:22:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:22:20 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:22:20 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:22:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:22:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:22:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:22:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:23:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:23:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:23:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:23:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:23:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:23:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:23:51 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:23:51 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:23:51 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:23:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:25:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:25:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:25:44 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:27:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:27:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:27:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:27:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:27:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:27:30 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:27:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:27:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:27:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:27:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:28:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:28:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:28:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:28:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:28:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:28:18 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:28:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:29:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:29:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:29:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:29:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:29:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:29:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:29:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:29:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:29:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:30:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:30:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:30:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:30:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:30:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:30:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:30:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:30:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:30:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:30:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:31:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:31:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:31:09 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:31:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:31:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:31:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:31:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:32:20 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:32:20 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:32:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:33:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:33:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:33:18 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:33:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:33:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:33:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:33:30 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:33:30 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:33:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:33:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:33:31 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:33:31 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:33:31 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:33:31 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:33:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:33:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:33:45 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:33:45 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:33:45 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:33:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:33:46 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:33:46 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:33:46 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:33:46 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:33:46 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:33:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:00 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:05 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:05 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:05 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:06 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:06 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:06 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+15:34:16 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:24 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:24 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:24 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:34:25 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:25 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:25 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:25 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:25 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:25 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:26 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:26 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:26 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:34:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:36 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:36 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:36 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:37 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:37 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:37 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:34:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:40 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:34:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:34:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+15:49:29 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:49:29 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:49:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:49:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:49:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:49:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:50:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:50:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:50:45 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+15:50:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:50:50 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:50:50 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:50:50 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:55:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:55:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:55:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:55:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:55:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:55:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:56:46 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:56:46 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:56:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:56:48 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:56:48 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:56:48 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:56:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:56:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:56:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:56:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:56:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:56:49 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:56:50 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:56:50 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:56:50 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:56:57 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:56:57 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:56:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:57:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:57:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:57:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:57:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:57:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:57:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+15:58:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+15:58:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+15:58:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+16:05:47 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:05:47 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing logout
+16:06:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:06:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:06:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:DANZASA
+16:06:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:06:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:06:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA

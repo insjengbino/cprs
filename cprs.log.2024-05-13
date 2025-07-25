@@ -1,0 +1,622 @@
+12:15:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:15:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:15:27 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+12:15:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:15:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:15:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+12:15:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:15:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:15:56 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+12:15:56 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:292566
+12:15:59 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+12:16:00 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+12:16:00 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+12:16:02 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:16:02 DEBUG[com.ins.registration.web.StockholderController:47]	preparing cancelStockholder
+12:16:03 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+12:16:03 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+12:16:08 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:16:08 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+12:16:08 WARN [com.ins.registration.web.ProfilesController:522]	IM
+12:16:08 WARN [com.ins.registration.web.ProfilesController:523]	CORP
+12:16:08 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:16:08 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:16:08 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:16:08 WARN [com.ins.registration.web.ProfilesController:527]	IM
+12:16:08 WARN [com.ins.registration.web.ProfilesController:528]	CORP
+12:16:08 WARN [com.ins.registration.web.ProfilesController:529]	7412
+12:16:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:16:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:19:31 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing listPrincipalOfficers
+12:19:31 DEBUG[com.ins.registration.web.PrincipalOfficerController:67]	setting currentProfileID session to value:292566
+12:19:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:19:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+12:19:40 WARN [com.ins.registration.web.ProfilesController:522]	IM
+12:19:40 WARN [com.ins.registration.web.ProfilesController:523]	CORP
+12:19:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:19:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:19:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:19:40 WARN [com.ins.registration.web.ProfilesController:527]	IM
+12:19:40 WARN [com.ins.registration.web.ProfilesController:528]	CORP
+12:19:40 WARN [com.ins.registration.web.ProfilesController:529]	7412
+12:19:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:19:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:36:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:36:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing removeProfilePicture
+12:38:01 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:38:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=292566
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveProfileImporter2
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@1187429
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.pezaIdNo = [Ljava.lang.String;@723da4
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.CustomBondedWarehouse = [Ljava.lang.String;@2d0c7a
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.priBrokerTaxpayerIdNo = [Ljava.lang.String;@18e3b6c
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@df6284
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@1bccfbc
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@ea76e6
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@124133b
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@16a9b96
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.paidUpCapitalAmount = [Ljava.lang.String;@cd634
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@c30891
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@677550
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.priBrokerCCN = [Ljava.lang.String;@4715f8
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@f35c4f
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1316e00
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@2d0236
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@ec440a
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@166f63a
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@af85a3
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@16ebed8
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@9c90cc
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.aabAssignedBankRefNo = [Ljava.lang.String;@e65e1d
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.capitalStockAmount = [Ljava.lang.String;@2cd9f9
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@9a75ce
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@ac55da
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@38859d
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secBrokerCCN = [Ljava.lang.String;@cc1f26
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@1112034
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@1595437
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@1a818cf
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@f4d67a
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@2d06f4
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secBrokerTaxpayerIdNo = [Ljava.lang.String;@2390c0
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@f4596e
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@1b61f8
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@1bcfa7b
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@1e0b391
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveProfileImporter2 = [Ljava.lang.String;@12d1b82
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secIdNo = [Ljava.lang.String;@68fa90
+12:38:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@1a0a4d
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:38:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:38:01 ERROR[com.opensymphony.xwork2.validator.AnnotationActionValidatorManager:364]	Caught exception while loading file com/ins/registration/web/ProfilesController-saveProfileImporter2-validation.xml
+java.lang.IllegalArgumentException: There is no validator class mapped to the name long
+	at com.opensymphony.xwork2.validator.ValidatorFactory.lookupRegisteredValidatorType(ValidatorFactory.java:299)
+	at com.opensymphony.xwork2.validator.ValidatorFileParser.addValidatorConfigs(ValidatorFileParser.java:192)
+	at com.opensymphony.xwork2.validator.ValidatorFileParser.parseActionValidatorConfigs(ValidatorFileParser.java:72)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.loadFile(AnnotationActionValidatorManager.java:361)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.buildAliasValidatorConfigs(AnnotationActionValidatorManager.java:244)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.buildValidatorConfigs(AnnotationActionValidatorManager.java:343)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.getValidators(AnnotationActionValidatorManager.java:69)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.validate(AnnotationActionValidatorManager.java:138)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.validate(AnnotationActionValidatorManager.java:113)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.validate(AnnotationActionValidatorManager.java:100)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doBeforeInvocation(ValidationInterceptor.java:142)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:148)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:48)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:123)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:105)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:83)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:268)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.ins.registration.misc.FieldInterceptor.intercept(FieldInterceptor.java:36)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:74)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:115)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:143)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:121)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:170)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:123)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:176)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:50)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:504)
+	at org.apache.struts2.dispatcher.FilterDispatcher.doFilter(FilterDispatcher.java:419)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.struts2.dispatcher.ActionContextCleanUp.doFilter(ActionContextCleanUp.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:151)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Unknown Source)
+12:38:02 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file profilePictureFile C:\Tomcat\work\Catalina\localhost\cprs\upload__28d53815_18cf1655d30__8000_00000474.tmp
+12:38:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:38:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:38:02 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:38:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:38:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:38:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+12:38:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:38:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:38:09 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+12:38:09 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:292566
+12:38:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:38:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+12:38:11 WARN [com.ins.registration.web.ProfilesController:522]	IM
+12:38:11 WARN [com.ins.registration.web.ProfilesController:523]	CORP
+12:38:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:38:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:38:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:38:11 WARN [com.ins.registration.web.ProfilesController:527]	IM
+12:38:11 WARN [com.ins.registration.web.ProfilesController:528]	CORP
+12:38:11 WARN [com.ins.registration.web.ProfilesController:529]	7412
+12:38:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:38:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:38:18 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+12:38:18 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:292566
+12:38:20 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+12:38:23 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+12:38:23 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+12:38:26 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderPicture
+12:38:27 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+12:38:35 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:38:35 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@627b73
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@196ec74
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@17de5b9
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@751406
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@759939
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@9ea6dd
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1dd1435
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@159c03a
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@15b29c2
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@12b597
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@4ffdc7
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@19e4b5e
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@16645ac
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@1683ca4
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@65690c
+12:38:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@1d3b0c7
+12:38:36 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderPictureFile C:\Tomcat\work\Catalina\localhost\cprs\upload__28d53815_18cf1655d30__8000_00000494.tmp
+12:38:36 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+12:38:36 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+12:38:41 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+12:38:43 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+12:38:43 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+12:39:01 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:39:01 DEBUG[com.ins.registration.web.StockholderController:47]	preparing cancelStockholder
+12:39:01 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+12:39:01 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+12:39:03 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:03 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+12:39:03 WARN [com.ins.registration.web.ProfilesController:522]	IM
+12:39:03 WARN [com.ins.registration.web.ProfilesController:523]	CORP
+12:39:03 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:39:03 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:39:03 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:39:03 WARN [com.ins.registration.web.ProfilesController:527]	IM
+12:39:03 WARN [com.ins.registration.web.ProfilesController:528]	CORP
+12:39:03 WARN [com.ins.registration.web.ProfilesController:529]	7412
+12:39:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:39:16 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing listPrincipalOfficers
+12:39:16 DEBUG[com.ins.registration.web.PrincipalOfficerController:67]	setting currentProfileID session to value:292566
+12:39:18 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing editPrincipalOfficer
+12:39:18 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing principalOfficerPicture
+12:39:18 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing principalOfficerSignature
+12:39:20 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:39:20 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing cancelPrincipal
+12:39:21 DEBUG[com.ins.registration.web.PrincipalOfficerController:48]	preparing listPrincipalOfficers
+12:39:21 DEBUG[com.ins.registration.web.PrincipalOfficerController:83]	Error in getting parameter: currentProfileID null
+12:39:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+12:39:23 WARN [com.ins.registration.web.ProfilesController:522]	IM
+12:39:23 WARN [com.ins.registration.web.ProfilesController:523]	CORP
+12:39:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:39:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:39:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:39:23 WARN [com.ins.registration.web.ProfilesController:527]	IM
+12:39:23 WARN [com.ins.registration.web.ProfilesController:528]	CORP
+12:39:23 WARN [com.ins.registration.web.ProfilesController:529]	7412
+12:39:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:39:35 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:39:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing cancel
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:39:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:39:36 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:39:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:39:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+12:39:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:39:50 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:39:50 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing removeProfilePicture
+12:40:01 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391
+12:40:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=316108
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker1
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@1fb795
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@4dabc7
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@148b3b8
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@f1684
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@8f3a4b
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@13c2bdb
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@16364a1
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@63c657
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@727e0e
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@b1f15e
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@5d727a
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@106b208
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@922cc5
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastName = [Ljava.lang.String;@b9505f
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@4ba5f6
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@7ce5bd
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@1cedb8b
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@1af86ae
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker1 = [Ljava.lang.String;@b318bb
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@1cd5c4
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@1bfc699
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@1878da9
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@65605d
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.middleName = [Ljava.lang.String;@199ab1c
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@1b0cb79
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@1fe8636
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.firstName = [Ljava.lang.String;@11d736f
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@85b66d
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@8bd140
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@156d485
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@19a7ae9
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@fb8c22
+12:40:01 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@ad34b0
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391
+12:40:01 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file profileSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload__28d53815_18cf1655d30__8000_00000600.tmp
+12:40:01 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file profilePictureFile C:\Tomcat\work\Catalina\localhost\cprs\upload__28d53815_18cf1655d30__8000_00000599.tmp
+12:40:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:40:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:40:02 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:40:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:40:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:40:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+12:40:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:40:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:41:54 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:41:54 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:41:54 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:41:54 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:41:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:41:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+12:42:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+12:42:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:42:40 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:42:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing cancel
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:42:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:42:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:42:48 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:48 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+12:42:49 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:49 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+12:42:59 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:42:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=292566
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveProfileImporter2
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@14d38e6
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.pezaIdNo = [Ljava.lang.String;@d2c241
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.CustomBondedWarehouse = [Ljava.lang.String;@cf5899
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.priBrokerTaxpayerIdNo = [Ljava.lang.String;@c1bdd7
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@196ae3e
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@189727e
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@bbb316
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@ea791d
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@1b57a0f
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.paidUpCapitalAmount = [Ljava.lang.String;@16075d1
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@1d6ef18
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@1eb5239
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.priBrokerCCN = [Ljava.lang.String;@957096
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@112905b
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1c368c3
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@1317a2
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@174ac84
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@ea3af7
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@1c5452a
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@3fec2f
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@ab0f1f
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.aabAssignedBankRefNo = [Ljava.lang.String;@6deaba
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.capitalStockAmount = [Ljava.lang.String;@4d63d0
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@d40b9d
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@146b071
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@1e9ee3f
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secBrokerCCN = [Ljava.lang.String;@1187c84
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@96e8ba
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@1894308
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@8fd67f
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@14b3e99
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@fadfaf
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secBrokerTaxpayerIdNo = [Ljava.lang.String;@737d8a
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@3708e6
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@32560
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@8ac1a1
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@1ae594f
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveProfileImporter2 = [Ljava.lang.String;@1698eeb
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secIdNo = [Ljava.lang.String;@1261322
+12:42:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@b247d3
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+12:42:59 ERROR[com.opensymphony.xwork2.validator.AnnotationActionValidatorManager:364]	Caught exception while loading file com/ins/registration/web/ProfilesController-saveProfileImporter2-validation.xml
+java.lang.IllegalArgumentException: There is no validator class mapped to the name long
+	at com.opensymphony.xwork2.validator.ValidatorFactory.lookupRegisteredValidatorType(ValidatorFactory.java:299)
+	at com.opensymphony.xwork2.validator.ValidatorFileParser.addValidatorConfigs(ValidatorFileParser.java:192)
+	at com.opensymphony.xwork2.validator.ValidatorFileParser.parseActionValidatorConfigs(ValidatorFileParser.java:72)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.loadFile(AnnotationActionValidatorManager.java:361)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.buildAliasValidatorConfigs(AnnotationActionValidatorManager.java:244)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.buildValidatorConfigs(AnnotationActionValidatorManager.java:343)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.getValidators(AnnotationActionValidatorManager.java:66)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.validate(AnnotationActionValidatorManager.java:138)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.validate(AnnotationActionValidatorManager.java:113)
+	at com.opensymphony.xwork2.validator.AnnotationActionValidatorManager.validate(AnnotationActionValidatorManager.java:100)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doBeforeInvocation(ValidationInterceptor.java:142)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:148)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:48)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:123)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:105)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:83)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:268)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.ins.registration.misc.FieldInterceptor.intercept(FieldInterceptor.java:36)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:74)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:115)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:143)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:121)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:170)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:86)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:123)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:176)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:224)
+	at com.opensymphony.xwork2.DefaultActionInvocation$2.doProfiling(DefaultActionInvocation.java:223)
+	at com.opensymphony.xwork2.util.profiling.UtilTimerStack.profile(UtilTimerStack.java:455)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:221)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:50)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:504)
+	at org.apache.struts2.dispatcher.FilterDispatcher.doFilter(FilterDispatcher.java:419)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.parsePage(PageFilter.java:118)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.struts2.dispatcher.ActionContextCleanUp.doFilter(ActionContextCleanUp.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:151)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Unknown Source)
+12:42:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:42:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:43:00 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:43:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:43:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:43:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing sendProfile
+12:43:33 DEBUG[com.ins.registration.web.ProfilesController:1012]	
+12:43:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:43:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:43:36 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:43:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:45:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:45:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:45:06 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:45:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:49:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:49:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing sendProfile
+12:49:16 DEBUG[com.ins.registration.web.ProfilesController:1012]	
+12:49:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:49:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:49:18 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:49:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:51:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:51:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:51:18 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+12:51:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:51:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:51:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing completeProfile
+12:51:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:51:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:51:31 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:51:31 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:51:44 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:51:44 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing sendProfile
+12:51:44 DEBUG[com.ins.registration.web.ProfilesController:1012]	
+12:51:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:51:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:51:45 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:51:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:53:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:53:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:53:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:53:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:53:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing completeProfile
+12:53:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:53:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:53:43 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:53:43 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:54:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:54:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing sendProfile
+12:54:01 DEBUG[com.ins.registration.web.ProfilesController:1012]	
+12:54:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:54:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:54:02 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+12:54:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
+12:56:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+12:56:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+12:56:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA

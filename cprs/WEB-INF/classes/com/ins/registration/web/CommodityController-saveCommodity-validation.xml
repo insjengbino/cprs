@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+
+	<field name="commodity.hsCode">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>		
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9 ]*</param>
+			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">35</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+	
+	<field name="commodity.itemCode">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>		
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z0-9 ]*</param>
+			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">35</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+	
+	<field name="commodity.itemDescription">
+		<field-validator type="requiredstring">
+			<message key="You can not leave this field empty."/>		
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">[A-Za-z ]*</param>
+			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+		</field-validator>
+		<field-validator type="stringlength">
+        	<param name="maxLength">100</param>
+        	<param name="trim">true</param>
+        	<message>Exceeded maximum field length of ${maxLength} characters.</message>
+        </field-validator>		
+	</field>
+
+</validators>

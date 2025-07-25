@@ -1,0 +1,28 @@
+01:29:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+01:29:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+01:29:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:117
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:119
+01:29:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+01:29:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:STUDENT120
+01:29:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+01:29:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+01:29:15 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+01:29:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:118
+16:07:41 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+16:07:41 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+16:07:41 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+16:07:41 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+16:07:41 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+16:07:41 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null

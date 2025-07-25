@@ -1,0 +1,207 @@
+09:08:44 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:08:44 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:08:45 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:08:45 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:08:45 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:08:45 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profileSignature
+09:20:56 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+09:20:56 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:20:56 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+09:20:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+09:20:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+09:20:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391
+09:28:49 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:28:49 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:28:49 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:28:49 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:31:54 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:31:54 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:31:55 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:31:55 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:37:28 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:37:28 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:37:29 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:37:29 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:37:52 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:37:52 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:37:52 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:37:52 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:38:07 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:38:07 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:38:08 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:38:08 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:46:07 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:46:07 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:46:07 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:46:07 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:46:37 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:46:37 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:46:37 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:46:37 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:47:16 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:47:16 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:47:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:47:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:47:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:47:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profileSignature
+09:50:12 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:50:12 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+09:50:13 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:50:13 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+09:52:44 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+09:52:44 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+09:52:44 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+09:52:44 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+09:52:44 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+09:52:44 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+10:01:10 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:01:10 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:01:11 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:01:11 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:06:02 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:06:02 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:06:02 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:06:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:06:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:06:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:07:00 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:07:00 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:07:00 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:07:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:07:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+10:07:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+10:10:25 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:10:25 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:10:25 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:10:25 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:10:29 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:10:29 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:10:29 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:10:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:10:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:10:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:11:10 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:11:10 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:11:10 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:11:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:11:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:11:10 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:12:37 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:12:37 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:12:37 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:12:37 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:12:43 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:12:43 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:12:43 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:12:43 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:12:43 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:12:43 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:14:24 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:14:24 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:14:24 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:14:24 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:14:26 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:14:26 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:14:26 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:14:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:14:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:14:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+10:18:05 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:18:05 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:18:05 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:18:05 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:18:17 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:18:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:18:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:18:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+10:18:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+10:18:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+10:55:33 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:55:33 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:55:34 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:55:34 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:55:38 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:55:38 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:55:38 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:55:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:SPROP
+10:55:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:55:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:5231
+10:56:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:56:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+10:56:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:56:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+10:56:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:56:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profileSignature
+10:56:24 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+10:56:24 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+10:56:24 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+10:56:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:SPROP
+10:56:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+10:56:24 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:46429
+12:29:20 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+12:29:20 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+12:29:20 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+12:29:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+12:29:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+12:29:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+13:01:06 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:01:06 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+13:01:06 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:01:06 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+13:06:09 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:06:09 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+13:06:09 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:06:09 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+13:06:59 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:06:59 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:06:59 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+13:06:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+13:06:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+13:06:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+13:34:15 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:34:15 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+13:34:16 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:34:16 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+13:34:20 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:34:21 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:34:21 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+13:34:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+13:34:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+13:34:21 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+13:36:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:36:58 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing cancel
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:EX
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:2899
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+13:36:59 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:36:59 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing listProfiles
+13:36:59 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:36:59 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+13:36:59 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:36:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:null
+13:37:13 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:37:13 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+13:37:13 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:37:13 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+13:37:16 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:37:17 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+13:37:17 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+13:37:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:CORP
+13:37:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:IM
+13:37:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:7412
+16:59:21 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+16:59:21 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing editProfile
+16:59:22 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+16:59:22 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profilePicture
+16:59:22 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+16:59:22 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing profileSignature
+16:59:29 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+16:59:29 INFO [com.ins.registration.web.ProfilesController:147]	Preparing with id=null
+16:59:29 DEBUG[com.ins.registration.web.ProfilesController:148]	Preparing printProfile
+16:59:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:IND
+16:59:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+16:59:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:6391

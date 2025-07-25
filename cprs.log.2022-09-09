@@ -1,0 +1,1197 @@
+08:03:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:03:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:03:14 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:03:14 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:03:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:03:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:03:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:03:14 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:03:14 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:03:14 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:03:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:03:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:03:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:03:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:03:17 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:03:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:03:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:03:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:03:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:03:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:06:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:06:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing removeProfilePicture
+08:06:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:06:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:07:05 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:07:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:07:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:07:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:07:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315980
+08:07:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker2
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@1769723
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@bca6aa
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@1621276
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@1aa34fa
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@17c0e0b
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@17df6fd
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.paidUpCapitalAmount = [Ljava.lang.String;@e2660a
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@199349f
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@14dca1c
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@100766
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@55c4da
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@ef00e7
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@1247bb8
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@3676d9
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@1b4c17e
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@1a887a8
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@1622c92
+08:07:05 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.capitalStockAmount = [Ljava.lang.String;@5c593e
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@e6fdd6
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@122fc73
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@1ec0a9c
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@1ac88c0
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@460db3
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@12d9840
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.importerTin = [Ljava.lang.String;@66ba5c
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@550bf8
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@184de8b
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker2 = [Ljava.lang.String;@2ea17c
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@16c0a5a
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@1ba8c6
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@1e58947
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@979f8c
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.exporterTin = [Ljava.lang.String;@6ba8d6
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secIdNo = [Ljava.lang.String;@19a3e0
+08:07:06 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@155d483
+08:07:06 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:07:06 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:225
+08:07:06 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:225
+08:07:06 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00031205.tmp Resized to: 112x112
+08:07:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:07:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:07:06 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:07:07 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+08:07:07 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+08:07:07 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file profilePictureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031205.tmp
+08:07:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:07:28 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+08:07:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+08:07:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+08:07:31 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:31 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:07:38 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:07:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315980
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker2
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@cf6e27
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@48d552
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@1ad123b
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@187f7f1
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@1a6f521
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@274f80
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.paidUpCapitalAmount = [Ljava.lang.String;@d49d34
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@9ce540
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@8ee5af
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@1894a99
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@80c125
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@b3660b
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@1f08697
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@146520
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@fb1c04
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@1ec8595
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@1361c09
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.capitalStockAmount = [Ljava.lang.String;@16ac2ae
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@13335d
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@9125e3
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@14e618d
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@e69ecf
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@c46505
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@1c43b0a
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.importerTin = [Ljava.lang.String;@46d9
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@2b6f55
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@19a513b
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker2 = [Ljava.lang.String;@4b287f
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@4fc9cc
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@498cf5
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@97c362
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@19c7915
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.exporterTin = [Ljava.lang.String;@1d19013
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secIdNo = [Ljava.lang.String;@149d782
+08:07:38 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@e39b8b
+08:07:38 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:07:38 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:225
+08:07:38 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:225
+08:07:38 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00031241.tmp Resized to: 112x112
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:07:38 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file profilePictureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031241.tmp
+08:07:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+08:07:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+08:07:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+08:07:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:07:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:07:46 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:07:46 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:07:46 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:07:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:07:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:07:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:08:08 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:08:08 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:08:10 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:08:10 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:08:10 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:08:14 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:08:14 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:08:20 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:08:20 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@62be07
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@a9fd5d
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@3900b4
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@5d5398
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@11b2eb4
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@19745a2
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@5cae45
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@b53f7b
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@15ab3fd
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@1deade4
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@6a7377
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@c2be28
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@1526098
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@143a0f6
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@f0085a
+08:08:20 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@b45044
+08:08:21 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031295.tmp
+08:08:21 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:08:21 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:08:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:08:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:08:23 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:08:23 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:08:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:08:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:08:23 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:08:23 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:08:23 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:08:23 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:08:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:08:23 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:08:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:08:23 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:08:26 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:08:26 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:08:26 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:08:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:08:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:08:26 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:10:14 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:10:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:10:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:10:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:10:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:10:14 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:10:19 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:10:19 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:10:19 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:10:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:10:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:10:19 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:11:27 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:11:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:11:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:11:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:11:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:11:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:12:17 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:12:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:12:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:12:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:12:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:12:17 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:13:28 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:13:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:13:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:13:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:13:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:13:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:13:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:13:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:13:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:13:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:13:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:13:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:14:29 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:14:29 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:14:32 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:14:32 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:14:32 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:14:37 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:14:37 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:14:49 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:14:49 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@116ec74
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@1fdc9c5
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@c9dced
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@c764a1
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@9f90af
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@1d3e912
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@cacbf0
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@133056
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@1ca72a8
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@2d7589
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@7fa6b3
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@9956f4
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@11bc826
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@f15728
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@91204c
+08:14:50 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@1df9543
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:102
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:830
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00031557.tmp Resized to: 415x51
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:51
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:415
+08:14:50 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00031557.tmp Resized to: 207x25
+08:14:50 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031557.tmp
+08:14:50 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:14:50 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:14:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:14:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:14:53 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:14:53 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:14:53 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:14:53 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:14:53 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:14:53 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:14:53 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:14:53 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:14:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:14:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:14:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:14:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:14:55 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:14:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:14:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:14:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:14:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:14:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:15:40 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:15:40 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:15:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:15:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:15:42 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:15:42 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:15:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:15:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:15:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:15:42 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:15:42 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:15:42 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:15:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:15:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:15:43 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:15:43 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:15:44 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:15:44 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:15:46 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:15:46 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:15:46 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:15:50 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:15:50 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:16:07 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:16:07 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@6c1d6
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@19ffbe7
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@53380c
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@184b082
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@606000
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@13ed9a3
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@14280df
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@11ae989
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@1da5e76
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@16f9901
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@1da65ac
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@14915b2
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@12f60f5
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@1867882
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@151bb48
+08:16:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@dea3d5
+08:16:08 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031609.tmp
+08:16:08 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:16:08 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:16:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:16:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:16:11 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:16:11 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:16:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:16:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:16:11 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:16:11 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:16:11 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:16:11 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:16:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:16:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:16:11 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:16:11 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:16:13 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:16:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:16:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:16:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:16:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:16:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:16:39 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:16:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:16:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:16:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:16:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:16:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:17:27 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:17:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:17:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:17:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:17:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:17:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:18:33 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:18:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:18:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:18:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:18:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:18:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:19:01 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:19:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:19:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:19:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:19:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:19:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:21:35 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:21:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:21:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:21:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:21:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:21:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:21:56 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:21:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:21:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:21:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:21:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:21:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:22:52 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:22:52 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:22:55 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:22:55 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:22:55 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:23:00 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:23:01 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:23:09 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:23:09 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@191cc63
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@101a585
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@119f9bf
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@5ba49b
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@93ed89
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@1cfce14
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1e2abfb
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@8916c3
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@358062
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@7fcc18
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@30579c
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@1c7c2dc
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@1ca2db8
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@7f9a4f
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@16bdbab
+08:23:09 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@22c289
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:102
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:830
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00031871.tmp Resized to: 415x51
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:51
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:415
+08:23:09 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00031871.tmp Resized to: 207x25
+08:23:10 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031871.tmp
+08:23:10 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:23:10 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:23:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:23:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:23:12 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:23:12 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:23:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:23:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:23:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:23:12 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:23:12 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:23:12 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:23:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:23:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:23:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:23:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:23:15 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:23:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:23:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:23:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:23:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:23:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:24:25 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:24:25 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:24:28 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:24:28 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:24:28 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:24:34 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:24:35 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:26:22 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:26:22 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@a5d885
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@2a2a0c
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@2ea1eb
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@188650a
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@1a17d8a
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@1392012
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@168b0a2
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@247a26
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@cf80f8
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@11c55b1
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@13e0a4c
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@163159
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@10207a6
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@44615a
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@1539758
+08:26:23 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@f52dc2
+08:26:23 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00031923.tmp
+08:26:23 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:26:23 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:26:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:26:28 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:26:28 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:26:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:26:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:26:28 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:26:28 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:26:28 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:26:28 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:26:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:26:28 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:28 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:26:32 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:26:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:26:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:26:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:26:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:26:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:26:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:26:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:26:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:26:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:26:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:32:09 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:32:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:32:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:32:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:32:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:32:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:33:56 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:33:56 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:33:58 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:33:58 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:33:58 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:34:02 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:34:02 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:34:08 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:34:08 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@1d7eed3
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@1807c50
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@617023
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@10928cd
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@55bbac
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@944a9d
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1ae9813
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@1822e36
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@1a7f5a5
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@1f037fa
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@1eb001b
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@153f4c7
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@eb3ba7
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@1995270
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@f3484b
+08:34:08 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@f618c
+08:34:09 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00032045.tmp
+08:34:09 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:34:09 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:34:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:34:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:34:13 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:34:13 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:34:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:34:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:34:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:34:13 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:34:13 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:34:13 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:34:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:34:14 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:34:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:34:14 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:34:16 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:34:16 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:34:16 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:34:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:34:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:34:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:35:23 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:35:23 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:35:25 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:35:26 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:35:26 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:35:30 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:35:30 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:35:36 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:35:36 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@167dbed
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@197ab7b
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@7b276a
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@158c96d
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@1036ac
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@757b2a
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@e9130c
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@1e1794b
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@1e24ec4
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@a151e8
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@1089644
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@c16cbd
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@ca2205
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@1468bc2
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@8183c0
+08:35:36 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@f0c4f9
+08:35:36 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:35:36 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:659
+08:35:36 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:1280
+08:35:37 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00032097.tmp Resized to: 640x329
+08:35:37 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00032097.tmp
+08:35:37 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:35:37 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:35:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:35:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:35:40 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:35:40 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:35:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:35:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:35:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:35:40 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:35:40 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:35:40 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:35:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:35:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:35:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:35:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:35:42 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:35:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:35:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:35:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:35:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:35:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:35:59 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:35:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:35:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:35:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:35:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:35:59 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:37:26 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:37:26 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:37:29 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:37:30 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:37:30 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:37:44 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:37:44 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:37:52 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:37:52 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@75b6b7
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@2eb2df
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@1e16d57
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@d17a14
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@a5d537
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@1511564
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1351466
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@1ce6b86
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@f560ae
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@19e786b
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@f3d139
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@12d1ca7
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@b425e1
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@122eebb
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@67523e
+08:37:52 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@14868c1
+08:37:52 ERROR[com.ins.registration.misc.ImportFileUploadInterceptor:60]	Content-Type not allowed: stockholderSignatureFile "upload_507009a_182d83e2829__8000_00032184.tmp" image/svg+xml
+08:37:52 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00032184.tmp
+08:37:52 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:38:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:38:58 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@105d09
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@4c0e6b
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@15abe6
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@c8c494
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@e1eeb2
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@fe12a0
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@78ff4d
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@1c14ed7
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@1f1cb8
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@96ac83
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@17eb88
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@6852b2
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@10d31a9
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@1376a7b
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@12fd3b6
+08:38:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@f488b4
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:308
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:936
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00032201.tmp Resized to: 468x154
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:154
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:468
+08:38:59 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00032201.tmp Resized to: 234x77
+08:38:59 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00032201.tmp
+08:38:59 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:38:59 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:39:01 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:39:01 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:39:01 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:39:01 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:39:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:39:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:39:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:39:01 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:39:01 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:39:01 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:39:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:39:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:39:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:39:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:39:05 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:39:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:39:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:39:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:39:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:39:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:40:02 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:40:02 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:40:04 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:40:05 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:40:05 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:40:08 DEBUG[com.ins.registration.web.StockholderController:47]	preparing removeStockholderSignature
+08:40:09 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:40:15 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:40:15 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@10bed7a
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@1403e5
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@bdd96
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@100d002
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@586e4a
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@1b0da33
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1c54c29
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@b40a9
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@c228b5
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@fe8bab
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@183a5cf
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@1fac82c
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@144b6e4
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@434e0e
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@b992e9
+08:40:15 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@15c309b
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:80]	Image Maximum Size:5000
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:237
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:855
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00032253.tmp Resized to: 427x118
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:84]	Image Height:118
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:85]	Image Width:427
+08:40:15 DEBUG[com.ins.registration.misc.ImportFileUploadInterceptor:93]	File: upload_507009a_182d83e2829__8000_00032253.tmp Resized to: 213x59
+08:40:16 INFO [org.apache.struts2.interceptor.FileUploadInterceptor:277]	Removing file stockholderSignatureFile C:\Tomcat\work\Catalina\localhost\cprs\upload_507009a_182d83e2829__8000_00032253.tmp
+08:40:16 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:40:16 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:40:17 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:40:17 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:40:18 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:40:18 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:40:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:40:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:40:18 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:40:18 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:40:18 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:40:18 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:40:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:40:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:40:18 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:40:18 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:40:20 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:40:20 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:40:20 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:40:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:40:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:40:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:41:22 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:41:22 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+08:41:24 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+08:41:25 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+08:41:25 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+08:41:31 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:41:31 DEBUG[com.ins.registration.web.StockholderController:47]	preparing cancelStockholder
+08:41:32 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+08:41:32 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+08:41:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:41:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+08:41:34 WARN [com.ins.registration.web.ProfilesController:522]	BR
+08:41:34 WARN [com.ins.registration.web.ProfilesController:523]	PART
+08:41:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+08:41:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:41:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:41:34 WARN [com.ins.registration.web.ProfilesController:527]	BR
+08:41:34 WARN [com.ins.registration.web.ProfilesController:528]	PART
+08:41:34 WARN [com.ins.registration.web.ProfilesController:529]	0000
+08:41:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:41:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+08:41:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:41:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+08:41:37 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+08:41:37 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+08:41:37 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+08:41:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+08:41:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+08:41:37 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+09:09:31 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+09:09:31 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+09:09:33 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+09:09:33 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+09:09:33 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+09:09:43 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+09:09:43 DEBUG[com.ins.registration.web.StockholderController:47]	preparing cancelStockholder
+09:09:43 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+09:09:43 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+09:09:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+09:09:45 WARN [com.ins.registration.web.ProfilesController:522]	BR
+09:09:45 WARN [com.ins.registration.web.ProfilesController:523]	PART
+09:09:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+09:09:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+09:09:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+09:09:45 WARN [com.ins.registration.web.ProfilesController:527]	BR
+09:09:45 WARN [com.ins.registration.web.ProfilesController:528]	PART
+09:09:45 WARN [com.ins.registration.web.ProfilesController:529]	0000
+09:09:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+09:09:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+09:09:47 DEBUG[com.ins.registration.web.ClientController:47]	Preparing listClient
+09:09:47 DEBUG[com.ins.registration.web.ClientController:67]	setting _profileId session to value:315980
+09:09:49 DEBUG[com.ins.registration.web.ClientController:47]	Preparing editClient
+09:09:51 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+09:09:51 DEBUG[com.ins.registration.web.ClientController:47]	Preparing listClient
+09:09:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+09:09:53 WARN [com.ins.registration.web.ProfilesController:522]	BR
+09:09:53 WARN [com.ins.registration.web.ProfilesController:523]	PART
+09:09:53 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+09:09:53 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+09:09:53 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+09:09:53 WARN [com.ins.registration.web.ProfilesController:527]	BR
+09:09:53 WARN [com.ins.registration.web.ProfilesController:528]	PART
+09:09:53 WARN [com.ins.registration.web.ProfilesController:529]	0000
+09:09:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:53 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+09:09:53 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+09:09:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+09:09:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+09:09:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+09:09:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+09:09:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+09:09:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+11:19:29 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+11:19:29 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:19:29 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+11:19:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+11:19:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+11:19:29 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+11:19:50 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+11:19:51 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+11:19:51 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+11:19:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+11:19:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+11:19:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:08:40 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:08:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:08:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:08:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:08:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:08:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:10:32 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:10:33 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=315980
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing saveBroker2
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.passportIdNo = [Ljava.lang.String;@1d8bce6
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.insClientNo = [Ljava.lang.String;@59bebc
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.driverLicenseIdNo = [Ljava.lang.String;@1f9320d
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.citizenship = [Ljava.lang.String;@1451551
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.dateCreated = [Ljava.lang.String;@7aa17f
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.mobile = [Ljava.lang.String;@100b9eb
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.paidUpCapitalAmount = [Ljava.lang.String;@ae0d75
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.telephone = [Ljava.lang.String;@f5b82b
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName1 = [Ljava.lang.String;@e378c
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.altTelephone = [Ljava.lang.String;@160fcac
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@6c9881
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.sssIdNo = [Ljava.lang.String;@1904179
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName3 = [Ljava.lang.String;@1ba77f1
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.relatedCompanyName2 = [Ljava.lang.String;@930a1
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.website = [Ljava.lang.String;@1579f2c
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.fax = [Ljava.lang.String;@19333a1
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.email = [Ljava.lang.String;@122afa2
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.capitalStockAmount = [Ljava.lang.String;@38e265
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.zipCode = [Ljava.lang.String;@97907f
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.prcIdNo = [Ljava.lang.String;@8fa400
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.tinNo = [Ljava.lang.String;@5833ae
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.address = [Ljava.lang.String;@a90aa3
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.country = [Ljava.lang.String;@1f986f6
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	businessType = [Ljava.lang.String;@10b8bbf
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.importerTin = [Ljava.lang.String;@103c1c0
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspPrimaryCcn = [Ljava.lang.String;@1a55c2a
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	natureOfBusiness = [Ljava.lang.String;@145d272
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveBroker2 = [Ljava.lang.String;@fb7ba5
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.city = [Ljava.lang.String;@72aef7
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.company = [Ljava.lang.String;@13cfa28
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.lastDateOfTransaction = [Ljava.lang.String;@4b86e4
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.vaspSecondaryCcn = [Ljava.lang.String;@84e2e2
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.exporterTin = [Ljava.lang.String;@1db98cf
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	profile.secIdNo = [Ljava.lang.String;@d755b
+13:10:33 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	clientType = [Ljava.lang.String;@193b8c7
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:10:33 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:10:34 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:10:34 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:10:34 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+13:10:34 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+13:10:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:10:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+13:10:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:10:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:10:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:10:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:10:47 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+13:10:47 DEBUG[com.ins.registration.web.StockholderController:67]	setting currentProfileID session to value:315980
+13:10:49 DEBUG[com.ins.registration.web.StockholderController:47]	preparing editStockholder
+13:10:50 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderPicture
+13:10:50 DEBUG[com.ins.registration.web.StockholderController:47]	preparing stockholderSignature
+13:11:35 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:11:35 DEBUG[com.ins.registration.web.StockholderController:47]	preparing saveStockholder
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.middleName = [Ljava.lang.String;@47ff59
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveStockholder = [Ljava.lang.String;@cd3da4
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.citizenship = [Ljava.lang.String;@89ecdc
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.tinNo = [Ljava.lang.String;@11d6f2d
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.email = [Ljava.lang.String;@16e2d5f
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.lastName = [Ljava.lang.String;@64da8e
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@148dd5b
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.telephone = [Ljava.lang.String;@bcae21
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.city = [Ljava.lang.String;@14c3259
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.firstName = [Ljava.lang.String;@17dac32
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.zipCode = [Ljava.lang.String;@1b40e90
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.altTelephone = [Ljava.lang.String;@ab0a1e
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.fax = [Ljava.lang.String;@1257369
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.address = [Ljava.lang.String;@1bbf72f
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.mobile = [Ljava.lang.String;@1616d19
+13:11:35 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorStockholder.country = [Ljava.lang.String;@1419674
+13:11:36 DEBUG[com.ins.registration.web.StockholderController:47]	preparing listStockholders
+13:11:36 DEBUG[com.ins.registration.web.StockholderController:83]	Error in getting parameter: currentProfileID null
+13:11:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:11:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+13:11:38 WARN [com.ins.registration.web.ProfilesController:522]	BR
+13:11:38 WARN [com.ins.registration.web.ProfilesController:523]	PART
+13:11:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:11:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:11:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:11:38 WARN [com.ins.registration.web.ProfilesController:527]	BR
+13:11:38 WARN [com.ins.registration.web.ProfilesController:528]	PART
+13:11:38 WARN [com.ins.registration.web.ProfilesController:529]	0000
+13:11:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:11:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:11:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:11:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:11:41 DEBUG[com.ins.registration.web.ClientController:47]	Preparing listClient
+13:11:41 DEBUG[com.ins.registration.web.ClientController:67]	setting _profileId session to value:315980
+13:11:44 DEBUG[com.ins.registration.web.ClientController:47]	Preparing editClient
+13:11:59 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:11:59 DEBUG[com.ins.registration.web.ClientController:47]	Preparing saveClient
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.fax = [Ljava.lang.String;@1404043
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.zipCode = [Ljava.lang.String;@13afba8
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.email = [Ljava.lang.String;@15ff827
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveClient = [Ljava.lang.String;@19ce8f2
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@81835d
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.address = [Ljava.lang.String;@d777f5
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.altTelephone = [Ljava.lang.String;@4aa92
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.city = [Ljava.lang.String;@5a7e3b
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.website = [Ljava.lang.String;@5d4302
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.company = [Ljava.lang.String;@da7711
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.telephone = [Ljava.lang.String;@befd87
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.country = [Ljava.lang.String;@f6ad86
+13:11:59 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.clientType = [Ljava.lang.String;@fa6c32
+13:11:59 DEBUG[com.ins.registration.web.ClientController:47]	Preparing listClient
+13:11:59 DEBUG[com.ins.registration.web.ClientController:83]	Error in getting parameter: currentProfileID null
+13:12:01 DEBUG[com.ins.registration.web.ClientController:47]	Preparing editClient
+13:12:03 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:12:03 DEBUG[com.ins.registration.web.ClientController:47]	Preparing saveClient
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.fax = [Ljava.lang.String;@1568b80
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.zipCode = [Ljava.lang.String;@e09ad4
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.email = [Ljava.lang.String;@1d51145
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	action:saveClient = [Ljava.lang.String;@160d32f
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	id = [Ljava.lang.String;@1c8b778
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.address = [Ljava.lang.String;@8541d7
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.altTelephone = [Ljava.lang.String;@a5aa52
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.city = [Ljava.lang.String;@50fd36
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.website = [Ljava.lang.String;@11feb91
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.company = [Ljava.lang.String;@a2b17b
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.telephone = [Ljava.lang.String;@13233cd
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.country = [Ljava.lang.String;@e7057a
+13:12:04 DEBUG[com.ins.registration.misc.FieldInterceptor:29]	majorClient.clientType = [Ljava.lang.String;@118c578
+13:12:04 DEBUG[com.ins.registration.web.ClientController:47]	Preparing listClient
+13:12:04 DEBUG[com.ins.registration.web.ClientController:83]	Error in getting parameter: currentProfileID null
+13:12:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+13:12:05 WARN [com.ins.registration.web.ProfilesController:522]	BR
+13:12:05 WARN [com.ins.registration.web.ProfilesController:523]	PART
+13:12:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:12:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:12:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:12:05 WARN [com.ins.registration.web.ProfilesController:527]	BR
+13:12:05 WARN [com.ins.registration.web.ProfilesController:528]	PART
+13:12:05 WARN [com.ins.registration.web.ProfilesController:529]	0000
+13:12:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:12:06 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:06 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:12:13 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:12:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:12:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:12:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:12:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:12:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:21:59 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:21:59 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileForm
+13:22:00 WARN [com.ins.registration.web.ProfilesController:522]	BR
+13:22:00 WARN [com.ins.registration.web.ProfilesController:523]	PART
+13:22:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:22:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:22:00 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:22:00 WARN [com.ins.registration.web.ProfilesController:527]	BR
+13:22:00 WARN [com.ins.registration.web.ProfilesController:528]	PART
+13:22:00 WARN [com.ins.registration.web.ProfilesController:529]	0000
+13:22:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:22:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:22:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:22:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:22:02 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:22:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:22:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:22:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:22:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:22:02 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:22:56 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:22:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:22:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:22:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:22:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:22:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:23:15 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:23:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:23:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:23:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:23:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:23:16 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:23:39 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:23:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:23:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:23:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:23:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:23:39 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:23:57 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:23:57 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:23:57 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:23:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:23:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:23:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:24:13 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:24:13 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:24:13 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:24:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:24:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:24:13 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:24:35 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:24:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:24:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:24:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:24:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:24:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:26:12 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:26:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:26:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:26:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:26:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:26:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:27:12 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:27:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:27:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:27:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:27:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:27:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:29:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:29:27 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
+13:29:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+13:29:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+13:29:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:29:30 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:30 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:29:32 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:29:32 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:29:32 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:29:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:29:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:29:32 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:30:36 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:30:36 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:30:36 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:30:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:30:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:30:36 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:30:51 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:30:51 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:30:51 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:30:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:30:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:30:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:31:08 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:31:08 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:31:08 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:31:08 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:31:08 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:31:08 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:31:20 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:31:20 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:31:20 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:31:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:31:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:31:20 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:31:27 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:31:27 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:31:27 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:31:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:31:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:31:27 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:31:55 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:31:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:31:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:31:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:31:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:31:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:33:11 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:33:12 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:33:12 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:33:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:33:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:33:12 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:36:58 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:36:58 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:36:58 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:38:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:38:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:38:38 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+13:38:38 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+13:38:42 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:38:42 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:38:42 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+13:39:38 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:39:38 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+13:39:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:39:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:39:39 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:39:39 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:40:55 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:40:55 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:40:55 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:40:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:40:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:40:55 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:41:56 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:41:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:41:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:41:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:41:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:41:57 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:42:15 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:42:15 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:42:15 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:42:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:42:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:42:15 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:53:45 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:53:45 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:53:45 DEBUG[com.ins.registration.web.ProfilesController:83]	Error in getting parameter: clientCode null
+13:53:45 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+13:54:40 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:54:40 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
+13:54:40 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:testa
+13:55:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:55:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing editProfile
+13:55:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:55:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profilePicture
+13:55:10 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:55:10 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing profileSignature
+13:56:25 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:56:25 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:56:25 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:56:25 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:56:25 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:56:25 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+13:56:35 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+13:56:35 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+13:56:35 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+13:56:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+13:56:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+13:56:35 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+14:01:46 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+14:01:46 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:01:46 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+14:01:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+14:01:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+14:01:46 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+14:01:56 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+14:01:56 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:01:56 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+14:01:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+14:01:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+14:01:56 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+14:02:09 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+14:02:09 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:02:09 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+14:02:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+14:02:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+14:02:09 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
+14:16:00 INFO [org.apache.struts2.dispatcher.Dispatcher:621]	Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+14:16:00 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
+14:16:00 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing printProfile
+14:16:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting business_type session to value:PART
+14:16:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting _client_type session to value:BR
+14:16:01 DEBUG[com.ins.registration.web.ProfilesController:67]	setting nature_of_business session to value:0000
