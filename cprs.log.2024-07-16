@@ -1,6 +1,0 @@
-12:07:50 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
-12:07:50 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
-12:07:50 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
-12:07:51 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:TESTA
-12:08:02 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
-12:08:02 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing clientTypeForm

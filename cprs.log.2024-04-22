@@ -1,4 +1,0 @@
-09:30:05 INFO [com.ins.registration.web.ProfilesController:?]	Preparing with id=null
-09:30:05 DEBUG[com.ins.registration.web.ProfilesController:?]	Preparing listProfiles
-09:30:05 DEBUG[com.ins.registration.web.ProfilesController:74]	clientCode not found in session
-09:30:05 DEBUG[com.ins.registration.web.ProfilesController:67]	setting clientCode session to value:ASPACA
