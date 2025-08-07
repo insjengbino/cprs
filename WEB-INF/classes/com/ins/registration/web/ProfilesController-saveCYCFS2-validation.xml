@@ -65,7 +65,7 @@
 		</field-validator>
 		<field-validator type="regex">
 			<param name="expression">^[0-9]*$</param>
-			<message key="Only alphanumeric and space are allowed. Other special characters as well as any non-English alphabet are not accepted." />
+			<message key="Only alphanumeric characters are allowed. Other special characters as well as any non-English alphabet are not accepted." />
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">4</param>
