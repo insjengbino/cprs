@@ -4,6 +4,30 @@
 		<link rel="stylesheet" href="/cprs/struts/xhtml/styles.css" type="text/css"/>
 	</head>
 	<body><br/>
+	<script>
+		window.onload = function () {
+			var pictureImage = document.getElementsByName('principalOfficerPictureFile')[0];
+			var signatureImage = document.getElementsByName('principalOfficerSignatureFile')[0];
+			if (pictureImage) {
+				pictureImage.addEventListener('change', function (event) {
+					validateImageEvent(event)
+				});
+			}
+			if (signatureImage) {
+				signatureImage.addEventListener('change', function (event) {
+					validateImageEvent(event)
+				});
+			}
+		};
+
+		function validateImageEvent(event) {
+			var file = event.target.files[0];
+			if (file && file.size > 5120) { // 5KB = 5120 bytes
+				alert("Please be Informed that the uploaded attachment has exceeded the allowable file size limit of 5kb");
+				event.target.value = ''; // Clear the file input
+			}
+		}
+	</script>
 
 	<@s.url id="pictureURL" action="principalOfficerPicture">
 		<@s.param name="id" value="id"/>
