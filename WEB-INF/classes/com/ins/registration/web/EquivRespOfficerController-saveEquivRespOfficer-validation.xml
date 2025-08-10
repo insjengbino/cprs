@@ -122,8 +122,8 @@
 			<message key="You can not leave this field empty."/>		
 		</field-validator>
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z0-9 ]*</param>
-			<message key="Only alphanumeric and space are accepted. Other special characters as well as any non-English alphabet are not accepted." />
+			<param name="expression">[A-Za-z0-9]*</param>
+			<message key="Only alphanumeric characters are allowed. Other special characters as well as any non-English alphabet are not accepted." />
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">9</param>
