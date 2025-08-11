@@ -146,7 +146,7 @@
 		  	<@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17    />
 		 </@s.if> 
 		 
-		  	<@s.textfield label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true"   />
+		  	<@s.textfield label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
 		  	<@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12   />
 			
 		 <!-- added code by toqaf -->	
