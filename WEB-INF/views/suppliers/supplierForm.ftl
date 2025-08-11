@@ -18,7 +18,7 @@
 		<@s.textfield label="TIN" name="majorSupplier.tinNo" maxLength=12 required="true"/> 
 		<@s.textfield label="Address" name="majorSupplier.address" maxLength=70 required="true"/>
 		<@s.textfield label="City" name="majorSupplier.city" maxLength=25 required="true"/>
-		<@s.textfield label="Zip Code" name="majorSupplier.zipCode" maxLength=9 required="true"/>
+		<@s.textfield label="Zip Code" name="majorSupplier.zipCode" maxLength=4 required="true"/>
 		<@s.select label="Country" name="majorSupplier.country"  
 			list="%{countries}" listKey="code" listValue="name" required="true" 
 			required="true"  preload="false"/>
