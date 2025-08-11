@@ -16,7 +16,7 @@
      	 	<@s.hidden name="importer.id"/>
 			<@s.textfield label="Address" name="importer.address" maxLength=70 required="true"/>
 			<@s.textfield label="City" name="importer.city" maxLength=25 required="true"/>
-			<@s.textfield label="Zip Code" name="importer.zipCode" maxLength=9 required="true"/>
+			<@s.textfield label="Zip Code" name="importer.zipCode" maxLength=4 required="true"/>
 			<@s.select label="Country" name="importer.country"  
 			list="%{countries}" listKey="code" listValue="name"  required="true"/> 
 	</tbody>
