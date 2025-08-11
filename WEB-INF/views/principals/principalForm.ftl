@@ -59,7 +59,7 @@
 			<@s.textfield label="TIN" name="principalOfficer.tinNo" maxLength=12 required="true"/>
 			<@s.textfield label="Address" name="principalOfficer.address" maxLength=70 required="true"/>
 			<@s.textfield label="City" name="principalOfficer.city" maxLength=25 required="true"/>
-			<@s.textfield label="Zip Code" name="principalOfficer.zipCode" maxLength=9 required="true"/>
+			<@s.textfield label="Zip Code" name="principalOfficer.zipCode" maxLength=4 required="true"/>
 		
 			<@s.select label="Country" name="principalOfficer.country" 
 			list="%{countries}" listKey="code" listValue="name" required="true" preload="false"/>
