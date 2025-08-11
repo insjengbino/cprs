@@ -62,7 +62,7 @@
 		  <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
 <#--		  <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
 			<input type="hidden" name="profile.businessType" value="${profile.businessType?if_exists}"/>
-		  <input type="hidden" name="natureOfBusiness" value="${natureOfBusiness?if_exists}"/>
+		  <input type="hidden" name="profile.natureOfBusiness" value="${natureOfBusiness?if_exists}"/>
 		  <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
 		  <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
@@ -70,7 +70,8 @@
 		  <@s.textfield label="Client Type" value="${clientType}" readonly="true"  />
 		  <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
 		  <@s.select label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name" required="true"/>
-		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />
+<#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
+			<@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{code + ' - ' + name}" required="true" cssStyle="width: 279.33px;"/>
 		  <@s.textfield label="INS Client Number" name="profile.insClientNo" required="true" readonly="true"  />
 		  <!--<@s.textfield label="INS Client Number" value="%{profile.insClientNo}" readonly="true"  />-->
 		
