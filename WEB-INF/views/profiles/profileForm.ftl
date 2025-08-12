@@ -71,7 +71,7 @@
 		  <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
 		  <@s.select label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name" required="true"/>
 <#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
-			<@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{code + ' - ' + name}" required="true" cssStyle="width: 279.33px;"/>
+			<@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{name + ' - ' + code}" required="true" cssStyle="width: 279.33px;"/>
 		  <@s.textfield label="INS Client Number" name="profile.insClientNo" required="true" readonly="true"  />
 		  <!--<@s.textfield label="INS Client Number" value="%{profile.insClientNo}" readonly="true"  />-->
 		
