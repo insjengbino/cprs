@@ -35,8 +35,7 @@
  	  <@s.form method="POST" enctype="multipart/form-data">	
 		  <@s.hidden name="id"/>
 
-
-<#--            client type-->
+	
 		  <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
 <#--		  <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
 			<input type="hidden" name="profile.businessType" value="${profile.businessType?if_exists}"/>
