@@ -28,6 +28,21 @@
 				event.target.value = ''; // Clear the file input
 			}
 		}
+
+		var natureOfBusinessFullNames = [
+			<#list naturesOfBusiness as item>
+			"${item.name?js_string}"<#if item_has_next>,</#if>
+			</#list>
+		];
+
+		document.addEventListener("DOMContentLoaded", function() {
+			var select = document.getElementById("natureOfBusinessSelect");
+			if (select) {
+				Array.from(select.options).forEach(function(opt, i) {
+					opt.title = natureOfBusinessFullNames[i];
+				});
+			}
+		});
 	</script>
 
 	<@s.url id="pictureURL" action="profilePicture">
@@ -71,7 +86,7 @@
 		  <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
 		  <@s.select label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name" required="true"/>
 <#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
-			<@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{name + ' - ' + code}" required="true" cssStyle="width: 279.33px;"/>
+			<@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}" required="true" cssStyle="width: 279.33px;" id="natureOfBusinessSelect"/>
 		  <@s.textfield label="INS Client Number" name="profile.insClientNo" required="true" readonly="true"  />
 		  <!--<@s.textfield label="INS Client Number" value="%{profile.insClientNo}" readonly="true"  />-->
 		
