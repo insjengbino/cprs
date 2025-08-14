@@ -13,6 +13,29 @@
 <table width="100%" align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
 <table width="100%" align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
  	<tbody>
+	<script>
+		document.addEventListener('input', function (e) {
+			const el = e.target;
+			// Skip certain input types
+			if (el.tagName === 'INPUT') {
+				const skipTypes = ['password', 'email', 'search', 'url'];
+				if (skipTypes.includes(el.type.toLowerCase())) return;
+				if (el.type.toLowerCase() === 'text' || el.type === '') {
+					const start = el.selectionStart;
+					const end = el.selectionEnd;
+					el.value = el.value.toUpperCase();
+					el.setSelectionRange(start, end);
+				}
+			}
+			// Apply to textareas too
+			else if (el.tagName === 'TEXTAREA') {
+				const start = el.selectionStart;
+				const end = el.selectionEnd;
+				el.value = el.value.toUpperCase();
+				el.setSelectionRange(start, end);
+			}
+		});
+	</script>
      	 	<@s.hidden name="importer.id"/>
 			<@s.textfield label="Address" name="importer.address" maxLength=70 required="true"/>
 			<@s.textfield label="City" name="importer.city" maxLength=25 required="true"/>
