@@ -48,8 +48,8 @@
 			const el = e.target;
 
 			if (el.tagName === 'INPUT') {
-				const skipTypes = ['password', 'email', 'search', 'url'];
-				if (skipTypes.includes(el.type.toLowerCase())) return;
+				const skipNames = ['profile.email','profile.website'];
+				if (skipNames.includes(el.name)) return;
 				if (el.type.toLowerCase() === 'text' || el.type === '') {
 					const start = el.selectionStart;
 					const end = el.selectionEnd;
