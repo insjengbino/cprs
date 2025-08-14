@@ -27,6 +27,28 @@
 				event.target.value = ''; // Clear the file input
 			}
 		}
+
+		document.addEventListener('input', function (e) {
+			const el = e.target;
+			// Skip certain input types
+			if (el.tagName === 'INPUT') {
+				const skipTypes = ['password', 'email', 'search', 'url'];
+				if (skipTypes.includes(el.type.toLowerCase())) return;
+				if (el.type.toLowerCase() === 'text' || el.type === '') {
+					const start = el.selectionStart;
+					const end = el.selectionEnd;
+					el.value = el.value.toUpperCase();
+					el.setSelectionRange(start, end);
+				}
+			}
+			// Apply to textareas too
+			else if (el.tagName === 'TEXTAREA') {
+				const start = el.selectionStart;
+				const end = el.selectionEnd;
+				el.value = el.value.toUpperCase();
+				el.setSelectionRange(start, end);
+			}
+		});
 	</script>
 
 	<@s.url id="pictureURL" action="equivRespOfficerPicture">

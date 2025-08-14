@@ -4,6 +4,52 @@
 		<link rel="stylesheet" href="/cprs/struts/xhtml/styles.css" type="text/css"/>
 	</head>
 	<body><br/>
+	<script>
+		window.onload = function () {
+			var pictureImage = document.getElementsByName('equivRespOfficerPictureFile')[0];
+			var signatureImage = document.getElementsByName('equivRespOfficerSignatureFile')[0];
+			if (pictureImage) {
+				pictureImage.addEventListener('change', function (event) {
+					validateImageEvent(event)
+				});
+			}
+			if (signatureImage) {
+				signatureImage.addEventListener('change', function (event) {
+					validateImageEvent(event)
+				});
+			}
+		};
+
+		function validateImageEvent(event) {
+			var file = event.target.files[0];
+			if (file && file.size > 5120) { // 5KB = 5120 bytes
+				alert("Please be Informed that the uploaded attachment has exceeded the allowable file size limit of 5kb");
+				event.target.value = ''; // Clear the file input
+			}
+		}
+
+		document.addEventListener('input', function (e) {
+			const el = e.target;
+			// Skip certain input types
+			if (el.tagName === 'INPUT') {
+				const skipTypes = ['password', 'email', 'search', 'url'];
+				if (skipTypes.includes(el.type.toLowerCase())) return;
+				if (el.type.toLowerCase() === 'text' || el.type === '') {
+					const start = el.selectionStart;
+					const end = el.selectionEnd;
+					el.value = el.value.toUpperCase();
+					el.setSelectionRange(start, end);
+				}
+			}
+			// Apply to textareas too
+			else if (el.tagName === 'TEXTAREA') {
+				const start = el.selectionStart;
+				const end = el.selectionEnd;
+				el.value = el.value.toUpperCase();
+				el.setSelectionRange(start, end);
+			}
+		});
+	</script>
 
 <@s.form method="POST" enctype="multipart/form-data">
 
