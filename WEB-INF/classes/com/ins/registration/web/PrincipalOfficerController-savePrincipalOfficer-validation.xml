@@ -7,8 +7,8 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z ]*</param>
-			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+			<param name="expression">[A-ZÑ'.\- ]*</param>
+			<message key="Only alphabet, space, and some special characters ('.\-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">35</param>
@@ -21,8 +21,8 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z ]*</param>
-			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+			<param name="expression">[A-ZÑ'.\- ]*</param>
+			<message key="Only alphabet, space, and some special characters ('.\-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">35</param>
@@ -35,8 +35,8 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z ]*</param>
-			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
+			<param name="expression">[A-ZÑ'.\- ]*</param>
+			<message key="Only alphabet, space, and some special characters ('.\-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">35</param>
@@ -49,8 +49,8 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z0-9 /',.-]*</param>
-			<message key="Only alphanumeric, space, and some special characters (/',.-) are accepted. Other special characters as well as any non-English alphabet are not accepted." />
+			<param name="expression">[A-Z0-9Ñ /',.\-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/',.\-) are accepted. Other special characters as well as any non-English alphabet are not accepted." />
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">35</param>
@@ -79,8 +79,8 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z0-9 /,.-]*</param>
-			<message key="Only alphanumeric, space, and some special characters (/,.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+			<param name="expression">[A-Z0-9Ñ /,.\-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/,.\-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">70</param>
@@ -93,8 +93,8 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>
 		<field-validator type="regex">
-			<param name="expression">[A-Za-z0-9 /,.-]*</param>
-			<message key="Only alphanumeric, space, and some special characters (/,.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+			<param name="expression">[A-Z0-9Ñ /,.\-]*</param>
+			<message key="Only alphanumeric, space, and some special characters (/,.\-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">25</param>
