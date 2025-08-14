@@ -8,7 +8,7 @@
 		</field-validator>	
 		<field-validator type="regex">
 			<param name="expression">[A-Z0-9Ñ /'.\-&amp;()]*</param>
-			<message key="Only alphanumeric, space, and some special characters (A-Z0-9Ñ /'.\-&amp;()) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
+			<message key="Only alphanumeric, space, and some special characters (/'.\-&amp;()) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
         	<param name="maxLength">35</param>
