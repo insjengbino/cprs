@@ -997,7 +997,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
         this.log.info("KK==========: " + this.selected.toString());
         for(Long checkedId : this.selected) {
             Profile profile = this.profileService.findByID(checkedId);
-            if (!this.isComplete()) {
+            if (!this.isComplete(profile)) {
                 this.addActionError("Profile details must first be completed before setting status to CREATE.");
                 return "error";
             }
@@ -1086,6 +1086,14 @@ public class ProfilesController extends BaseController implements Preparable, Va
             } else if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getMajorSuppliers().size() > 0 && profile.getImporters().size() > 0) {
                 return true;
             }
+        } else if (profile.getClientType().equals("EX")) {
+            if (!profile.getBusinessType().equals("SPROP") && !profile.getBusinessType().equals("IND")) {
+                if (profile.getMajorStockholders().size() > 0 && profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0) {
+                    return true;
+                }
+            } else if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getMajorSuppliers().size() > 0) {
+                return true;
+            }
         } else if (profile.getClientType().equals("SU")) {
             if (!profile.getBusinessType().equals("SPROP") && !profile.getBusinessType().equals("IND")) {
                 if (profile.getMajorStockholders().size() > 0 && profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0) {
@@ -1100,6 +1108,14 @@ public class ProfilesController extends BaseController implements Preparable, Va
                     return true;
                 }
             } else if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
+                return true;
+            }
+        } else if (profile.getClientType().equals("YI")) {
+            if (profile.getBusinessType().equals("IND")) {
+                if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
+                    return true;
+                }
+            } else if (profile.getMajorStockholders().size() > 0 && profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
                 return true;
             }
         }
