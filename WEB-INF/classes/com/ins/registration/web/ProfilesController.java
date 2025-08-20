@@ -947,7 +947,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String sendProfile() {
-        this.log.info(this.selected.toString());
+        this.log.info("KK==========: " + this.selected.toString());
         this.log.debug(this.profile.getId());
 
         for(Long checkedId : this.selected) {
@@ -977,7 +977,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String completeProfile() {
-        this.log.info(this.selected.toString());
+        this.log.info("KK==========: " + this.selected.toString());
         for(Long checkedId : this.selected) {
             Profile profile = this.profileService.findByID(checkedId);
             if (!this.isComplete()) {
@@ -994,7 +994,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String renewProfile() {
-        this.log.info(this.selected.toString());
+        this.log.info("KK==========: " + this.selected.toString());
         for(Long checkedId : this.selected) {
             Profile profile = this.profileService.findByID(checkedId);
             if (!this.isComplete()) {
@@ -1011,7 +1011,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String amendProfile() {
-        this.log.info(this.selected.toString());
+        this.log.info("KK==========: " + this.selected.toString());
         for(Long checkedId : this.selected) {
             Profile profile = this.profileService.findByID(checkedId);
             if (!this.isComplete()) {
