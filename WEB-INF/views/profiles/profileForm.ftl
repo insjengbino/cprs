@@ -5,30 +5,7 @@
 		<@jscalendar.head calendarcss="calendar-blue"/>
 	</head>
 	<body>
-	<script>
-		window.onload = function () {
-			var pictureImage = document.getElementsByName('profilePictureFile')[0];
-			var signatureImage = document.getElementsByName('profileSignatureFile')[0];
-			if (pictureImage) {
-				pictureImage.addEventListener('change', function (event) {
-					validateImageEvent(event)
-				});
-			}
-			if (signatureImage) {
-				signatureImage.addEventListener('change', function (event) {
-					validateImageEvent(event)
-				});
-			}
-		};
-
-		function validateImageEvent(event) {
-			var file = event.target.files[0];
-			if (file && file.size > 5120) { // 5KB = 5120 bytes
-				alert("Please be Informed that the uploaded attachment has exceeded the allowable file size limit of 5kb");
-				event.target.value = ''; // Clear the file input
-			}
-		}
-	</script>
+    <script src="${base}/js/profilesForm.js"></script>
 
 	<@s.url id="pictureURL" action="profilePicture">
 		<@s.param name="id" value="id"/>
@@ -58,30 +35,37 @@
  	  <@s.form method="POST" enctype="multipart/form-data">	
 		  <@s.hidden name="id"/>
 
-	
+
+<#--            client type-->
 		  <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
 <#--		  <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
 			<input type="hidden" name="profile.businessType" value="${profile.businessType?if_exists}"/>
-		  <input type="hidden" name="natureOfBusiness" value="${natureOfBusiness?if_exists}"/>
+		  <input type="hidden" name="profile.natureOfBusiness" value="${natureOfBusiness?if_exists}"/>
 		  <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
 		  <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
 		
 		  <@s.textfield label="Client Type" value="${clientType}" readonly="true"  />
+
+
+<#--            business entity type-->
 		  <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
-		  <@s.select label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name" required="true"/>
-		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />
+		  <@s.select id = "businessEntityType" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code"
+          listValue="name" required="true"/>
+
+
+<#--            nature of business-->
+<#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
+			<@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}" required="true" cssStyle="width: 279.33px;" id="natureOfBusinessSelect"/>
 		  <@s.textfield label="INS Client Number" name="profile.insClientNo" required="true" readonly="true"  />
 		  <!--<@s.textfield label="INS Client Number" value="%{profile.insClientNo}" readonly="true"  />-->
 		
 		  <@s.textfield label="Business Name/Company Name" name="profile.company" maxLength=35 required="true"  />
-		
-		 <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">
-			<@s.textfield label="First Name" name="profile.firstName" maxLength=35 required="true"  /> 
-			<@s.textfield label="Middle Name" name="profile.middleName" maxLength=35 required="true"  /> 
-			<@s.textfield label="Last Name " name="profile.lastName" maxLength=35 required="true"  />
-		 </@s.if>
-		
+
+        <@s.textfield id="firstName" label="First Name" name="profile.firstName" maxLength=35 required="true"  />
+        <@s.textfield id="middleName" label="Middle Name" name="profile.middleName" maxLength=35 required="true"  />
+        <@s.textfield id="lastName" label="Last Name " name="profile.lastName" maxLength=35 required="true"  />
+
 		  <@s.select label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name" required="true" />
 		  <@s.textfield label="Address" name="profile.address" maxLength=70 required="true"  />
 		  <@s.textfield label="City" name="profile.city" maxLength=25 required="true"  />
@@ -146,7 +130,7 @@
 		  	<@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17    />
 		 </@s.if> 
 		 
-		  	<@s.textfield label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true"   />
+		  	<@s.textfield label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
 		  	<@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12   />
 			
 		 <!-- added code by toqaf -->	
