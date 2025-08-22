@@ -67,7 +67,11 @@ document.addEventListener('input', function (e) {
 
 function changeFormDependingOnBusinessEntity(){
     const dropdown = document.getElementById("businessEntityType");
-    dropdown.addEventListener("DOMContentLoaded", manageHiddenFieldsBasedOnSelectedBusinessEntity);
+
+    // Run once immediately (to handle pre-filled/default value)
+    manageHiddenFieldsBasedOnSelectedBusinessEntity.call(dropdown);
+
+    // Run again whenever dropdown changes
     dropdown.addEventListener("change", manageHiddenFieldsBasedOnSelectedBusinessEntity);
 
 }
@@ -80,11 +84,15 @@ function manageHiddenFieldsBasedOnSelectedBusinessEntity(){
 
     // Do something depending on chosen option
     if (!(selectedValue === "SPROP" || selectedValue === "IND")) {
-        fName.style.display = "block";
-        middleName.style.display = "block";
-        lName.style.display = "block";
+        fName.style.display = "inline-block";
+        middleName.style.display = "inline-block";
+        lName.style.display = "inline-block";
         fName.value = "";
         middleName.value = "";
         lName.value = "";
+    } else {
+        fName.style.display = "none";
+        middleName.style.display = "none";
+        lName.style.display = "none";
     }
 }
