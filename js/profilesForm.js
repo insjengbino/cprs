@@ -74,11 +74,11 @@ document.addEventListener('input', function (e) {
 
     function manageHidden(dropdown) {
         const code = (dropdown.value || "").trim().toUpperCase();
-        const showPersonal = !(code === "SPROP" || code === "IND");
+        const showPersonal = (code === "SPROP" || code === "IND");
 
         // Toggle entire rows
         const rows = getFieldRows();
-        rows.forEach(row => { row.style.display = showPersonal ? "" : "none"; });
+        rows.forEach(row => { row.style.display = showPersonal ? "inline-block" : "none"; });
 
         // Optional: clear values when showing
         if (showPersonal) {
