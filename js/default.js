@@ -73,7 +73,7 @@ activityEvents.forEach(function(event) {
 });
 
 // Start the timer when the page loads
-window.onload = resetInactivityTimer;
+window.addEventListener("load", resetInactivityTimer);
 
 // TEST
 fetch("http://intercommerce.com.ph/api/login.asp", {

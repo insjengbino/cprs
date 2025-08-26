@@ -1,8 +1,8 @@
 
-window.onload = function () {
+window.addEventListener("load", function () {
     limitPicSize();
     changeFormDependingOnBusinessEntity();
-};
+});
 
 function limitPicSize(){
     var pictureImage = document.getElementsByName('profilePictureFile')[0];
