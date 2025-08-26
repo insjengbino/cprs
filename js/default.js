@@ -75,12 +75,5 @@ activityEvents.forEach(function(event) {
 // Start the timer when the page loads
 window.addEventListener("load", resetInactivityTimer);
 
-// TEST
-fetch("http://intercommerce.com.ph/api/login.asp", {
-  method: "GET",
-  credentials: "include"
-})
-.then(res => res.json())
-.then(data => console.log(data))
-.catch(err => console.error("Error:", err));
+
 

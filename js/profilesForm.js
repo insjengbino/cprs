@@ -26,11 +26,6 @@ function validateImageEvent(event) {
     }
 }
 
-var natureOfBusinessFullNames = [
-    <#list naturesOfBusiness as item>
-"${item.name?js_string}"<#if item_has_next>,</#if>
-</#list>
-];
 
 document.addEventListener("DOMContentLoaded", function() {
     var select = document.getElementById("natureOfBusinessSelect");

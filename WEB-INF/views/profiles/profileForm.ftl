@@ -316,6 +316,13 @@
 	</@s.form>
 		
 		 </div>
+    <script>
+        var natureOfBusinessFullNames = [
+            <#list naturesOfBusiness as item>
+            "${item.name?js_string}"<#if item_has_next>,</#if>
+            </#list>
+        ];
+    </script>
      <script src="${base}/js/profilesForm.js"></script>
 	</body>
 </html>
