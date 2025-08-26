@@ -5,8 +5,6 @@
 		<@jscalendar.head calendarcss="calendar-blue"/>
 	</head>
 	<body>
-    <script src="${base}/js/profilesForm.js"></script>
-
 	<@s.url id="pictureURL" action="profilePicture">
 		<@s.param name="id" value="id"/>
 	</@s.url>
@@ -318,7 +316,8 @@
 	</@s.form>
 		
 		 </div>
-	</body>  	
+     <script src="${base}/js/profilesForm.js"></script>
+	</body>
 </html>
 
 
