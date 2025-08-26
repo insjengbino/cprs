@@ -1,7 +1,6 @@
 
 window.addEventListener("load", function () {
     limitPicSize();
-    changeFormDependingOnBusinessEntity();
 });
 
 function limitPicSize(){
@@ -112,5 +111,3 @@ document.addEventListener('input', function (e) {
     // Use addEventListener to avoid being overwritten by other libs
     document.addEventListener("DOMContentLoaded", init);
 })();
-
-}
