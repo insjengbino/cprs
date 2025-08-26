@@ -101,6 +101,7 @@ document.addEventListener('input', function (e) {
             return;
         }
 
+        console.log("Dropdown found:", dropdown); // 👈 Debug
         // initial state (handles pre-filled/default value)
         manageHidden(dropdown);
 
