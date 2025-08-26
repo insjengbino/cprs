@@ -65,34 +65,52 @@ document.addEventListener('input', function (e) {
 });
 
 
-function changeFormDependingOnBusinessEntity(){
-    const dropdown = document.getElementById("businessEntityType");
+(function () {
+    const FIELD_IDS = ["firstName", "middleName", "lastName"];
 
-    // Run once immediately (to handle pre-filled/default value)
-    manageHiddenFieldsBasedOnSelectedBusinessEntity.call(dropdown);
-
-    // Run again whenever dropdown changes
-    dropdown.addEventListener("change", manageHiddenFieldsBasedOnSelectedBusinessEntity);
-
-}
-
-function manageHiddenFieldsBasedOnSelectedBusinessEntity(){
-    const selectedValue = this.value;
-    const fName = document.getElementById("firstName");
-    const middleName = document.getElementById("middleName");
-    const lName = document.getElementById("lastName");
-
-    // Do something depending on chosen option
-    if (!(selectedValue === "SPROP" || selectedValue === "IND")) {
-        fName.style.display = "inline-block";
-        middleName.style.display = "inline-block";
-        lName.style.display = "inline-block";
-        fName.value = "";
-        middleName.value = "";
-        lName.value = "";
-    } else {
-        fName.style.display = "none";
-        middleName.style.display = "none";
-        lName.style.display = "none";
+    function getFieldRows() {
+        // Hide the whole row (label + input), not just the input
+        return FIELD_IDS
+            .map(id => {
+                const el = document.getElementById(id);
+                return el ? el.closest("tr") || el.parentElement?.closest("tr") : null;
+            })
+            .filter(Boolean);
     }
+
+    function manageHidden(dropdown) {
+        const code = (dropdown.value || "").trim().toUpperCase();
+        const showPersonal = !(code === "SPROP" || code === "IND");
+
+        // Toggle entire rows
+        const rows = getFieldRows();
+        rows.forEach(row => { row.style.display = showPersonal ? "" : "none"; });
+
+        // Optional: clear values when showing
+        if (showPersonal) {
+            FIELD_IDS.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.value = "";
+            });
+        }
+    }
+
+    function init() {
+        const dropdown = document.getElementById("businessEntityType");
+        if (!dropdown) {
+            console.warn("Dropdown #businessEntityType not found");
+            return;
+        }
+
+        // initial state (handles pre-filled/default value)
+        manageHidden(dropdown);
+
+        // react to user changes
+        dropdown.addEventListener("change", () => manageHidden(dropdown));
+    }
+
+    // Use addEventListener to avoid being overwritten by other libs
+    document.addEventListener("DOMContentLoaded", init);
+})();
+
 }
