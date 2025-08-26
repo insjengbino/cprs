@@ -78,7 +78,7 @@ document.addEventListener('input', function (e) {
 
         // Toggle entire rows
         const rows = getFieldRows();
-        rows.forEach(row => { row.style.display = showPersonal ? "inline-block" : "none"; });
+        rows.forEach(row => { row.style.display = showPersonal ? "block" : "none"; });
 
         // Optional: clear values when showing
         if (showPersonal) {
