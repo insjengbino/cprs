@@ -53,7 +53,7 @@
 		    </interceptor-stack>
 
 			<!-- Register custom interceptor -->
-			<interceptor name="postOnlyInterceptor" class="com.example.interceptor.PostOnlyInterceptor"/>
+			<interceptor name="postOnlyInterceptor" class="com.ins.registration.misc.PostOnlyInterceptor"/>
 			<interceptor-stack name="secureStack">
 				<interceptor-ref name="defaultStack"/>
 				<interceptor-ref name="postOnlyInterceptor"/>

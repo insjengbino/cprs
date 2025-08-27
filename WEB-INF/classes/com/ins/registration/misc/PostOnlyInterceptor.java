@@ -34,7 +34,7 @@ public class PostOnlyInterceptor extends AbstractInterceptor {
 
                 // Redirect to ASP login with returnTo param
                 String returnTo = request.getRequestURL().toString();
-                response.sendRedirect("http://asp-app/login.asp?returnTo=" + returnTo);
+                response.sendRedirect("http://testweb.intercommerce.com.ph/login.asp?returnTo=" + returnTo);
                 return null; // stop here
             }
 
