@@ -51,6 +51,13 @@
 		            <param name="excludeMethods">input,back,cancel</param>
 		        </interceptor-ref>
 		    </interceptor-stack>
+
+			<!-- Register custom interceptor -->
+			<interceptor name="postOnlyInterceptor" class="com.example.interceptor.PostOnlyInterceptor"/>
+			<interceptor-stack name="secureStack">
+				<interceptor-ref name="defaultStack"/>
+				<interceptor-ref name="postOnlyInterceptor"/>
+			</interceptor-stack>
     	</interceptors>
     	<default-interceptor-ref name="defaultStack"/>
     	
@@ -92,6 +99,7 @@
         </action>
         
         <action name="listProfiles" method="listProfiles" class="profilesController">
+			<interceptor-ref name="secureStack"/>
 	    	<result name="success" type="freemarker">WEB-INF/views/profiles/listProfile.ftl</result>
 	    </action>
 	

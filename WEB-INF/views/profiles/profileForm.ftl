@@ -304,6 +304,17 @@
 			</@s.if>
  		</@s.if>
 
+		<@s.if test="(clientType == 'AR')">
+			<@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">
+				<@s.submit value="Save" action="saveArrastreOperator1" theme="simple"/>
+			</@s.if>
+		</@s.if>
+		<@s.if test="(clientType == 'AR')">
+			<@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">
+				<@s.submit value="Save" action="saveArrastreOperator2" theme="simple"/>
+			</@s.if>
+		</@s.if>
+
 		<@s.submit value="Cancel" action="cancel" theme="simple"/> 
 		
 		<@s.if test="(profile.id != null )">
