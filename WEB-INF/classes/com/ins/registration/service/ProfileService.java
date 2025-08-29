@@ -31,5 +31,5 @@ public interface ProfileService {
 
     void setEm(EntityManager var1);
 
-    int checkDuplicateByTinClientTypeINSClientNo(String tin, String clientType, String insClientNo);
+    int checkDuplicateByTinClientTypeINSClientNo(String tin, String insClientNo);
 }
