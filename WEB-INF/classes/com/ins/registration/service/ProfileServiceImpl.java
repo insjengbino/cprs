@@ -5,6 +5,9 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class ProfileServiceImpl implements ProfileService {
     @PersistenceContext
     private EntityManager em;
+    private final Log log = LogFactory.getLog(this.getClass());
 
     public void save(Profile profile) {
         if (profile.getId() == null) {
@@ -139,11 +143,12 @@ public class ProfileServiceImpl implements ProfileService {
     }
 
     @Transactional(readOnly = true)
-    public int checkDuplicateByTinClientTypeINSClientNo(String tin, String insClientNo) {
+    public List<Profile> checkDuplicateByTinINSClientNo(String tin, String insClientNo) {
         Query q = this.em.createQuery("select t from Profile t where t.insClientNo <>:insClientNo and t.tinNo = :tinNo");
         q.setParameter("insClientNo", insClientNo);
         q.setParameter("tinNo", tin);
-        return q.getResultList().size();
+        log.debug("checkDUUUUUPEEE::" + q.getResultList());
+        return q.getResultList();
     }
 
     public List<Profile> searchTinAndClientType(String var1, String var2) {
