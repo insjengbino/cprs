@@ -30,4 +30,6 @@ public interface ProfileService {
     List<Profile> searchTinAndId(String var1, Long var2);
 
     void setEm(EntityManager var1);
+
+    int checkDuplicateByTinClientTypeINSClientNo(String tin, String clientType, String insClientNo);
 }

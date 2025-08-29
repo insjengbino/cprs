@@ -156,7 +156,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
                 this.addFieldError("profile.underWritingCapacity", "You can not leave this field empty.");
             }
 
-            if (this.hasDuplicateTIN()) {
+            if (this.hasDuplicateTINV2()) {
                 this.addFieldError("profile.tinNo", "Duplicate TIN");
             }
 
@@ -270,6 +270,13 @@ public class ProfilesController extends BaseController implements Preparable, Va
         }
 
         return tinList.size() > 0;
+    }
+
+    public boolean hasDuplicateTINV2() {
+        return this.profileService.checkDuplicateByTinClientTypeINSClientNo(
+                this.profile.getTinNo(),
+                this.profile.getClientType(),
+                this.profile.getTinNo()) > 0;
     }
 
     public List<Profile> getProfiles() {
