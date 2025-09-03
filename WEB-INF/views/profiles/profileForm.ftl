@@ -215,29 +215,29 @@
 </td></tr></table> 		 
 		
 		 
-		<tr><td align=center> 
- 		<@s.if test="(clientType == 'AW')">
- 			<@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">
+		<tr><td align=center>
+ 		<@s.if test="clientType == 'AW'">
+ 			<@s.if test="businessType == 'IND' || businessType == 'SPROP'">
 				<@s.submit value="Save" action="saveAirport1" theme="simple"/>
  			</@s.if>
  		</@s.if>
- 		<@s.if test="(clientType == 'AW')">
- 			<@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">
+ 		<@s.if test="clientType == 'AW'">
+ 			<@s.if test="businessType == 'CMP' || businessType == 'CORP' || businessType == 'PART'">
 				<@s.submit value="Save" action="saveAirport2" theme="simple"/>
  			</@s.if>
  		</@s.if>
- 		
- 		<@s.if test="(clientType == 'BR')">
- 			<@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">
+
+ 		<@s.if test="clientType == 'BR'">
+ 			<@s.if test="businessType == 'IND' || businessType == 'SPROP'">
 				<@s.submit value="Save" action="saveBroker1" theme="simple"/>
  			</@s.if>
  		</@s.if>
- 		<@s.if test="(clientType == 'BR')">
- 			<@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">
+ 		<@s.if test="clientType == 'BR'">
+ 			<@s.if test="businessType == 'CMP' || businessType == 'CORP' || businessType == 'PART'">
 				<@s.submit value="Save" action="saveBroker2" theme="simple"/>
  			</@s.if>
  		</@s.if>
- 		
+
  		<@s.if test="(clientType == 'CY')">
  			<@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">
 				<@s.submit value="Save" action="saveCYCFS1" theme="simple"/>
