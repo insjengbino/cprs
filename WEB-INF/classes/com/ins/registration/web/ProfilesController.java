@@ -1176,7 +1176,6 @@ public class ProfilesController extends BaseController implements Preparable, Va
             return "input";
         } else {
             this.listProfiles();
-            ServletActionContext.getRequest().getSession().setAttribute("allowListProfiles", true);
             return "success";
         }
     }
