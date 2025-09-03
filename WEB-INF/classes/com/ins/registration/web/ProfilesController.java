@@ -39,11 +39,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -104,6 +100,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     @Autowired
     private MessageGenerator generator;
     List<Profile> profileList = new ArrayList();
+    private Integer role;
 
     public byte[] getBytes() {
         return this.buffer;
@@ -170,6 +167,12 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
             if (this.profile.getPaidUpCapitalAmount() != null && this.profile.getCapitalStockAmount() != null && Double.parseDouble(this.profile.getPaidUpCapitalAmount()) > Double.parseDouble(this.profile.getCapitalStockAmount())) {
                 this.addFieldError("profile.paidUpCapitalAmount", "Amount must be less than or equal to the Amount of Authorized Capital Stock.");
+            }
+
+            if(2 == this.getRole() && "BR".equals(this.getClientType())){
+                this.addFieldError("profile.clientType", "Action not allowed. Your account is\n" +
+                        "registered as a Broker. Adding other client types is not\n" +
+                        "permitted for this account type.”");
             }
         }
 
@@ -440,6 +443,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public String logout() {
         this.setInSession("clientCode", (Object)null);
+        this.setInSession("role", null);
         HttpServletRequest request = ServletActionContext.getRequest();
         HttpServletResponse response = ServletActionContext.getResponse();
         HttpSession session = request.getSession(false);
@@ -1142,13 +1146,20 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public String listProfiles() {
         String currentSession = String.valueOf(this.getFromSession("clientCode"));
-        if (null != currentSession && currentSession.length() != 0) {
+        String roleValueFromSession = String.valueOf(this.getFromSession("role"));
+        if ((null != currentSession && currentSession.length() != 0) &&
+                (null != roleValueFromSession && roleValueFromSession.length() != 0)) {
             String clientCode = this.getParameter("clientCode");
+            String roleValue = this.getParameter("role");
             if (clientCode == null) {
                 clientCode = (String)this.getFromSession("clientCode");
             }
-
+            if (roleValue == null) {
+                roleValue = (String)this.getFromSession("role");
+            }
+            this.setInSession("role", roleValue);
             this.setInSession("clientCode", clientCode);
+            this.setRole(Integer.parseInt(roleValue));
             this.profiles = this.profileService.listByClientCode(clientCode);
             return "success";
         } else {
@@ -1229,5 +1240,13 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public void setProfileHistoryService(ProfileHistoryService profileHistoryService) {
         this.profileHistoryService = profileHistoryService;
+    }
+
+    public void setRole(Integer role){
+        this.role = role;
+    }
+
+    public Integer getRole(){
+        return this.role;
     }
 }
