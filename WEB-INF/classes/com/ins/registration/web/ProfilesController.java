@@ -184,6 +184,10 @@ public class ProfilesController extends BaseController implements Preparable, Va
             this.setInSession("_data", new HashMap());
         }
 
+        if (null == this.businessType) {
+            this.setBusinessType("IND");
+        }
+
         return "success";
     }
 
