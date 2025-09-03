@@ -169,7 +169,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
                 this.addFieldError("profile.paidUpCapitalAmount", "Amount must be less than or equal to the Amount of Authorized Capital Stock.");
             }
 
-            if(2 == this.getRole() && "BR".equals(this.getClientType())){
+            if(String.valueOf(2) == this.getFromSession("role") && "BR".equals(this.getClientType())){
                 this.addFieldError("profile.clientType", "Action not allowed. Your account is\n" +
                         "registered as a Broker. Adding other client types is not\n" +
                         "permitted for this account type.”");
