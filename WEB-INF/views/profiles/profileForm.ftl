@@ -41,7 +41,11 @@
 		  <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
 		  <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
-		
+         <tr><td>
+            DEBUG: clientType = [${clientType!"null"}] <br/>
+            DEBUG: businessType = [${businessType!"null"}] <br/>
+            DEBUG: profiles.businessType = [${profile.businessType!"null"}] <br/>
+        </td></tr>
 		  <@s.textfield label="Client Type" value="${clientType}" readonly="true"  />
 
 
