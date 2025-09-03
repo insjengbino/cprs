@@ -184,10 +184,6 @@ public class ProfilesController extends BaseController implements Preparable, Va
             this.setInSession("_data", new HashMap());
         }
 
-        if (null == this.businessType) {
-            this.setBusinessType("IND");
-        }
-
         return "success";
     }
 
@@ -424,6 +420,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
     public String profileForm() {
         this.log.warn(this.profile.getClientType());
         this.log.warn(this.profile.getBusinessType());
+        if(null == this.businessType){
+            this.businessType = "IND";
+        }
         this.setInSession("nature_of_business", this.natureOfBusiness);
         this.setInSession("business_type", this.businessType);
         this.setInSession("_client_type", this.clientType);
