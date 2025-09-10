@@ -598,8 +598,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
                 //company || corporation || partnership
             else saveActionName = "YI2save";
         }
-
-        request.setAttribute("saveActionName", saveActionName);
+        this.setSaveActionName(saveActionName);
     }
 
     public String saveImporter() {
