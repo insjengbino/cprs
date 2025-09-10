@@ -143,6 +143,8 @@ public class ProfilesController extends BaseController implements Preparable, Va
             }
         }
 
+        //added on phase 3 of cprs enhancement
+        prepareSaveAction();
     }
 
     public void validate() {
@@ -508,6 +510,94 @@ public class ProfilesController extends BaseController implements Preparable, Va
             e.printStackTrace();
         }
 
+    }
+
+    public void prepareSaveAction(){
+        HttpServletRequest request = ServletActionContext.getRequest();
+        String saveActionName = "";
+        //airport warehouse
+        if("AW".equals(this.clientType)) {
+            //individual || sole proprietor
+            if ("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveAirport1";
+            //company || corporation || partnership
+            else saveActionName = "saveAirport2";
+        }
+
+        //broker
+        if("BR".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveBroker1";
+            //company || corporation || partnership
+            else saveActionName = "saveBroker2";
+        }
+
+        //CY-CFS operator
+        if("CY".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveCYCFS1";
+            //company || corporation || partnership
+            else saveActionName = "saveCYCFS2";
+        }
+
+        //CY-CFS operator
+        if("CY".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveCYCFS1";
+            //company || corporation || partnership
+            else saveActionName = "saveCYCFS2";
+        }
+
+        //Importer
+        if("IM".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveProfileImporter1";
+            //company || corporation || partnership
+            else saveActionName = "saveProfileImporter2";
+        }
+
+        //Exporter
+        if("EX".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveProfileExporter1";
+            //company || corporation || partnership
+            else saveActionName = "saveProfileExporter2";
+        }
+
+        //surety
+        if("SU".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveSurety1";
+                //company || corporation || partnership
+            else saveActionName = "saveSurety2";
+        }
+
+        //warehouse operator
+        if("WO".equals(this.clientType)){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
+                saveActionName = "saveWarehouse1";
+                //company || corporation || partnership
+            else saveActionName = "saveWarehouse2";
+        }
+
+        //Non-Regular Importer previously called: Once a year importer hence the CODE: YI
+        if("YI".equals(this.clientType)){
+            //individual || sole proprietor
+            // todo: on previous implementation, there is no condition for SPROP for YI. Needs confirmation
+            if("IND".equals(this.businessType))
+                saveActionName = "YI1save";
+                //company || corporation || partnership
+            else saveActionName = "YI2save";
+        }
+
+        request.setAttribute("saveActionName", saveActionName);
     }
 
     public String saveImporter() {
@@ -985,7 +1075,6 @@ public class ProfilesController extends BaseController implements Preparable, Va
     public String completeProfile() {
         this.log.info("KK==========: " + this.selected.toString());
         for(Long checkedId : this.selected) {
-            Profile profile = this.profileService.findByID(checkedId);
             if (!this.isComplete()) {
                 this.addActionError("Profile details must first be completed before setting status to CREATE.");
                 return "error";

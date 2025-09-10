@@ -93,6 +93,7 @@ public class ProfileServiceImpl implements ProfileService {
         return query.getResultList();
     }
 
+    //used by Tosser (check Tosser /lib/cprsmodel)
     @Transactional(
             readOnly = true
     )
@@ -102,6 +103,7 @@ public class ProfileServiceImpl implements ProfileService {
         return query.getResultList();
     }
 
+    //used by Tosser (check Tosser /lib/cprsmodel)
     @Transactional(
             readOnly = true
     )

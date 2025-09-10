@@ -74,7 +74,7 @@
     	</action> 
     	
         <action name="profileForm" method="profileForm" class="profilesController">
-            <result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>			
+            <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>			
         </action>
         
         <action name="clientTypeForm" method="clientTypeForm" class="profilesController">
@@ -88,7 +88,7 @@
         </action>
         
         <action name="loadProfile" method="loadProfile" class="profilesController">
-            <result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
         </action>
         
         <action name="listProfiles" method="listProfiles" class="profilesController">
@@ -97,11 +97,11 @@
 	
 	    <action name="cancel" method="cancel" class="profilesController">
 	    	<result name="success" type="redirect">listProfiles.action</result>	
-	    	 <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>		
+	    	 <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>		
 	    </action>
 	    
 	    <action name="viewProfile" method="viewProfile" class="profilesController">
-            <result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>			
+            <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>			
 	    </action>
         
         <action name="profilePicture" method="loadPicture" class="profilesController">
@@ -113,17 +113,17 @@
 	    </action>
 	    
 	    <action name="removeProfilePicture" method="removePicture" class="profilesController">
-	    	<result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>
+	    	<result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
 	    </action>
 	    
 	    <action name="removeProfileSignature" method="removeSignature" class="profilesController">
-	    	<result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>
+	    	<result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
 	    </action>
         
         <action name="saveProfileImporter1" method="saveImporter" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -133,7 +133,7 @@
          <action name="saveProfileImporter2" method="saveImporter" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	 
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	 
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -143,7 +143,7 @@
 		<action name="saveProfileExporter1" method="saveExporter" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -153,7 +153,7 @@
          <action name="saveProfileExporter2" method="saveExporter" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	 
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	 
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -163,7 +163,7 @@
         <action name="saveBroker1" method="saveBroker" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -173,7 +173,7 @@
         <action name="saveBroker2" method="saveBroker" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -183,7 +183,7 @@
 		<action name="saveWarehouse1" method="saveWarehouse" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -193,7 +193,7 @@
 		<action name="saveWarehouse2" method="saveWarehouse" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -203,7 +203,7 @@
 		<action name="saveSurety1" method="saveSurety" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
@@ -214,7 +214,7 @@
         <action name="saveSurety2" method="saveSurety" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
@@ -225,7 +225,7 @@
         <action name="saveAirport1" method="saveAirport" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
@@ -235,7 +235,7 @@
         <action name="saveAirport2" method="saveAirport" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
@@ -245,7 +245,7 @@
 		<action name="saveCYCFS1" method="saveCYCFS" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             
             <result name="error" type="redirect">
            	 	<param name="location">http://www.intercommerce.com.ph/</param>
@@ -256,7 +256,7 @@
         <action name="saveCYCFS2" method="saveCYCFS" class="profilesController">
 			<interceptor-ref name="crudStack"/>
            	<result name="success" type="redirect">listProfiles.action</result>	
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
             
             <result name="error" type="redirect">
             	<param name="location">http://www.intercommerce.com.ph/</param>
@@ -265,7 +265,7 @@
         </action>    
                    
         <action name="editProfile" method="editProfile" class="profilesController">
-            <result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>	
+            <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
 	    </action>
 	    
         <action name="deleteProfile" method="deleteProfile" class="profilesController">
@@ -532,7 +532,7 @@
 	    	<result name="success" type="myImageResult"/>
 	    </action>
 	     <action name="removeProfileImportedCommodities" method="removeImportedCommodities" class="profilesController">
-	    	<result name="success" type="freemarker">WEB-INF/views/profiles/profileForm.ftl</result>
+	    	<result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
 	    </action>
 	    
  
