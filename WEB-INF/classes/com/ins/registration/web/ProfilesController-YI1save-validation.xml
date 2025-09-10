@@ -79,7 +79,7 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-Z0-9Ã /,.-]*</param>
+			<param name="expression">[A-Z0-9ï¿½ /,.-]*</param>
 			<message key="Only alphanumeric, space, and some special characters (/,.-) are accepted. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
@@ -113,7 +113,7 @@
 			<message key="Only alphanumeric and space are allowed. Other special characters as well as any non-English alphabet are not accepted." />
 		</field-validator>
 		<field-validator type="stringlength">
-        	<param name="maxLength">4</param>
+        	<param name="maxLength">9</param>
         	<param name="trim">true</param>
         	<message>Exceeded maximum field length of ${maxLength} characters.</message>
         </field-validator>						
