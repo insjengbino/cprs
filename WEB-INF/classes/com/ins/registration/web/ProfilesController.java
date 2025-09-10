@@ -105,6 +105,8 @@ public class ProfilesController extends BaseController implements Preparable, Va
     private MessageGenerator generator;
     List<Profile> profileList = new ArrayList();
 
+    private String saveActionName;
+
     public byte[] getBytes() {
         return this.buffer;
     }
@@ -1317,5 +1319,12 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public void setProfileHistoryService(ProfileHistoryService profileHistoryService) {
         this.profileHistoryService = profileHistoryService;
+    }
+
+    public String getSaveActionName() {
+        return this.saveActionName;
+    }
+    public void setSaveActionName(String saveActionName) {
+        this.saveActionName = saveActionName;
     }
 }

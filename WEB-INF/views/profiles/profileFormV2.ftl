@@ -361,7 +361,7 @@
 <#--                </@s.if>-->
 <#--            </@s.if>-->
 
-            <@s.submit value="Save" action="${saveActionName}" theme="simple"/>
+            <@s.submit value="Save" action="%{saveActionName}" theme="simple"/>
 
             <@s.submit value="Cancel" action="cancel" theme="simple"/>
 
