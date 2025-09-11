@@ -532,18 +532,15 @@ public class ProfilesController extends BaseController implements Preparable, Va
         clientTypeMap.put("YI", Arrays.asList("YI1save", "YI2save"));
         clientTypeMap.put("AR", Arrays.asList("saveArrastreOperator1", "saveArrastreOperator2"));
 
-        for(Map.Entry<String, List<String>> entry : clientTypeMap.entrySet()){
-            if(entry.getKey().equals(this.clientType)){
-                //individual || sole proprietor
-                if("IND".equals(this.businessType) || "SPROP".equals(this.businessType)){
-                    this.setSaveActionName(entry.getValue().get(0)); //action1
-                    break;
-                }
-                //company || corporation || partnership
-                else{
-                    this.setSaveActionName(entry.getValue().get(1)); //action2
-                    break;
-                }
+        List<String> actions = clientTypeMap.get(this.clientType);
+        if(actions != null){
+            //individual || sole proprietor
+            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType)){
+                this.setSaveActionName(actions.get(0)); //actionName1
+            }
+            //company || corporation || partnership
+            else{
+                this.setSaveActionName(actions.get(1)); //actionName2
             }
         }
     }
