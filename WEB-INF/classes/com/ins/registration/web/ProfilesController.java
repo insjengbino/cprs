@@ -39,11 +39,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -146,7 +142,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
         }
 
         //added on phase 3 of cprs enhancement
-        prepareSaveAction();
+        prepareSaveActionName();
     }
 
     public void validate() {
@@ -514,91 +510,42 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     }
 
-    public void prepareSaveAction(){
-        HttpServletRequest request = ServletActionContext.getRequest();
-        String saveActionName = "";
-        //airport warehouse
-        if("AW".equals(this.clientType)) {
-            //individual || sole proprietor
-            if ("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveAirport1";
-            //company || corporation || partnership
-            else saveActionName = "saveAirport2";
-        }
+    /**
+     * Sept-11-2025
+     * cprs enhancement v3
+     * Removed the use for profileForm.ftl as it has different logic for saving each profile.
+     * profileFormV2.ftl's save function is now dynamic
+     * All save function of profileFormV2.ftl should be mapped here
+     **/
+    private void prepareSaveActionName(){
+        this.setSaveActionName("");
+        final HashMap<String, List<String>> clientTypeMap = new HashMap<String, List<String>>();
+        ///             clientType            [0]: actionName1    [1]actionName2
+        ///
+        clientTypeMap.put("AW", Arrays.asList("saveAirport1", "saveAirport2"));
+        clientTypeMap.put("BR", Arrays.asList("saveBroker1", "saveBroker2"));
+        clientTypeMap.put("CY", Arrays.asList("saveCYCFS1", "saveCYCFS2"));
+        clientTypeMap.put("IM", Arrays.asList("saveProfileImporter1", "saveProfileImporter2"));
+        clientTypeMap.put("EX", Arrays.asList("saveProfileExporter1", "saveProfileExporter2"));
+        clientTypeMap.put("SU", Arrays.asList("saveSurety1", "saveSurety2"));
+        clientTypeMap.put("WO", Arrays.asList("saveWarehouse1", "saveWarehouse2"));
+        clientTypeMap.put("YI", Arrays.asList("YI1save", "YI2save"));
+        clientTypeMap.put("AR", Arrays.asList("saveArrastreOperator1", "saveArrastreOperator2"));
 
-        //broker
-        if("BR".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveBroker1";
-            //company || corporation || partnership
-            else saveActionName = "saveBroker2";
-        }
-
-        //CY-CFS operator
-        if("CY".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveCYCFS1";
-            //company || corporation || partnership
-            else saveActionName = "saveCYCFS2";
-        }
-
-        //CY-CFS operator
-        if("CY".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveCYCFS1";
-            //company || corporation || partnership
-            else saveActionName = "saveCYCFS2";
-        }
-
-        //Importer
-        if("IM".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveProfileImporter1";
-            //company || corporation || partnership
-            else saveActionName = "saveProfileImporter2";
-        }
-
-        //Exporter
-        if("EX".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveProfileExporter1";
-            //company || corporation || partnership
-            else saveActionName = "saveProfileExporter2";
-        }
-
-        //surety
-        if("SU".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveSurety1";
+        for(Map.Entry<String, List<String>> entry : clientTypeMap.entrySet()){
+            if(entry.getKey().equals(this.clientType)){
+                //individual || sole proprietor
+                if("IND".equals(this.businessType) || "SPROP".equals(this.businessType)){
+                    this.setSaveActionName(entry.getValue().get(0)); //action1
+                    break;
+                }
                 //company || corporation || partnership
-            else saveActionName = "saveSurety2";
+                else{
+                    this.setSaveActionName(entry.getValue().get(1)); //action2
+                    break;
+                }
+            }
         }
-
-        //warehouse operator
-        if("WO".equals(this.clientType)){
-            //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType))
-                saveActionName = "saveWarehouse1";
-                //company || corporation || partnership
-            else saveActionName = "saveWarehouse2";
-        }
-
-        //Non-Regular Importer previously called: Once a year importer hence the CODE: YI
-        if("YI".equals(this.clientType)){
-            //individual || sole proprietor
-            // todo: on previous implementation, there is no condition for SPROP for YI. Needs confirmation
-            if("IND".equals(this.businessType))
-                saveActionName = "YI1save";
-                //company || corporation || partnership
-            else saveActionName = "YI2save";
-        }
-        this.setSaveActionName(saveActionName);
     }
 
     public String saveImporter() {
