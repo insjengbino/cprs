@@ -142,7 +142,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
         }
 
         //added on phase 3 of cprs enhancement
-        prepareSaveActionName();
+        prepSaveActionName();
     }
 
     public void validate() {
@@ -517,7 +517,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
      * profileFormV2.ftl's save function is now dynamic
      * All save function of profileFormV2.ftl should be mapped here
      **/
-    private void prepareSaveActionName(){
+    private void prepSaveActionName(){
         this.setSaveActionName("");
         final HashMap<String, List<String>> clientTypeMap = new HashMap<String, List<String>>();
         ///             clientType            [0]: actionName1    [1]actionName2
