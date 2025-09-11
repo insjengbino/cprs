@@ -123,7 +123,7 @@
 		  <@s.select label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name" required="true" />
 		  <@s.textfield label="Address" name="profile.address" maxLength=70 required="true"  />
 		  <@s.textfield label="City" name="profile.city" maxLength=25 required="true"  />
-		  <@s.textfield label="Zip Code" type="number" name="profile.zipCode" maxlength="9" required="true" />
+		  <@s.textfield label="Zip Code" type="number" name="profile.zipCode" maxlength=9 required="true" />
 
 		  <@s.select label="Country" name="profile.country" list="%{countries}" listKey="code" listValue="name" required="true" />
 		  

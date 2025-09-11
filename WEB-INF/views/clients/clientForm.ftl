@@ -66,7 +66,7 @@
 		<@s.textfield label="Name / Company Name" name="majorClient.company" maxLength=35 required="true"/> 
 		<@s.textfield label="Address" name="majorClient.address" maxLength=70 required="true"/>
 		<@s.textfield label="City" name="majorClient.city" maxLength=25 required="true"/>
-		<@s.textfield label="Zip Code" name="majorClient.zipCode" maxLength=4 required="true"/>
+		<@s.textfield label="Zip Code" name="majorClient.zipCode" maxLength=9 required="true"/>
 		<@s.select label="Country" name="majorClient.country" 
 			list="%{countries}" listKey="code" listValue="name" 
 			required="true" preload="false"/>
