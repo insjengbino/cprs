@@ -30,6 +30,7 @@ import com.ins.registration.service.NatureOfBusinessService;
 import com.ins.registration.service.ProfileHistoryService;
 import com.ins.registration.service.ProfileService;
 import com.ins.registration.service.StatusService;
+import com.ins.registration.util.StringUtils;
 import com.opensymphony.xwork2.Preparable;
 import com.opensymphony.xwork2.Validateable;
 import com.thoughtworks.xstream.XStream;
@@ -141,12 +142,14 @@ public class ProfilesController extends BaseController implements Preparable, Va
             }
         }
 
-        //added on phase 3 of cprs enhancement
-        prepSaveActionName();
     }
 
     public void validate() {
         super.validate();
+
+        //added on phase 3 of cprs enhancement
+        prepSaveActionName();
+
         if (this.getActionName().startsWith("save") && !this.hasErrors()) {
             if (this.profile.getPicture() == null && this.profilePictureFile == null) {
                 this.addFieldError("profilePictureFile", "Please attach Scanned Photo");
@@ -518,7 +521,14 @@ public class ProfilesController extends BaseController implements Preparable, Va
      * All save function of profileFormV2.ftl should be mapped here
      **/
     private void prepSaveActionName(){
+        String clientType = this.getClientType();
+        String businessType = this.getBusinessType();
         this.setSaveActionName("");
+
+        if(StringUtils.isEmpty(clientType) && StringUtils.isEmpty(businessType)){
+            return;
+        }
+
         final HashMap<String, List<String>> clientTypeMap = new HashMap<String, List<String>>();
         ///             clientType            [0]: actionName1    [1]actionName2
         ///
@@ -532,10 +542,10 @@ public class ProfilesController extends BaseController implements Preparable, Va
         clientTypeMap.put("YI", Arrays.asList("YI1save", "YI2save"));
         clientTypeMap.put("AR", Arrays.asList("saveArrastreOperator1", "saveArrastreOperator2"));
 
-        List<String> actions = clientTypeMap.get(this.clientType);
+        List<String> actions = clientTypeMap.get(clientType);
         if(actions != null){
             //individual || sole proprietor
-            if("IND".equals(this.businessType) || "SPROP".equals(this.businessType)){
+            if("IND".equals(businessType) || "SPROP".equals(businessType)){
                 this.setSaveActionName(actions.get(0)); //actionName1
             }
             //company || corporation || partnership
@@ -543,6 +553,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
                 this.setSaveActionName(actions.get(1)); //actionName2
             }
         }
+        log.info("CHECK ==== client type: " + clientType
+                + " &&  business  type: " + businessType);
+        log.info("ACTION NAME: " + this.getSaveActionName());
     }
 
     public String saveImporter() {
@@ -1020,6 +1033,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     public String completeProfile() {
         this.log.info("KK==========: " + this.selected.toString());
         for(Long checkedId : this.selected) {
+            Profile profile = this.profileService.findByID(checkedId);
             if (!this.isComplete()) {
                 this.addActionError("Profile details must first be completed before setting status to CREATE.");
                 return "error";

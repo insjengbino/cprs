@@ -97,7 +97,7 @@
 
 
                                                     <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
-                                                    <input type="hidden" name="businessType" value="${businessType?if_exists}"/>
+<#--                                                    <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
                                                     <input type="hidden" name="profile.businessType" value="${profile.businessType?if_exists}"/>
                                                     <input type="hidden" name="profile.natureOfBusiness" value="${natureOfBusiness?if_exists}"/>
                                                     <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
