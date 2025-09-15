@@ -234,6 +234,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
             businessTypeList = this.businessTypeService.listAllBusinessType();
         }
 
+        //set default selected option for dropdown in profileForm
+        if(StringUtils.isEmpty(this.getBusinessType())) this.setBusinessType("SPROP");
+
         return businessTypeList;
     }
 

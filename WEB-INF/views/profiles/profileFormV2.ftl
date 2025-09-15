@@ -273,93 +273,6 @@
 
 
     <tr><td align=center>
-<#--            <@s.if test="(clientType == 'AW')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveAirport1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'AW')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveAirport2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-
-<#--            <@s.if test="(clientType == 'BR')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveBroker1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'BR')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveBroker2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-
-<#--            <@s.if test="(clientType == 'CY')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveCYCFS1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'CY')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveCYCFS2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-
-<#--            <@s.if test="(clientType == 'IM')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveProfileImporter1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'IM')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveProfileImporter2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-
-<#--            <@s.if test="(clientType == 'EX')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveProfileExporter1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'EX')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveProfileExporter2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-
-
-<#--            <@s.if test="(clientType == 'SU')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveSurety1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'SU')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveSurety2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-
-<#--            <@s.if test="(clientType == 'WO')">-->
-<#--                <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">-->
-<#--                    <@s.submit value="Save" action="saveWarehouse1" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'WO')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="saveWarehouse2" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'YI')">-->
-<#--                <@s.if test="(businessType == 'IND')">-->
-<#--                    <@s.submit value="Save" action="YI1save" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
-<#--            <@s.if test="(clientType == 'YI')">-->
-<#--                <@s.if test="(businessType == 'CMP') || (businessType == 'CORP') || (businessType == 'PART')">-->
-<#--                    <@s.submit value="Save" action="YI2save" theme="simple"/>-->
-<#--                </@s.if>-->
-<#--            </@s.if>-->
 
             <@s.submit value="Save" action="%{saveActionName}" theme="simple"/>
 
@@ -368,7 +281,6 @@
             <@s.if test="(profile.id != null )">
                 <@s.submit value="Print" action="printProfile" theme="simple"/>
             </@s.if>
-
 
         </td></tr>
     </td></tr></table>
