@@ -283,7 +283,7 @@
 
             <@s.submit value="Save" action="%{saveActionName}" theme="simple"/>
 
-            <@s.submit value="Cancel" action="cancel" theme="simple"/>
+            <button type="button" onclick="location.href='listProfiles.action'">Cancel</button>
 
             <@s.if test="(profile.id != null )">
                 <@s.submit value="Print" action="printProfile" theme="simple"/>
