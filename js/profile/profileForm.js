@@ -93,6 +93,8 @@ document.addEventListener('input', function (e) {
             const inputs = row.querySelectorAll("input, select, textarea");
             const rowHasUnique = Array.from(inputs).some(el => UNIQUE_FIELD_IDS.includes(el.id));
 
+            console.log("step 1 inputs: " + inputs);
+            console.log("has unique: " + rowHasUnique);
             if (rowHasUnique) {
                 row.style.display = "none";
                 inputs.forEach(el => {
