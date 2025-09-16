@@ -296,6 +296,13 @@
 </div>
 <script src = "${base}/js/profile/fieldMappings.js" type="module"></script>
 <script src = "${base}/js/profile/profileForm.js" type="module"></script>
+<script>
+    var natureOfBusinessFullNames = [
+        <#list naturesOfBusiness as item>
+        "${item.name?js_string}"<#if item_has_next>,</#if>
+        </#list>
+    ];
+</script>
 </body>
 </html>
 
