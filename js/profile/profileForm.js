@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
     limitPicSize();
 });
 
-function limitPicSize(){ 1
+function limitPicSize(){
     var pictureImage = document.getElementsByName('profilePictureFile')[0];
     var signatureImage = document.getElementsByName('profileSignatureFile')[0];
     if (pictureImage) {
@@ -28,9 +28,14 @@ function validateImageEvent(event) {
     }
 }
 
+const natureOfBusinessFullNames = [
+    <#list naturesOfBusiness as item>
+"${item.name?js_string}"<#if item_has_next>,</#if>
+</#list>
+];
 
 document.addEventListener("DOMContentLoaded", function() {
-    var select = document.getElementById("natureOfBusinessSelect");
+    var select = document.getElementById("businessNature");
     if (select) {
         Array.from(select.options).forEach(function(opt, i) {
             opt.title = natureOfBusinessFullNames[i];
@@ -75,29 +80,36 @@ document.addEventListener('input', function (e) {
         const businessType = dropdown.value.trim().toUpperCase();
         const clientType = document.getElementById("clientType").value.trim().toUpperCase();
 
-        // Collect displayable fields
+        // Collect displayable + required fields
         const FIELD_IDS = [];
         const REQ_FIELD_IDS = [];
 
-        mainFieldMap.get(clientType).get(businessType)?.forEach(id => FIELD_IDS.push(id));
-        mainFieldMap.get(clientType).get("common-fields")?.forEach(id => FIELD_IDS.push(id));
+        mainFieldMap.get(clientType)?.get(businessType)?.forEach(id => FIELD_IDS.push(id));
+        mainFieldMap.get(clientType)?.get("common-fields")?.forEach(id => FIELD_IDS.push(id));
 
-        mainReqFieldMap.get(clientType).get(businessType)?.forEach(id => REQ_FIELD_IDS.push(id));
-        mainReqFieldMap.get(clientType).get("common-fields")?.forEach(id => REQ_FIELD_IDS.push(id));
+        mainReqFieldMap.get(clientType)?.get(businessType)?.forEach(id => REQ_FIELD_IDS.push(id));
+        mainReqFieldMap.get(clientType)?.get("common-fields")?.forEach(id => REQ_FIELD_IDS.push(id));
 
-        // Reset everything (hide + clear)
-        document.querySelectorAll("tr").forEach(row => {
-            row.style.display = "none";
-            const inputs = row.querySelectorAll("input, select, textarea");
-            inputs.forEach(el => {
-                el.value = "";              // clear values
-                el.removeAttribute("required"); // reset required
-            });
+        // Reset only the fields mentioned in the mapping
+        const allControlledFields = [...new Set([...FIELD_IDS, ...REQ_FIELD_IDS])];
+        allControlledFields.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.value = "";                               // clear values
+                el.removeAttribute("required");  // reset required
+                const row = el.closest("tr") || el.parentElement?.closest("tr");
+                if (row) row.style.display = "none";
+            }
         });
 
         // Show allowed fields
-        const displayFields = getFieldRows(FIELD_IDS);
-        displayFields.forEach(row => { row.style.display = ""; });
+        FIELD_IDS.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                const row = el.closest("tr") || el.parentElement?.closest("tr");
+                if (row) row.style.display = "";
+            }
+        });
 
         // Apply "required"
         REQ_FIELD_IDS.forEach(id => {
@@ -105,6 +117,7 @@ document.addEventListener('input', function (e) {
             if (el) el.setAttribute("required", "true");
         });
     }
+
 
     function init() {
         const dropdown = document.getElementById("businessEntityType");
