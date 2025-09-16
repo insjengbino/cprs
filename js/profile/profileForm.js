@@ -79,8 +79,11 @@ document.addEventListener('input', function (e) {
         mainFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_FIELD_IDS.push(id));
         mainReqFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_REQ_FIELD_IDS.push(id));
 
-        console.log("display fields: " + FIELD_IDS);
-        console.log("required fields: " + REQ_FIELD_IDS);
+        console.log("unique display fields: " + UNIQUE_FIELD_IDS);
+        console.log("common display fields: " + COMMON_FIELD_IDS);
+        console.log("unique required fields: " + UNIQUE_REQ_FIELD_IDS);
+        console.log("common required fields: " + COMMON_REQ_FIELD_IDS);
+
         console.log("client type: " + clientType);
         console.log("business type: " + businessType);
 
