@@ -160,31 +160,30 @@ document.addEventListener('input', function (e) {
     }
 
     function toggleRequiredMarker(el, isRequired) {
-        // Find the associated <label> for this input
-        let label = null;
+        const label = document.querySelector(`label[for="${el.id}"]`);
+        if (!label) return;
 
-        if (el.id) {
-            label = document.querySelector(`label[for="${el.id}"]`);
-        }
-        if (!label && el.name) {
-            label = document.querySelector(`label[for="${el.name}"]`);
-        }
+        let reqSpan = label.querySelector("span.required");
 
-        if (label) {
-            // Remove old * if any
-            label.innerHTML = label.innerHTML.replace(/\*$/, "");
-            if (isRequired) {
-                label.innerHTML = label.innerHTML.trim() + "*";
-            }
-        }
-
-        // Apply/remove the actual HTML required attribute
         if (isRequired) {
             el.setAttribute("required", "true");
+            if (!reqSpan) {
+                reqSpan = document.createElement("span");
+                reqSpan.className = "required";
+                reqSpan.textContent = "*";
+                // Insert before colon if label text has one
+                if (label.textContent.includes(":")) {
+                    label.insertBefore(reqSpan, label.lastChild);
+                } else {
+                    label.appendChild(reqSpan);
+                }
+            }
         } else {
             el.removeAttribute("required");
+            if (reqSpan) reqSpan.remove();
         }
     }
+
 
 
 
