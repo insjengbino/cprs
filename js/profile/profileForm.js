@@ -167,13 +167,20 @@ document.addEventListener('input', function (e) {
 
         if (isRequired) {
             el.setAttribute("required", "true");
+
             if (!reqSpan) {
                 reqSpan = document.createElement("span");
                 reqSpan.className = "required";
                 reqSpan.textContent = "*";
-                // Insert before colon if label text has one
-                if (label.textContent.includes(":")) {
-                    label.insertBefore(reqSpan, label.lastChild);
+
+                // If label has a colon, insert before it
+                const colonIndex = label.textContent.lastIndexOf(":");
+                if (colonIndex !== -1) {
+                    const textBeforeColon = label.textContent.slice(0, colonIndex);
+                    const textAfterColon = label.textContent.slice(colonIndex);
+                    label.textContent = textBeforeColon; // clear + reset text before colon
+                    label.appendChild(reqSpan);          // insert the star
+                    label.appendChild(document.createTextNode(textAfterColon)); // put colon back
                 } else {
                     label.appendChild(reqSpan);
                 }
@@ -183,8 +190,6 @@ document.addEventListener('input', function (e) {
             if (reqSpan) reqSpan.remove();
         }
     }
-
-
 
 
     function init() {
