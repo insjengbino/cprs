@@ -91,17 +91,24 @@ document.addEventListener('input', function (e) {
         // Step 1: Reset only unique fields (hide + clear)
         document.querySelectorAll("tr").forEach(row => {
             const inputs = row.querySelectorAll("input, select, textarea");
-            const rowHasUnique = Array.from(inputs).some(el => UNIQUE_FIELD_IDS.includes(el.id));
 
-            inputs.forEach(el => {
-                console.log("input id:", el.id, " name:", el.name);
-            });
-            console.log("has unique: " + rowHasUnique);
+            // check if this row contains any unique field
+            const rowHasUnique = Array.from(inputs).some(el =>
+                UNIQUE_FIELD_IDS.some(uniqueId =>
+                    el.id.endsWith(uniqueId) || el.name.endsWith(uniqueId)
+                )
+            );
+
             if (rowHasUnique) {
-                row.style.display = "none";
+                // clear only unique fields when hidden
                 inputs.forEach(el => {
-                    el.value = "";                  // clear unique fields only
-                    el.removeAttribute("required");
+                    if (
+                        UNIQUE_FIELD_IDS.some(uniqueId =>
+                            el.id.endsWith(uniqueId) || el.name.endsWith(uniqueId)
+                        )
+                    ) {
+                        el.value = "";
+                    }
                 });
             }
         });
