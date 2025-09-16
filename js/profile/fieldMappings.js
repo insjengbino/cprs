@@ -34,6 +34,22 @@ let YIReqMap = new Map;
 
 mainFieldMap.set("AR", ARMap);
 mainReqFieldMap.set("AR",ARReqMap);
+mainFieldMap.set("WO", WOMap);
+mainReqFieldMap.set("WO", WOReqMap);
+mainFieldMap.set("AW", AWMap);
+mainReqFieldMap.set("AW", AWReqMap);
+mainFieldMap.set("CY", CYMap);
+mainReqFieldMap.set("CY", CYReqMap);
+mainFieldMap.set("SU", SUMap);
+mainReqFieldMap.set("SU", SUReqMap);
+mainFieldMap.set("IM", IMMap);
+mainReqFieldMap.set("IM", IMReqMap);
+mainFieldMap.set("BR", BRMap);
+mainReqFieldMap.set("BR", BRReqMap);
+mainFieldMap.set("EX", EXMap);
+mainReqFieldMap.set("EX", EXReqMap);
+mainFieldMap.set("YI", AWMap);
+mainReqFieldMap.set("YI", AWReqMap);
 
 /**
  * Arrastre Operator Map (AR)
