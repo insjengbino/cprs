@@ -76,11 +76,11 @@ activityEvents.forEach(function(event) {
 window.onload = resetInactivityTimer;
 
 // TEST
-fetch("http://intercommerce.com.ph/api/login.asp", {
-  method: "GET",
-  credentials: "include"
-})
-.then(res => res.json())
-.then(data => console.log(data))
-.catch(err => console.error("Error:", err));
+// fetch("http://intercommerce.com.ph/api/login.asp", {
+//   method: "GET",
+//   credentials: "include"
+// })
+// .then(res => res.json())
+// .then(data => console.log(data))
+// .catch(err => console.error("Error:", err));
 
