@@ -106,22 +106,23 @@ document.addEventListener('input', function (e) {
             els.forEach(el => {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
                 if (visibleUniqueFields.has(shortId)) {
-                    if (row) row.style.display = "";
-                } else {
-                    if (row) row.style.display = "none";
-                    // clear value for unique fields that are being hidden
-                    if (el.tagName === "INPUT" || el.tagName === "SELECT" || el.tagName === "TEXTAREA") {
-                        if (el.type === "checkbox" || el.type === "radio") {
-                            el.checked = false;
-                        } else {
-                            el.value = "";
-                        }
+                    if (row) {
+                        row.style.display = "";
+                        el.disabled = false;   // enable visible field
                     }
+                } else {
+                    if (row) {
+                        row.style.display = "none";
+                        el.disabled = true;    // disable hidden field
+                    }
+                    // ❌ do not clear values, just disable so they're not submitted
                 }
+
                 // remove required; will reapply below only for visible ones
                 toggleRequiredMarker(el, false);
             });
         });
+
 
         // 2) Ensure common fields are visible and not cleared (do not touch values)
         commonFields.forEach(shortId => {
