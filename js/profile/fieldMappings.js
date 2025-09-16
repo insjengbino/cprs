@@ -8,15 +8,39 @@ let mainReqFieldMap = new Map;
 let ARMap = new Map;
 let ARReqMap = new Map;
 
+let WOMap = new Map;
+let WOReqMap =  new Map;
+
+let AWMap = new Map;
+let AWReqMap = new Map;
+
+let CYMap = new Map;
+let CYReqMap = new Map;
+
+let SUMap = new Map;
+let SUReqMap = new Map;
+
+let IMMap = new Map;
+let IMReqMap = new Map;
+
+let BRMap = new Map;
+let BRReqMap = new Map;
+
+let EXMap = new Map;
+let EXReqMap = new Map;
+
+let YIMap = new Map;
+let YIReqMap = new Map;
+
 mainFieldMap.set("AR", ARMap);
 mainReqFieldMap.set("AR",ARReqMap);
 
 /**
- * Arrastre Operator Map
+ * Arrastre Operator Map (AR)
  */
 
 //COMPANY
-ARMap.set("COMP", [
+ARMap.set("CMP", [
     //add unique fields for AR-COMP clients here
     "SECRegNo",
     "authCapitalStockAmount",
@@ -89,7 +113,7 @@ ARMap.set("common-fields", [
 
 
 //COMPANY
-ARReqMap.set("COMP", [
+ARReqMap.set("CMP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
@@ -149,14 +173,462 @@ ARReqMap.set("common-fields", [
 
 
 /**
+ * Airport Warehouse (AW)
  * */
+
+AWMap.set("common-fields", [
+    "bondedWarehouseType",
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "prcIdNo",
+    "uniqueRefNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+AWMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+AWMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+AWMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+AWReqMap.set("common-fields", [
+    "bondedWarehouseType",
+]);
+
+AWMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+AWMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+AWMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+/**
+ * Airport Warehouse (AW) end
+ * */
+
+
+/**
+ * Broker (BR)
+ * */
+BRMap.set("common-fields",[
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+BRMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+BRMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+BRMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+BRReqMap.set("common-fields",[
+    "sssNo"
+]);
+
+BRReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+BRReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+BRReqMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+
+/**
+ * Broker (BR) end
+ * */
+
+
+/**
+ * CY-CFS Operator (CY)
+ * */
+CYMap.set("common-fields", [
+    "bondedWarehouseType",
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "prcIdNo",
+    "uniqueRefNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+CYMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+CYMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+CYMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+
+CYReqMap.set("common-fields", [
+    "bondedWarehouseType"
+]);
+
+CYReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+CYReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+CYReqMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+/**
+ * CY-CFS Operator (CY) end
+ * */
+
+
+/**
+ * Exporter (EX)
+ * */
+EXMap.set("common-fields", [
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "prcIdNo",
+    "uniqueRefNo",
+    "aabAssignedBankRefNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+EXMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+EXMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+EXMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+EXReqMap.set("common-fields",[
+    "uniqueRefNo"
+]);
+
+EXReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+EXReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+EXReqMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+/**
+ * Exporter (EX) end
+ * */
+
+
+/**
+ * Importer (IM)
+ * */
+IMMap.set("common-fields", [
+    "bondedWarehouse",
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "prcIdNo",
+    "uniqueRefNo",
+    "primaryBrokerTIN",
+    "primaryBrokerCCN",
+    "secondaryBrokerTIN",
+    "secondaryBrokerCCN",
+    "aabAssignedBankRefNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+
+IMMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+IMMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+IMMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+IMReqMap.set("common-fields", [
+    "primaryBrokerTIN",
+    "primaryBrokerCCN"
+]);
+
+IMReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+IMReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+IMReqMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+/**
+ * Importer (IM) end
+ * */
+
+
+/**
+ * Surety (SU)
+ * */
+SUMap.set("common-fields", [
+    "certOfAuth",
+    "underWritingCap",
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "prcIdNo",
+    "uniqueRefNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+SUMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+SUMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+SUMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+SUReqMap.set("common-fields", [
+    "certOfAuth",
+    "underWritingCap"
+]);
+
+SUReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+SUReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+SUReqMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+/**
+ * Surety (SU) end
+ * */
+
+
+/**
+ * Warehouse Operator (WO)
+ * */
+
+WOMap.set("common-fields", [
+    "bondedWarehouseType",
+    "sssNo",
+    "passportNo",
+    "driverLicenseNo",
+    "prcIdNo",
+    "uniqueRefNo",
+    "relatedCompany1",
+    "relatedCompany2",
+    "relatedCompany3"
+
+]);
+
+WOMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+WOMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+WOMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+WOReqMap.set("common-fields", [
+    "bondedWarehouseType",
+    "sssNo"
+]);
+
+WOReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+WOReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+WOReqMap.set("CMP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+/**
+ * Warehouse Operator (WO) end
+ * */
+
+
+/**
+ * Non-Regular Importer (YI) - previously labeled as 'Once A Year Importer'
+ * */
+YIMap.set("common-fields", [
+
+]);
+
+YIReqMap.set("common-fields", [
+
+]);
+/**
+ * Non-Regular Importer (YI) end
+ * */
+
+
 
 
 /**
  * Maps created here are need to be exported in order for other JS files to use it
  *
  * Then, on other JS files that would use these maps add:
- * import {mainFieldMap, mainReqFieldMap, ARMap, ARReqMap} from "./fieldMappings.js";
+ * import {mainFieldMap, mainReqFieldMap} from "./fieldMappings.js";
  *
  * on ftl files declare fieldMappings.js and other js files as a module:
  *   <!-- load both files as modules -->

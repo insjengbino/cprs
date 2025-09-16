@@ -92,7 +92,7 @@
                 <table align="center" cellspacing="10" cellpadding="2" border="0" bgcolor="#6A639D" ><tr><td bgcolor="#FFFFFF" >
                             <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
                                         <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
-                                                    <@s.form method="POST" enctype="multipart/form-data">
+                                                    <@s.form method="POST" enctype="multipart/form-data" novalidate>
                                                     <@s.hidden name="id"/>
 
                                                     <h3>On going development, please ignore bugs</h3>
@@ -138,47 +138,57 @@
                                                     <@s.textfield id="SECRegNo" label="SEC Registration Number" name="profile.secIdNo" maxLength=17/>
                                                     <@s.textfield id="authCapitalStockAmount" label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18/>
                                                     <@s.textfield id="paidUpCapitalAmount" label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18/>
+                                                    <@s.textfield id="aabAssignedBankRefNo" label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"   />
                                                     <@s.textfield id="relatedCompany1" label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />
                                                     <@s.textfield id= "relatedCompany2" label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />
                                                     <@s.textfield id="relatedCompany3" label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />
-
+                                                    <@s.select id="bondedWarehouseType" label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}" listKey="code" listValue="name"/>
+                                                    <@s.textfield id="certOfAuth" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
+                                                    <@s.textfield id="bondedWarehouse" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/> <!--not required-->
+                                                    <@s.textfield id="underWritingCap" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 />
+                                                    <@s.textfield id="primaryBrokerTIN" label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12/>
+                                                    <@s.textfield id="primaryBrokerCCN" label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12/>
+                                                    <@s.textfield id="secondaryBrokerTIN" label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12  />
+                                                    <@s.textfield id="secondaryBrokerCCN"  label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12  />
                                                     <#--                                                 custom fields based on clientType and businessType and other fields-->
 
-                                                    <@s.if test="(clientType == 'WO') || (clientType == 'AW') || (clientType == 'CY')">
-                                                        <@s.select label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}"
-                                                        listKey="code" listValue="name" required="true"  />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'WO') || (clientType == 'AW') || (clientType == 'CY')">-->
+<#--                                                        <@s.select label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}"-->
+<#--                                                        listKey="code" listValue="name" required="true"  />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="(clientType == 'SU')">
-                                                        <@s.textfield label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18 required="true"   />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'SU')">-->
+<#--                                                        <@s.textfield label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18 required="true"   />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="(clientType == 'IM')">
-                                                        <@s.textfield label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15 required="false"   />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'IM')">-->
+<#--                                                        <@s.textfield label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15 required="false"   />-->
+<#--                                                    </@s.if>-->
 
+                                                    <!--todo -->
                                                     <@s.if test="(natureOfBusiness == 'GO004')">
                                                         <@s.textfield label="JO 2-91 Reference Number" name="profile.jo291" maxLength=17/>
                                                         <@jscalendar.jscalendar format="%m/%d/%Y" name="periodOfEffectivity" label="Period of Effectivity" size="10" required="true" maxLength="10"/>
                                                         <@s.textfield label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 required="true"   />
                                                     </@s.if>
-                                                    <@s.if test="(clientType == 'SU')">
-                                                        <@s.textfield label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 required="true"   />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'SU')">-->
+<#--                                                        <@s.textfield label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 required="true"   />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="(clientType == 'BR')">
-                                                        <@s.textfield label="SSS Number" name="profile.sssIdNo" maxLength=17 required="true"  />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'BR')">-->
+<#--                                                        <@s.textfield label="SSS Number" name="profile.sssIdNo" maxLength=17 required="true"  />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' )">
-                                                        <@s.textfield label="SSS Number" name="profile.sssIdNo" maxLength=17  />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' )">-->
+<#--                                                        <@s.textfield label="SSS Number" name="profile.sssIdNo" maxLength=17  />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="(clientType != 'YI' )">
-                                                        <@s.textfield label="Passport Number" name="profile.passportIdNo" maxLength=17   />
-                                                        <@s.textfield label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17  />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType != 'YI' )">-->
+<#--                                                        <@s.textfield label="Passport Number" name="profile.passportIdNo" maxLength=17   />-->
+<#--                                                        <@s.textfield label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17  />-->
+<#--                                                    </@s.if>-->
 
+                                                    <!-- todo -->
                                                     <@s.if test="(clientType == 'BR')">
                                                         <@s.if test="(clientType == 'BR' && natureOfBusiness == '0000' )">
                                                             <@s.textfield label="PRC Id Number" value="NONBROKER" name="profile.prcIdNo" maxLength=17 required="true" readonly="true"    />
@@ -188,11 +198,11 @@
                                                         </@s.else>
                                                     </@s.if>
 
-                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' )">
-                                                        <@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17    />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' )">-->
+<#--                                                        <@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17    />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12   />
+<#--                                                    <@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12   />-->
 
                                                     <!-- added code by toqaf -->
                                                     <@s.if test="(clientType == 'BR' && natureOfBusiness == '0000' )">
@@ -201,36 +211,37 @@
                                                     </@s.if>
                                                     <!-- added code by toqaf /-->
 
-                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' && clientType != 'EX')">
-                                                        <@s.textfield label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' && clientType != 'EX')">-->
+<#--                                                        <@s.textfield label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="(clientType == 'EX')">
-                                                        <@s.textfield label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17 required="true" />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'EX')">-->
+<#--                                                        <@s.textfield label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17 required="true" />-->
+<#--                                                    </@s.if>-->
 
-                                                    <@s.if test="((businessType == 'PART' ) || (businessType ==  'CORP' ) || (businessType ==  'CMP' ) && (clientType != 'YI')) ">
-                                                        <@s.textfield label="SEC Registration Number" name="profile.secIdNo" maxLength=17 required="true"   />
-                                                        <@s.textfield label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18 required="true"   />
-                                                        <@s.textfield label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18 required="true"   />
-                                                    </@s.if>
+<#--                                                    <@s.if test="((businessType == 'PART' ) || (businessType ==  'CORP' ) || (businessType ==  'CMP' ) && (clientType != 'YI')) ">-->
+<#--                                                        <@s.textfield label="SEC Registration Number" name="profile.secIdNo" maxLength=17 required="true"   />-->
+<#--                                                        <@s.textfield label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18 required="true"   />-->
+<#--                                                        <@s.textfield label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18 required="true"   />-->
+<#--                                                    </@s.if>-->
 
+                                                    <!--todo-->
                                                     <@s.if test="(clientType == 'IM' ) || (clientType == 'EX')">
                                                         <@s.textfield label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"   />
                                                     </@s.if>
 
-                                                    <@s.if test="(clientType != 'YI' )">
-                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />
-                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />
-                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType != 'YI' )">-->
+<#--                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />-->
+<#--                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />-->
+<#--                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />-->
+<#--                                                    </@s.if>-->
 
                                                     <@s.if test="(clientType == 'IM') || (clientType == 'EX') || (clientType == 'WO')">
-                                                        <@s.textfield label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12 required="true"  />
-                                                        <@s.textfield label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12 required="true"   />
+<#--                                                        <@s.textfield label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12 required="true"  />-->
+<#--                                                        <@s.textfield label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12 required="true"   />-->
 
-                                                        <@s.textfield label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12  />
-                                                        <@s.textfield label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12  />
+<#--                                                        <@s.textfield label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12  />-->
+<#--                                                        <@s.textfield label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12  />-->
 
                                                         <!--<#if profile.importedCommodities?exists>
                                                       <tr><td class="tdLabel"><label class="label">Imported Commodities:</label></td>
