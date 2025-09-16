@@ -119,7 +119,7 @@ document.addEventListener('input', function (e) {
                     }
                 }
                 // remove required; will reapply below only for visible ones
-                el.removeAttribute("required");
+                toggleRequiredMarker(el, false);
             });
         });
 
@@ -130,7 +130,7 @@ document.addEventListener('input', function (e) {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
                 if (row) row.style.display = "";
                 // remove any previous required flag; we'll reapply combined required next
-                el.removeAttribute("required");
+                toggleRequiredMarker(el, false);
             });
         });
 
@@ -154,11 +154,37 @@ document.addEventListener('input', function (e) {
             // apply only if it's visible now (either common or visible unique)
             if (!commonFields.includes(shortId) && !visibleUniqueFields.has(shortId)) return;
             document.querySelectorAll(selectorForShortId(shortId)).forEach(el => {
-                el.setAttribute("required", "true");
+                toggleRequiredMarker(el, true);
             });
         });
     }
 
+    function toggleRequiredMarker(el, isRequired) {
+        // Find the associated <label> for this input
+        let label = null;
+
+        if (el.id) {
+            label = document.querySelector(`label[for="${el.id}"]`);
+        }
+        if (!label && el.name) {
+            label = document.querySelector(`label[for="${el.name}"]`);
+        }
+
+        if (label) {
+            // Remove old * if any
+            label.innerHTML = label.innerHTML.replace(/\*$/, "");
+            if (isRequired) {
+                label.innerHTML = label.innerHTML.trim() + "*";
+            }
+        }
+
+        // Apply/remove the actual HTML required attribute
+        if (isRequired) {
+            el.setAttribute("required", "true");
+        } else {
+            el.removeAttribute("required");
+        }
+    }
 
 
 
