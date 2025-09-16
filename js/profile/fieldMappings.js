@@ -434,11 +434,30 @@ EXReqMap.set("CMP", [
  * Importer (IM)
  * */
 IMMap.set("common-fields", [
+    "clientType",
+    "businessEntity",
+    "businessNature",
+    "incClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
     "bondedWarehouse",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
+    "vaspPrimaryNo",
+    "vaspSecondaryNo",
     "uniqueRefNo",
     "primaryBrokerTIN",
     "primaryBrokerCCN",
@@ -470,7 +489,35 @@ IMMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+
+IMMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+IMMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
 IMReqMap.set("common-fields", [
+    "clientType",
+    "businessEntity",
+    "businessNature",
+    "incClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "tinNo",
+    "email",
+    "vaspPrimaryNo",
     "primaryBrokerTIN",
     "primaryBrokerCCN"
 ]);
@@ -491,6 +538,18 @@ IMReqMap.set("CMP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
+]);
+
+IMReqMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+IMReqMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 
 /**
