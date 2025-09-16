@@ -79,6 +79,12 @@ document.addEventListener('input', function (e) {
         mainFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_FIELD_IDS.push(id));
         mainReqFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_REQ_FIELD_IDS.push(id));
 
+        console.log("display fields: " + FIELD_IDS);
+        console.log("required fields: " + REQ_FIELD_IDS);
+        console.log("client type: " + clientType);
+        console.log("business type: " + businessType);
+
+
         // Step 1: Reset only unique fields (hide + clear)
         document.querySelectorAll("tr").forEach(row => {
             const inputs = row.querySelectorAll("input, select, textarea");
