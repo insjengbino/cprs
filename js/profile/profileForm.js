@@ -173,23 +173,35 @@ document.addEventListener('input', function (e) {
                 reqSpan.className = "required";
                 reqSpan.textContent = "*";
 
-                // If label has a colon, insert before it
+                // If label already has a colon, insert the star before it
                 const colonIndex = label.textContent.lastIndexOf(":");
                 if (colonIndex !== -1) {
-                    const textBeforeColon = label.textContent.slice(0, colonIndex);
+                    // Strip only the colon, keep rest
+                    const textBeforeColon = label.textContent.slice(0, colonIndex).trimEnd();
                     const textAfterColon = label.textContent.slice(colonIndex);
-                    label.textContent = textBeforeColon; // clear + reset text before colon
-                    label.appendChild(reqSpan);          // insert the star
-                    label.appendChild(document.createTextNode(textAfterColon)); // put colon back
+                    label.textContent = textBeforeColon;
+                    label.appendChild(reqSpan);
+                    label.appendChild(document.createTextNode(textAfterColon));
                 } else {
                     label.appendChild(reqSpan);
                 }
             }
         } else {
             el.removeAttribute("required");
-            if (reqSpan) reqSpan.remove();
+            // Only remove if WE added it, don’t remove Struts’ original star
+            if (reqSpan && !reqSpan.dataset.fromStruts) {
+                reqSpan.remove();
+            }
         }
     }
+
+    // Run once on page load to mark Struts-generated stars as "fromStruts"
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("label span.required").forEach(span => {
+            span.dataset.fromStruts = "true";
+        });
+    });
+
 
 
     function init() {
