@@ -61,49 +61,40 @@ document.addEventListener('input', function (e) {
 
 
 (function () {
-    function getFieldRows(fieldList) {
-        return fieldList
-            .map(id => {
-                const el = document.getElementById(id);
-                return el ? el.closest("tr") || el.parentElement?.closest("tr") : null;
-            })
-            .filter(Boolean);
-    }
-
     function manageHidden(dropdown) {
         const businessType = dropdown.value.trim().toUpperCase();
         const clientType = document.getElementById("clientType").value.trim().toUpperCase();
 
-        // Collect displayable + required fields
-        const FIELD_IDS = [];
-        const REQ_FIELD_IDS = [];
+        // Separate lists
+        const UNIQUE_FIELD_IDS = [];
+        const COMMON_FIELD_IDS = [];
+        const UNIQUE_REQ_FIELD_IDS = [];
+        const COMMON_REQ_FIELD_IDS = [];
 
-        mainFieldMap.get(clientType)?.get(businessType).forEach(id => FIELD_IDS.push(id));
-        mainFieldMap.get(clientType)?.get("common-fields").forEach(id => FIELD_IDS.push(id));
+        // Unique fields
+        mainFieldMap.get(clientType).get(businessType)?.forEach(id => UNIQUE_FIELD_IDS.push(id));
+        mainReqFieldMap.get(clientType).get(businessType)?.forEach(id => UNIQUE_REQ_FIELD_IDS.push(id));
 
-        mainReqFieldMap.get(clientType)?.get(businessType).forEach(id => REQ_FIELD_IDS.push(id));
-        mainReqFieldMap.get(clientType)?.get("common-fields").forEach(id => REQ_FIELD_IDS.push(id));
+        // Common fields
+        mainFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_FIELD_IDS.push(id));
+        mainReqFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_REQ_FIELD_IDS.push(id));
 
-        console.log("display fields: " + FIELD_IDS);
-        console.log("required fields: " + REQ_FIELD_IDS);
-        console.log("client type: " + clientType);
-        console.log("business type: " + businessType);
+        // Step 1: Reset only unique fields (hide + clear)
+        document.querySelectorAll("tr").forEach(row => {
+            const inputs = row.querySelectorAll("input, select, textarea");
+            const rowHasUnique = Array.from(inputs).some(el => UNIQUE_FIELD_IDS.includes(el.id));
 
-
-        // Reset only the fields mentioned in the mapping
-        const allControlledFields = [...new Set([...FIELD_IDS, ...REQ_FIELD_IDS])];
-        allControlledFields.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.value = "";                               // clear values
-                el.removeAttribute("required");  // reset required
-                const row = el.closest("tr") || el.parentElement?.closest("tr");
-                if (row) row.style.display = "none";
+            if (rowHasUnique) {
+                row.style.display = "none";
+                inputs.forEach(el => {
+                    el.value = "";                  // clear unique fields only
+                    el.removeAttribute("required");
+                });
             }
         });
 
-        // Show allowed fields
-        FIELD_IDS.forEach(id => {
+        // Step 2: Show relevant unique fields
+        UNIQUE_FIELD_IDS.forEach(id => {
             const el = document.getElementById(id);
             if (el) {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
@@ -111,12 +102,22 @@ document.addEventListener('input', function (e) {
             }
         });
 
-        // Apply "required"
-        REQ_FIELD_IDS.forEach(id => {
+        // Step 3: Always keep common fields visible
+        COMMON_FIELD_IDS.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                const row = el.closest("tr") || el.parentElement?.closest("tr");
+                if (row) row.style.display = "";
+            }
+        });
+
+        // Step 4: Apply required rules
+        UNIQUE_REQ_FIELD_IDS.concat(COMMON_REQ_FIELD_IDS).forEach(id => {
             const el = document.getElementById(id);
             if (el) el.setAttribute("required", "true");
         });
     }
+
 
 
     function init() {
