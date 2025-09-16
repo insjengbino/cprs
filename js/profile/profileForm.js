@@ -84,11 +84,17 @@ document.addEventListener('input', function (e) {
         const FIELD_IDS = [];
         const REQ_FIELD_IDS = [];
 
-        mainFieldMap.get(clientType)?.get(businessType)?.forEach(id => FIELD_IDS.push(id));
-        mainFieldMap.get(clientType)?.get("common-fields")?.forEach(id => FIELD_IDS.push(id));
+        mainFieldMap.get(clientType)?.get(businessType).forEach(id => FIELD_IDS.push(id));
+        mainFieldMap.get(clientType)?.get("common-fields").forEach(id => FIELD_IDS.push(id));
 
-        mainReqFieldMap.get(clientType)?.get(businessType)?.forEach(id => REQ_FIELD_IDS.push(id));
-        mainReqFieldMap.get(clientType)?.get("common-fields")?.forEach(id => REQ_FIELD_IDS.push(id));
+        mainReqFieldMap.get(clientType)?.get(businessType).forEach(id => REQ_FIELD_IDS.push(id));
+        mainReqFieldMap.get(clientType)?.get("common-fields").forEach(id => REQ_FIELD_IDS.push(id));
+
+        console.log("display fields: " + FIELD_IDS);
+        console.log("required fields: " + REQ_FIELD_IDS);
+        console.log("client type: " + clientType);
+        console.log("business type: " + businessType);
+
 
         // Reset only the fields mentioned in the mapping
         const allControlledFields = [...new Set([...FIELD_IDS, ...REQ_FIELD_IDS])];
@@ -120,6 +126,7 @@ document.addEventListener('input', function (e) {
 
 
     function init() {
+        console.log("init() running...")
         const dropdown = document.getElementById("businessEntityType");
         if (!dropdown) {
             console.warn("Dropdown #businessEntityType not found");
