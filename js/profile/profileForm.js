@@ -61,82 +61,104 @@ document.addEventListener('input', function (e) {
 
 
 (function () {
+    // inside your IIFE (or top-level if you prefer)
+// ensure mainFieldMap and mainReqFieldMap are imported at top of file
+
     function manageHidden(dropdown) {
-        const businessType = dropdown.value.trim().toUpperCase();
-        const clientType = document.getElementById("clientType").value.trim().toUpperCase();
+        const businessType = (dropdown?.value || "").trim().toUpperCase();
+        const clientTypeEl = document.getElementById("clientType");
+        const clientType = clientTypeEl ? clientTypeEl.value.trim().toUpperCase() : null;
 
-        // Separate lists
-        const UNIQUE_FIELD_IDS = [];
-        const COMMON_FIELD_IDS = [];
-        const UNIQUE_REQ_FIELD_IDS = [];
-        const COMMON_REQ_FIELD_IDS = [];
+        if (!clientType) {
+            console.warn("manageHidden: clientType not found");
+            return;
+        }
 
-        // Unique fields
-        mainFieldMap.get(clientType).get(businessType)?.forEach(id => UNIQUE_FIELD_IDS.push(id));
-        mainReqFieldMap.get(clientType).get(businessType)?.forEach(id => UNIQUE_REQ_FIELD_IDS.push(id));
+        const clientMap = mainFieldMap.get(clientType);
+        const clientReqMap = mainReqFieldMap.get(clientType);
 
-        // Common fields
-        mainFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_FIELD_IDS.push(id));
-        mainReqFieldMap.get(clientType).get("common-fields")?.forEach(id => COMMON_REQ_FIELD_IDS.push(id));
+        if (!clientMap) {
+            console.warn("manageHidden: no mapping found for clientType:", clientType);
+            return;
+        }
 
-        console.log("unique display fields: " + UNIQUE_FIELD_IDS);
-        console.log("common display fields: " + COMMON_FIELD_IDS);
-        console.log("unique required fields: " + UNIQUE_REQ_FIELD_IDS);
-        console.log("common required fields: " + COMMON_REQ_FIELD_IDS);
+        // arrays from maps (short IDs as in your mappings)
+        const commonFields = clientMap.get("common-fields") || [];
+        const visibleUniqueFields = new Set(clientMap.get(businessType) || []);
 
-        console.log("client type: " + clientType);
-        console.log("business type: " + businessType);
+        // Build set of all unique fields controlled by this clientType (all business-type specific fields)
+        const controlledUniqueFields = new Set();
+        for (const [bt, arr] of clientMap.entries()) {
+            if (bt === "common-fields") continue;
+            (arr || []).forEach(id => controlledUniqueFields.add(id));
+        }
 
+        // Required sets
+        const commonReq = clientReqMap ? (clientReqMap.get("common-fields") || []) : [];
+        const uniqueReqForThisBT = clientReqMap ? (clientReqMap.get(businessType) || []) : [];
 
-        // Step 1: Reset only unique fields (hide + clear)
-        document.querySelectorAll("tr").forEach(row => {
-            const inputs = row.querySelectorAll("input, select, textarea");
+        // Helper to find elements by shortId suffix (matches id or name)
+        const selectorForShortId = (shortId) => `[id$="${shortId}"], [name$="${shortId}"]`;
 
-            // check if this row contains any unique field
-            const rowHasUnique = Array.from(inputs).some(el =>
-                UNIQUE_FIELD_IDS.some(uniqueId =>
-                    el.id.endsWith(uniqueId) || el.name.endsWith(uniqueId)
-                )
-            );
-
-            if (rowHasUnique) {
-                // clear only unique fields when hidden
-                inputs.forEach(el => {
-                    if (
-                        UNIQUE_FIELD_IDS.some(uniqueId =>
-                            el.id.endsWith(uniqueId) || el.name.endsWith(uniqueId)
-                        )
-                    ) {
-                        el.value = "";
+        // 1) For each controlled unique field: hide if not visible, show if visible.
+        controlledUniqueFields.forEach(shortId => {
+            const els = document.querySelectorAll(selectorForShortId(shortId));
+            els.forEach(el => {
+                const row = el.closest("tr") || el.parentElement?.closest("tr");
+                if (visibleUniqueFields.has(shortId)) {
+                    if (row) row.style.display = "";
+                } else {
+                    if (row) row.style.display = "none";
+                    // clear value for unique fields that are being hidden
+                    if (el.tagName === "INPUT" || el.tagName === "SELECT" || el.tagName === "TEXTAREA") {
+                        if (el.type === "checkbox" || el.type === "radio") {
+                            el.checked = false;
+                        } else {
+                            el.value = "";
+                        }
                     }
-                });
-            }
+                }
+                // remove required; will reapply below only for visible ones
+                el.removeAttribute("required");
+            });
         });
 
-        // Step 2: Show relevant unique fields
-        UNIQUE_FIELD_IDS.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
+        // 2) Ensure common fields are visible and not cleared (do not touch values)
+        commonFields.forEach(shortId => {
+            const els = document.querySelectorAll(selectorForShortId(shortId));
+            els.forEach(el => {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
                 if (row) row.style.display = "";
-            }
+                // remove any previous required flag; we'll reapply combined required next
+                el.removeAttribute("required");
+            });
         });
 
-        // Step 3: Always keep common fields visible
-        COMMON_FIELD_IDS.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
+        // 3) Make visible unique fields explicitly visible (in case they were inside hidden container)
+        visibleUniqueFields.forEach(shortId => {
+            const els = document.querySelectorAll(selectorForShortId(shortId));
+            els.forEach(el => {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
                 if (row) row.style.display = "";
-            }
+            });
         });
 
-        // Step 4: Apply required rules
-        UNIQUE_REQ_FIELD_IDS.concat(COMMON_REQ_FIELD_IDS).forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.setAttribute("required", "true");
+        // 4) Reapply `required` to the fields that must be required now:
+        //    - common required fields
+        //    - unique required fields for the selected businessType (but only for visible unique fields)
+        const mustBeRequired = new Set();
+        commonReq.forEach(id => mustBeRequired.add(id));
+        uniqueReqForThisBT.forEach(id => mustBeRequired.add(id));
+
+        mustBeRequired.forEach(shortId => {
+            // apply only if it's visible now (either common or visible unique)
+            if (!commonFields.includes(shortId) && !visibleUniqueFields.has(shortId)) return;
+            document.querySelectorAll(selectorForShortId(shortId)).forEach(el => {
+                el.setAttribute("required", "true");
+            });
         });
     }
+
 
 
 
