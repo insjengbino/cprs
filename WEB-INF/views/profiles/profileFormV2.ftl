@@ -95,6 +95,7 @@
                                                     <@s.form method="POST" enctype="multipart/form-data">
                                                     <@s.hidden name="id"/>
 
+                                                    <h3>On going development, please ignore bugs</h3>
 
                                                     <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
 <#--                                                    <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
@@ -104,35 +105,44 @@
 
                                                     <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
 
-                                                    <@s.textfield label="Client Type" value="${clientType}" readonly="true"  />
+                                                    <@s.textfield id="clientType" label="Client Type" value="${clientType}" readonly="true"  />
                                                     <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
-                                                    <@s.select label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name" required="true"/>
+                                                    <@s.select id= "businessEntityType" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name"/>
                                                     <#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
-                                                    <@s.select label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}" required="true" cssStyle="width: 279.33px;" id="natureOfBusinessSelect"/>
-                                                    <@s.textfield label="INS Client Number" name="profile.insClientNo" required="true" readonly="true"  />
+                                                    <@s.select id="businessNature" label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}" cssStyle="width: 279.33px;" id="natureOfBusinessSelect"/>
+                                                    <@s.textfield id="insClientNo" label="INS Client Number" name="profile.insClientNo" readonly="true"  />
                                                     <!--<@s.textfield label="INS Client Number" value="%{profile.insClientNo}" readonly="true"  />-->
+                                                    <@s.textfield id="companyName" label="Business Name/Company Name" name="profile.company" maxLength=35/>
+                                                    <@s.textfield id="firstName" label="First Name" name="profile.firstName" maxLength=35/>
+                                                    <@s.textfield id="middleName" label="Middle Name" name="profile.middleName" maxLength=35/>
+                                                    <@s.textfield id= "lastName" label="Last Name " name="profile.lastName" maxLength=35/>
+                                                    <@s.select id="citizenship" label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name"/>
+                                                    <@s.textfield id="address" label="Address" name="profile.address" maxLength=70/>
+                                                    <@s.textfield id="city" label="City" name="profile.city" maxLength=25/>
+                                                    <@s.textfield id="zipCode" label="Zip Code" type="number" name="profile.zipCode" maxlength="9"/>
+                                                    <@s.select id="country" label="Country" name="profile.country" list="%{countries}" listKey="code" listValue="name"/>
+                                                    <@s.textfield id="telNo" label="Telephone Number" name="profile.telephone" maxLength=15/>
+                                                    <@s.textfield id="altTelNo" label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15  />
+                                                    <@s.textfield id="fax" label="Fax" name="profile.fax" maxLength=15  />
+                                                    <@s.textfield id="mobileNo" label="Mobile Number" name="profile.mobile" maxLength=15   />
+                                                    <@s.textfield id="email" label="Email Address" name="profile.email" maxLength=88/>
+                                                    <@s.textfield id="website" label="Website" name="profile.website" maxLength=100  />
+                                                    <@s.textfield id="tinNo" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
+                                                    <@s.textfield id="sssNo" label="SSS Number" name="profile.sssIdNo" maxLength=17/>
+                                                    <@s.textfield id="passportNo" label="Passport Number" name="profile.passportIdNo" maxLength=17   />
+                                                    <@s.textfield id="driverLicenseNo" label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17  />
+                                                    <@s.textfield id="prcIdNo" label="PRC Id Number" name="profile.prcIdNo" maxLength=17/>
+                                                    <@s.textfield id="primaryVASPNo" label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
+                                                    <@s.textfield id="secondaryVASPNo" label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12/>
+                                                    <@s.textfield id="uniqueRefNo" label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
+                                                    <@s.textfield id="SECRegNo" label="SEC Registration Number" name="profile.secIdNo" maxLength=17/>
+                                                    <@s.textfield id="authCapitalStockAmount" label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18/>
+                                                    <@s.textfield id="paidUpCapitalAmount" label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18/>
+                                                    <@s.textfield id="relatedCompany1" label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />
+                                                    <@s.textfield id= "relatedCompany2" label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />
+                                                    <@s.textfield id="relatedCompany3" label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />
 
-                                                    <@s.textfield label="Business Name/Company Name" name="profile.company" maxLength=35 required="true"  />
-
-                                                    <@s.if test="(businessType == 'IND') || (businessType == 'SPROP')">
-                                                        <@s.textfield label="First Name" name="profile.firstName" maxLength=35 required="true"  />
-                                                        <@s.textfield label="Middle Name" name="profile.middleName" maxLength=35 required="true"  />
-                                                        <@s.textfield label="Last Name " name="profile.lastName" maxLength=35 required="true"  />
-                                                    </@s.if>
-
-                                                    <@s.select label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name" required="true" />
-                                                    <@s.textfield label="Address" name="profile.address" maxLength=70 required="true"  />
-                                                    <@s.textfield label="City" name="profile.city" maxLength=25 required="true"  />
-                                                    <@s.textfield label="Zip Code" type="number" name="profile.zipCode" maxlength="9" required="true" />
-
-                                                    <@s.select label="Country" name="profile.country" list="%{countries}" listKey="code" listValue="name" required="true" />
-
-                                                    <@s.textfield label="Telephone Number" name="profile.telephone" maxLength=15 required="true"/>
-                                                    <@s.textfield label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15  />
-                                                    <@s.textfield label="Fax" name="profile.fax" maxLength=15  />
-                                                    <@s.textfield label="Mobile Number" name="profile.mobile" maxLength=15   />
-                                                    <@s.textfield label="Email Address" name="profile.email" maxLength=88 required="true"  />
-                                                    <@s.textfield label="Website" name="profile.website" maxLength=100  />
+                                                    <#--                                                 custom fields based on clientType and businessType and other fields-->
 
                                                     <@s.if test="(clientType == 'WO') || (clientType == 'AW') || (clientType == 'CY')">
                                                         <@s.select label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}"
@@ -155,8 +165,6 @@
                                                     <@s.if test="(clientType == 'SU')">
                                                         <@s.textfield label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 required="true"   />
                                                     </@s.if>
-
-                                                    <@s.textfield label="TIN" name="profile.tinNo" minLength=12 maxLength=12 required="true"   />
 
                                                     <@s.if test="(clientType == 'BR')">
                                                         <@s.textfield label="SSS Number" name="profile.sssIdNo" maxLength=17 required="true"  />
@@ -184,7 +192,6 @@
                                                         <@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17    />
                                                     </@s.if>
 
-                                                    <@s.textfield label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
                                                     <@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12   />
 
                                                     <!-- added code by toqaf -->
@@ -287,6 +294,8 @@
     </@s.form>
 
 </div>
+<script src = "${base}/js/profile/fieldMappings.js" type="module"></script>
+<script src = "${base}/js/profile/profileForm.js" type="module"></script>
 </body>
 </html>
 
