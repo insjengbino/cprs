@@ -48,8 +48,8 @@ mainFieldMap.set("BR", BRMap);
 mainReqFieldMap.set("BR", BRReqMap);
 mainFieldMap.set("EX", EXMap);
 mainReqFieldMap.set("EX", EXReqMap);
-mainFieldMap.set("YI", AWMap);
-mainReqFieldMap.set("YI", AWReqMap);
+mainFieldMap.set("YI", YIMap);
+mainReqFieldMap.set("YI", YIReqMap);
 
 /**
  * Arrastre Operator Map (AR)
