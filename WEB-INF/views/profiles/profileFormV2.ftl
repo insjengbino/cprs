@@ -129,6 +129,8 @@
                                                     <@s.textfield id="website" label="Website" name="profile.website" maxLength=100  />
                                                     <@s.select id="bondedWarehouseType" label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}" listKey="code" listValue="name"/>
                                                     <@s.textfield id="bondedWarehouse" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/> <!--not required-->
+                                                    <@s.textfield id="certOfAuth" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
+                                                    <@s.textfield id="underWritingCap" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 />
                                                     <@s.textfield id="tinNo" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
                                                     <@s.textfield id="sssNo" label="SSS Number" name="profile.sssIdNo" maxLength=17/>
                                                     <@s.textfield id="passportNo" label="Passport Number" name="profile.passportIdNo" maxLength=17   />
