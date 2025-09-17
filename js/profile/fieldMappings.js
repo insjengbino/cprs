@@ -246,14 +246,14 @@ AWMap.set("CMP", [
 
 AWMap.set("SPROP", [
     "firstName",
-    "secondName",
-    "thirdName"
+    "middleName",
+    "lastName"
 ]);
 
 AWMap.set("IND", [
     "firstName",
-    "secondName",
-    "thirdName"
+    "middleName",
+    "lastName"
 ]);
 
 // ****map required fields here****
@@ -296,14 +296,14 @@ AWReqMap.set("CMP", [
 
 AWReqMap.set("SPROP", [
     "firstName",
-    "secondName",
-    "thirdName"
+    "middleName",
+    "lastName"
 ]);
 
 AWReqMap.set("IND", [
     "firstName",
-    "secondName",
-    "thirdName"
+    "middleName",
+    "lastName"
 ]);
 
 
