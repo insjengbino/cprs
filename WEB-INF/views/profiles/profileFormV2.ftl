@@ -146,8 +146,6 @@
                                                     <@s.textfield id="relatedCompany1" label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />
                                                     <@s.textfield id= "relatedCompany2" label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />
                                                     <@s.textfield id="relatedCompany3" label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />
-                                                    <@s.textfield id="certOfAuth" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
-                                                    <@s.textfield id="underWritingCap" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 />
                                                     <@s.textfield id="primaryBrokerTIN" label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12/>
                                                     <@s.textfield id="primaryBrokerCCN" label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12/>
                                                     <@s.textfield id="secondaryBrokerTIN" label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12  />
