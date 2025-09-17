@@ -1036,13 +1036,102 @@ WOReqMap.set("SPROP", [
  * Non-Regular Importer (YI) - previously labeled as 'Once A Year Importer'
  * */
 YIMap.set("common-fields", [
-
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
+    "tinNo",
+    "primaryVASPNo",
+    "secondaryVASPNo"
 ]);
 
+YIMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+YIMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+YIMap.set("CMP", [
+    //no unique fields
+]);
+
+YIMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+YIMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+//*******map required fields here*****
 YIReqMap.set("common-fields", [
-
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
+    "tinNo",
+    "primaryVASPNo"
 ]);
 
+YIReqMap.set("PART", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+YIReqMap.set("CORP", [
+    "SECRegNo",
+    "authCapitalStockAmount",
+    "paidUpCapitalAmount"
+]);
+
+YIReqMap.set("CMP", [
+    //no unique fields
+]);
+
+YIReqMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+YIReqMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
 /**
  * Non-Regular Importer (YI) end
  * */
