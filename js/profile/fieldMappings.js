@@ -411,16 +411,34 @@ BRReqMap.set("SPROP", [
  * CY-CFS Operator (CY)
  * */
 CYMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
     "bondedWarehouseType",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "uniqueRefNo",
     "relatedCompany1",
     "relatedCompany2",
     "relatedCompany3"
-
 ]);
 
 CYMap.set("PART", [
@@ -441,9 +459,38 @@ CYMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+CYMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
 
+CYMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+
+//******map required fields here*******
 CYReqMap.set("common-fields", [
-    "bondedWarehouseType"
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
+    "bondedWarehouseType",
+    "tinNo",
+    "primaryVASPNo",
+    "secondaryVASPNo"
 ]);
 
 CYReqMap.set("PART", [
@@ -462,6 +509,18 @@ CYReqMap.set("CMP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
+]);
+
+CYReqMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+CYReqMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 /**
  * CY-CFS Operator (CY) end
