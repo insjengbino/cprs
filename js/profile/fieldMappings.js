@@ -489,8 +489,7 @@ CYReqMap.set("common-fields", [
     "email",
     "bondedWarehouseType",
     "tinNo",
-    "primaryVASPNo",
-    "secondaryVASPNo"
+    "primaryVASPNo"
 ]);
 
 CYReqMap.set("PART", [
