@@ -756,15 +756,38 @@ SUReqMap.set("CMP", [
  * */
 
 WOMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
     "bondedWarehouseType",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "uniqueRefNo",
     "relatedCompany1",
     "relatedCompany2",
-    "relatedCompany3"
+    "relatedCompany3",
+    "primaryBrokerTIN",
+    "primaryBrokerCCN",
+    "secondaryBrokerTIN",
+    "secondaryBrokerCCN"
 
 ]);
 
@@ -786,9 +809,39 @@ WOMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+WOMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+WOMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+//******map reuqired fields here*******
+
 WOReqMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
     "bondedWarehouseType",
-    "sssNo"
+    "tinNo",
+    "primaryVASPNo",
+    "primaryBrokerTIN",
+    "primaryBrokerCCN"
 ]);
 
 WOReqMap.set("PART", [
@@ -807,6 +860,19 @@ WOReqMap.set("CMP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
+]);
+
+WOReqMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+WOReqMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 
 /**
