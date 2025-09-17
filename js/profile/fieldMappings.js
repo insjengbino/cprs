@@ -786,17 +786,35 @@ IMReqMap.set("SPROP", [
  * Surety (SU)
  * */
 SUMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "insClientNo",
+    "businessNature",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
     "certOfAuth",
     "underWritingCap",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
     "uniqueRefNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "relatedCompany1",
     "relatedCompany2",
     "relatedCompany3"
-
 ]);
 
 SUMap.set("PART", [
@@ -817,9 +835,37 @@ SUMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+SUMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+SUMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+//***** map required fields here******
 SUReqMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "insClientNo",
+    "businessNature",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
     "certOfAuth",
-    "underWritingCap"
+    "underWritingCap",
+    "tinNo",
+    "primaryVASPNo"
 ]);
 
 SUReqMap.set("PART", [
@@ -838,6 +884,18 @@ SUReqMap.set("CMP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
+]);
+
+SUReqMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+SUReqMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 
 /**
