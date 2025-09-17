@@ -316,9 +316,29 @@ AWReqMap.set("IND", [
  * Broker (BR)
  * */
 BRMap.set("common-fields",[
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
+    "prcIdNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "relatedCompany1",
     "relatedCompany2",
     "relatedCompany3"
@@ -331,20 +351,36 @@ BRMap.set("PART", [
     "paidUpCapitalAmount"
 ]);
 
-BRMap.set("CORP", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+BRMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 
-BRMap.set("CMP", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+BRMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
+
 
 BRReqMap.set("common-fields",[
-    "sssNo"
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
+    "tinNo",
+    "sssNo",
+    "prcIdNo",
+    "primaryVASPNo"
 ]);
 
 BRReqMap.set("PART", [
@@ -353,16 +389,16 @@ BRReqMap.set("PART", [
     "paidUpCapitalAmount"
 ]);
 
-BRReqMap.set("CORP", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+BRReqMap.set("IND", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 
-BRReqMap.set("CMP", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+BRReqMap.set("SPROP", [
+    "firstName",
+    "middleName",
+    "lastName"
 ]);
 
 
