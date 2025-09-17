@@ -125,7 +125,7 @@
                                                     <@s.textfield id="altTelNo" label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15  />
                                                     <@s.textfield id="fax" label="Fax" name="profile.fax" maxLength=15  />
                                                     <@s.textfield id="mobileNo" label="Mobile Number" name="profile.mobile" maxLength=15   />
-                                                    <@s.textfield id="email" lcssStyle="display:none;" abel="Email Address" name="profile.email" maxLength=88/>
+                                                    <@s.textfield id="email" label="Email Address" name="profile.email" maxLength=88/>
                                                     <@s.textfield id="website" label="Website" name="profile.website" maxLength=100  />
                                                     <@s.textfield id="bondedWarehouse" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/> <!--not required-->
                                                     <@s.textfield id="tinNo" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
