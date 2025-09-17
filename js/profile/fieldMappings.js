@@ -128,6 +128,8 @@ ARMap.set("common-fields", [
     "relatedCompany3"
 ]);
 
+// ****map required fields here****
+
 
 //COMPANY
 ARReqMap.set("CMP", [
@@ -193,11 +195,30 @@ ARReqMap.set("common-fields", [
  * */
 
 AWMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
     "bondedWarehouseType",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "uniqueRefNo",
     "relatedCompany1",
     "relatedCompany2",
@@ -223,26 +244,66 @@ AWMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+AWMap.set("SPROP", [
+    "firstName",
+    "secondName",
+    "thirdName"
+]);
+
+AWMap.set("IND", [
+    "firstName",
+    "secondName",
+    "thirdName"
+]);
+
+// ****map required fields here****
+
 AWReqMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
     "bondedWarehouseType",
+    "tinNo",
+    "primaryVASPNo"
 ]);
 
-AWMap.set("PART", [
+AWReqMap.set("PART", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
 ]);
 
-AWMap.set("CORP", [
+AWReqMap.set("CORP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
 ]);
 
-AWMap.set("CMP", [
+AWReqMap.set("CMP", [
     "SECRegNo",
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
+]);
+
+AWReqMap.set("SPROP", [
+    "firstName",
+    "secondName",
+    "thirdName"
+]);
+
+AWReqMap.set("IND", [
+    "firstName",
+    "secondName",
+    "thirdName"
 ]);
 
 
@@ -508,7 +569,7 @@ IMMap.set("SPROP", [
 
 IMReqMap.set("common-fields", [
     "clientType",
-    "businessEntity",
+    "businessEntityType",
     "businessNature",
     "incClientNo",
     "companyName",
