@@ -226,9 +226,9 @@
 <#--                                                    </@s.if>-->
 
                                                     <!--todo-->
-                                                    <@s.if test="(clientType == 'IM' ) || (clientType == 'EX')">
-                                                        <@s.textfield label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"   />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'IM' ) || (clientType == 'EX')">-->
+<#--                                                        <@s.textfield label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"   />-->
+<#--                                                    </@s.if>-->
 
 <#--                                                    <@s.if test="(clientType != 'YI' )">-->
 <#--                                                        <@s.textfield label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />-->

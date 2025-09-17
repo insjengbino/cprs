@@ -437,7 +437,8 @@ EXReqMap.set("CMP", [
  * */
 IMMap.set("common-fields", [
     "clientType",
-    "businessEntity",
+    "businessEntityType",
+    "insClientNo",
     "businessNature",
     "incClientNo",
     "companyName",
@@ -458,8 +459,8 @@ IMMap.set("common-fields", [
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
-    "vaspPrimaryNo",
-    "vaspSecondaryNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "uniqueRefNo",
     "primaryBrokerTIN",
     "primaryBrokerCCN",
@@ -519,7 +520,7 @@ IMReqMap.set("common-fields", [
     "telNo",
     "tinNo",
     "email",
-    "vaspPrimaryNo",
+    "primaryVASPNo",
     "primaryBrokerTIN",
     "primaryBrokerCCN"
 ]);
