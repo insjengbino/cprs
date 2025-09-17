@@ -92,7 +92,7 @@
                 <table align="center" cellspacing="10" cellpadding="2" border="0" bgcolor="#6A639D" ><tr><td bgcolor="#FFFFFF" >
                             <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
                                         <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
-                                                    <@s.form method="POST" enctype="multipart/form-data" novalidate="novalidate">
+                                                    <@s.form method="POST" enctype="multipart/form-data" dynamicAttributes={"novalidate":"novalidate"}>
                                                     <@s.hidden name="id"/>
 
                                                     <h3>On going development, please ignore bugs</h3>
