@@ -436,11 +436,34 @@ CYReqMap.set("CMP", [
  * Exporter (EX)
  * */
 EXMap.set("common-fields", [
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "altTelNo",
+    "fax",
+    "mobileNo",
+    "email",
+    "website",
+    "tinNo",
     "sssNo",
     "passportNo",
     "driverLicenseNo",
     "prcIdNo",
+    "primaryVASPNo",
+    "secondaryVASPNo",
     "uniqueRefNo",
+    "primaryBrokerTIN",
+    "primaryBrokerCCN",
+    "secondaryBrokerTIN",
+    "secondaryBrokerCCN",
     "aabAssignedBankRefNo",
     "relatedCompany1",
     "relatedCompany2",
@@ -466,7 +489,39 @@ EXMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+EXMap.set("IND",[
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+EXMap.set("SPROP",[
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+// *****map required fields here****
 EXReqMap.set("common-fields",[
+    "clientType",
+    "businessEntityType",
+    "businessNature",
+    "insClientNo",
+    "companyName",
+    "citizenship",
+    "address",
+    "city",
+    "zipCode",
+    "country",
+    "telNo",
+    "email",
+    "tinNo",
+    "primaryVASPNo",
+    "uniqueRefNo",
+    "primaryBrokerTIN",
+    "primaryBrokerCCN",
     "uniqueRefNo"
 ]);
 
@@ -488,6 +543,19 @@ EXReqMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+EXReqMap.set("IND",[
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
+
+EXReqMap.set("SPROP",[
+    "firstName",
+    "middleName",
+    "lastName"
+]);
+
 /**
  * Exporter (EX) end
  * */
@@ -501,7 +569,6 @@ IMMap.set("common-fields", [
     "businessEntityType",
     "insClientNo",
     "businessNature",
-    "incClientNo",
     "companyName",
     "citizenship",
     "address",
@@ -571,7 +638,7 @@ IMReqMap.set("common-fields", [
     "clientType",
     "businessEntityType",
     "businessNature",
-    "incClientNo",
+    "insClientNo",
     "companyName",
     "citizenship",
     "address",
