@@ -4,6 +4,7 @@
  **/
 let mainFieldMap = new Map;
 let mainReqFieldMap = new Map;
+let allFieldsList = new Set;
 
 let ARMap = new Map;
 let ARReqMap = new Map;
@@ -182,7 +183,7 @@ ARReqMap.set("common-fields", [
     "primaryVASPNo"
 ]);
 
-
+ARMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * Arrastre Operator Map END
  */
@@ -245,6 +246,8 @@ AWMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+AWMap.forEach((value, key) => allFieldsList.add(value));
+
 /**
  * Airport Warehouse (AW) end
  * */
@@ -303,6 +306,7 @@ BRReqMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+BRMap.forEach((value, key) => allFieldsList.add(value));
 
 /**
  * Broker (BR) end
@@ -365,6 +369,7 @@ CYReqMap.set("CMP", [
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
 ]);
+CYMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * CY-CFS Operator (CY) end
  * */
@@ -425,6 +430,8 @@ EXReqMap.set("CMP", [
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
 ]);
+
+EXMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * Exporter (EX) end
  * */
@@ -552,6 +559,7 @@ IMReqMap.set("SPROP", [
     "lastName"
 ]);
 
+IMMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * Importer (IM) end
  * */
@@ -614,6 +622,8 @@ SUReqMap.set("CMP", [
     "authCapitalStockAmount",
     "paidUpCapitalAmount"
 ]);
+
+SUMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * Surety (SU) end
  * */
@@ -677,6 +687,7 @@ WOReqMap.set("CMP", [
     "paidUpCapitalAmount"
 ]);
 
+WOMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * Warehouse Operator (WO) end
  * */
@@ -692,6 +703,8 @@ YIMap.set("common-fields", [
 YIReqMap.set("common-fields", [
 
 ]);
+
+YIMap.forEach((value, key) => allFieldsList.add(value));
 /**
  * Non-Regular Importer (YI) end
  * */
@@ -714,4 +727,4 @@ YIReqMap.set("common-fields", [
  *   <script src="legacy.js" type="text/javascript"></script>
  *
  * */
-export {mainFieldMap, mainReqFieldMap};
+export {mainFieldMap, mainReqFieldMap, allFieldsList};

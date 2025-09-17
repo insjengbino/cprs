@@ -1,4 +1,4 @@
-import {mainFieldMap, mainReqFieldMap} from "./fieldMappings.js";
+import {mainFieldMap, mainReqFieldMap, allFieldsList} from "./fieldMappings.js";
 
 
 window.addEventListener("load", function () {
@@ -61,9 +61,6 @@ document.addEventListener('input', function (e) {
 
 
 (function () {
-    // inside your IIFE (or top-level if you prefer)
-// ensure mainFieldMap and mainReqFieldMap are imported at top of file
-
     function manageHidden(dropdown) {
         const businessType = (dropdown?.value || "").trim().toUpperCase();
         const clientTypeEl = document.getElementById("clientType");
@@ -86,13 +83,6 @@ document.addEventListener('input', function (e) {
         const commonFields = clientMap.get("common-fields") || [];
         const visibleUniqueFields = new Set(clientMap.get(businessType) || []);
 
-        // Build set of all unique fields controlled by this clientType (all business-type specific fields)
-        const controlledUniqueFields = new Set();
-        for (const [bt, arr] of clientMap.entries()) {
-            if (bt === "common-fields") continue;
-            (arr || []).forEach(id => controlledUniqueFields.add(id));
-        }
-
         // Required sets
         const commonReq = clientReqMap ? (clientReqMap.get("common-fields") || []) : [];
         const uniqueReqForThisBT = clientReqMap ? (clientReqMap.get(businessType) || []) : [];
@@ -100,65 +90,40 @@ document.addEventListener('input', function (e) {
         // Helper to find elements by shortId suffix (matches id or name)
         const selectorForShortId = (shortId) => `[id$="${shortId}"], [name$="${shortId}"]`;
 
-        // 1) For each controlled unique field: hide if not visible, show if visible.
-        controlledUniqueFields.forEach(shortId => {
+        // --- NEW: handle all fields (from allFieldsList) ---
+        allFieldsList.forEach(shortId => {
+            const isVisible = commonFields.includes(shortId) || visibleUniqueFields.has(shortId);
             const els = document.querySelectorAll(selectorForShortId(shortId));
+
             els.forEach(el => {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
-                if (visibleUniqueFields.has(shortId)) {
-                    if (row) {
-                        row.style.display = "";
-                        el.disabled = false;   // enable visible field
-                    }
+                if (isVisible) {
+                    if (row) row.style.display = "";
+                    el.disabled = false;
+                    el.style.display = "";
                 } else {
-                    if (row) {
-                        row.style.display = "none";
-                        el.disabled = true;    // disable hidden field
-                    }
-                    // ❌ do not clear values, just disable so they're not submitted
+                    if (row) row.style.display = "none";
+                    el.disabled = true;   // disable so it's not in payload
                 }
-
-                // remove required; will reapply below only for visible ones
+                // reset required always
                 toggleRequiredMarker(el, false);
             });
         });
 
-
-        // 2) Ensure common fields are visible and not cleared (do not touch values)
-        commonFields.forEach(shortId => {
-            const els = document.querySelectorAll(selectorForShortId(shortId));
-            els.forEach(el => {
-                const row = el.closest("tr") || el.parentElement?.closest("tr");
-                if (row) row.style.display = "";
-                // remove any previous required flag; we'll reapply combined required next
-                toggleRequiredMarker(el, false);
-            });
-        });
-
-        // 3) Make visible unique fields explicitly visible (in case they were inside hidden container)
-        visibleUniqueFields.forEach(shortId => {
-            const els = document.querySelectorAll(selectorForShortId(shortId));
-            els.forEach(el => {
-                const row = el.closest("tr") || el.parentElement?.closest("tr");
-                if (row) row.style.display = "";
-            });
-        });
-
-        // 4) Reapply `required` to the fields that must be required now:
-        //    - common required fields
-        //    - unique required fields for the selected businessType (but only for visible unique fields)
-        const mustBeRequired = new Set();
-        commonReq.forEach(id => mustBeRequired.add(id));
-        uniqueReqForThisBT.forEach(id => mustBeRequired.add(id));
+        // --- Reapply required markers ---
+        const mustBeRequired = new Set([...commonReq, ...uniqueReqForThisBT]);
 
         mustBeRequired.forEach(shortId => {
-            // apply only if it's visible now (either common or visible unique)
+            // only if it’s currently visible
             if (!commonFields.includes(shortId) && !visibleUniqueFields.has(shortId)) return;
             document.querySelectorAll(selectorForShortId(shortId)).forEach(el => {
                 toggleRequiredMarker(el, true);
             });
         });
     }
+
+    // expose globally if needed
+    window.manageHidden = manageHidden;
 
     function toggleRequiredMarker(el, isRequired) {
         const label = document.querySelector(`label[for="${el.id}"]`);
@@ -174,10 +139,8 @@ document.addEventListener('input', function (e) {
                 reqSpan.className = "required";
                 reqSpan.textContent = "*";
 
-                // If label already has a colon, insert the star before it
                 const colonIndex = label.textContent.lastIndexOf(":");
                 if (colonIndex !== -1) {
-                    // Strip only the colon, keep rest
                     const textBeforeColon = label.textContent.slice(0, colonIndex).trimEnd();
                     const textAfterColon = label.textContent.slice(colonIndex);
                     label.textContent = textBeforeColon;
@@ -189,39 +152,33 @@ document.addEventListener('input', function (e) {
             }
         } else {
             el.removeAttribute("required");
-            // Only remove if WE added it, don’t remove Struts’ original star
             if (reqSpan && !reqSpan.dataset.fromStruts) {
                 reqSpan.remove();
             }
         }
     }
 
-    // Run once on page load to mark Struts-generated stars as "fromStruts"
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("label span.required").forEach(span => {
             span.dataset.fromStruts = "true";
         });
     });
 
-
-
     function init() {
-        console.log("init() running...")
+        console.log("init() running...");
         const dropdown = document.getElementById("businessEntityType");
         if (!dropdown) {
             console.warn("Dropdown #businessEntityType not found");
             return;
         }
 
-        // Initial state (handle default value)
         manageHidden(dropdown);
-
-        // On change
         dropdown.addEventListener("change", () => manageHidden(dropdown));
     }
 
     document.addEventListener("DOMContentLoaded", init);
 })();
+
 
 
 
