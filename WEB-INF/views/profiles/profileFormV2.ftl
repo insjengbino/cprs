@@ -105,21 +105,27 @@
                                                     <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
                                                     <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
-                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                            <tr class="managed-field always-show">
+                                                <td colspan="2">
                                                     <@s.textfield id="clientType" theme="simple" label="Client Type" value="${clientType}" readonly="true"/>
-                                                </td></tr>
+                                                </td>
+                                            </tr>
 
-                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                            <tr class="managed-field always-show">
+                                                <td colspan="2">
                                                     <@s.select id="businessEntityType" theme="simple" label="Type of Business Entity" name="businessType"
                                                     list="%{businessTypeList}" listKey="code" listValue="name"/>
-                                                </td></tr>
+                                                </td>
+                                            </tr>
 
-                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                            <tr class="managed-field always-show">
+                                                <td colspan="2">
                                                     <@s.select id="businessNature" theme="simple" label="Nature of Business" name="natureOfBusiness"
                                                     list="%{naturesOfBusiness}" listKey="code"
                                                     listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}"
                                                     cssStyle="width: 279.33px;"/>
-                                                </td></tr>
+                                                </td>
+                                            </tr>
 
                                             <tr class="managed-field" style="display:none;"><td colspan="2">
                                                     <@s.textfield id="insClientNo" theme="simple" label="INS Client Number" name="profile.insClientNo" readonly="true"/>
