@@ -320,7 +320,7 @@
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const form = document.getElementById("profileForm"); // or by ID/class
+        const form = document.getElementById("mainForm"); // or by ID/class
         if (form) {
             form.setAttribute("novalidate", "novalidate");
         }
