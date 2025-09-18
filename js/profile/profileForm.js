@@ -224,7 +224,7 @@ document.addEventListener('input', function (e) {
         businessNatureDropdown.addEventListener("change", () => manageHiddenAfterBusinessNatureChange(businessNatureDropdown));
 
         // Show form only after applying visibility logic
-        document.getElementById("profileForm").style.visibility = "visible";
+        document.getElementById("profileFormFields").style.visibility = "visible";
     }
 
     document.addEventListener("DOMContentLoaded", init);
