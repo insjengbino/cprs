@@ -177,6 +177,11 @@ document.addEventListener('input', function (e) {
                     }
                 });
             }
+        }else{
+            showElement(importerTin, false);
+            toggleRequiredMarker(importerTin, false);
+            showElement(exporterTin, false);
+            toggleRequiredMarker(exporterTin, false);
         }
 
         if (businessNatureCode === "GO004") {
@@ -214,6 +219,7 @@ document.addEventListener('input', function (e) {
         }
 
         manageHiddenAfterBusinessTypeChange(businessTypeDropdown);
+        manageHiddenAfterBusinessNatureChange(businessNatureDropdown);
         businessTypeDropdown.addEventListener("change", () => manageHiddenAfterBusinessTypeChange(businessTypeDropdown));
         businessNatureDropdown.addEventListener("change", () => manageHiddenAfterBusinessNatureChange(businessNatureDropdown));
     }
