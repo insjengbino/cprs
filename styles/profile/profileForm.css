@@ -1,4 +1,15 @@
-/* all managed fields start hidden */
-.managed-field {
+/* Hide managed rows before JS runs to prevent flicker */
+tr.managed-field {
     display: none;
+}
+/* Rows that should be visible initially (clientType, businessType, businessNature) */
+tr.managed-field.always-show {
+    display: table-row;
+}
+
+/* Optional: make sure cells behave properly */
+td.tdLabel {
+    white-space: nowrap;
+    vertical-align: top;
+    padding-right: 8px;
 }

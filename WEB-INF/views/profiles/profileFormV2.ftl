@@ -105,192 +105,193 @@
                                                     <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
                                                     <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="clientType" label="Client Type" value="${clientType}" readonly="true"/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="clientType" theme="simple" label="Client Type" value="${clientType}" readonly="true"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.select id="businessEntityType" label="Type of Business Entity" name="businessType"
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.select id="businessEntityType" theme="simple" label="Type of Business Entity" name="businessType"
                                                     list="%{businessTypeList}" listKey="code" listValue="name"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.select id="businessNature" label="Nature of Business" name="natureOfBusiness"
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.select id="businessNature" theme="simple" label="Nature of Business" name="natureOfBusiness"
                                                     list="%{naturesOfBusiness}" listKey="code"
                                                     listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}"
                                                     cssStyle="width: 279.33px;"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="insClientNo" label="INS Client Number" name="profile.insClientNo" readonly="true"/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="insClientNo" theme="simple" label="INS Client Number" name="profile.insClientNo" readonly="true"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="companyName" label="Business Name/Company Name" name="profile.company" maxLength=35/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="companyName" theme="simple" label="Business Name/Company Name" name="profile.company" maxLength=35/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="firstName" label="First Name" name="profile.firstName" maxLength=35/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="firstName" theme="simple" label="First Name" name="profile.firstName" maxLength=35/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="middleName" label="Middle Name" name="profile.middleName" maxLength=35/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="middleName" theme="simple" label="Middle Name" name="profile.middleName" maxLength=35/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="lastName" label="Last Name" name="profile.lastName" maxLength=35/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="lastName" theme="simple" label="Last Name" name="profile.lastName" maxLength=35/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.select id="citizenship" label="Country of Citizenship" name="profile.citizenship"
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.select id="citizenship" theme="simple" label="Country of Citizenship" name="profile.citizenship"
                                                     list="%{countries}" listKey="code" listValue="name"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="address" label="Address" name="profile.address" maxLength=70/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="address" theme="simple" label="Address" name="profile.address" maxLength=70/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="city" label="City" name="profile.city" maxLength=25/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="city" theme="simple" label="City" name="profile.city" maxLength=25/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="zipCode" label="Zip Code" type="number" name="profile.zipCode" maxlength="9"/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="zipCode" theme="simple" label="Zip Code" type="number" name="profile.zipCode" maxlength="9"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.select id="country" label="Country" name="profile.country"
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.select id="country" theme="simple" label="Country" name="profile.country"
                                                     list="%{countries}" listKey="code" listValue="name"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="telNo" label="Telephone Number" name="profile.telephone" maxLength=15/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="telNo" theme="simple" label="Telephone Number" name="profile.telephone" maxLength=15/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="altTelNo" label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="altTelNo" theme="simple" label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="fax" label="Fax" name="profile.fax" maxLength=15/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="fax" theme="simple" label="Fax" name="profile.fax" maxLength=15/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="mobileNo" label="Mobile Number" name="profile.mobile" maxLength=15/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="mobileNo" theme="simple" label="Mobile Number" name="profile.mobile" maxLength=15/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="email" label="Email Address" name="profile.email" maxLength=88/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="email" theme="simple" label="Email Address" name="profile.email" maxLength=88/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="website" label="Website" name="profile.website" maxLength=100/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="website" theme="simple" label="Website" name="profile.website" maxLength=100/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.select id="bondedWarehouseType" label="Custom Bonded Warehouse Type"
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.select id="bondedWarehouseType" theme="simple" label="Custom Bonded Warehouse Type"
                                                     name="profile.customBondedWarehouseType"
                                                     list="%{customBondedWarehouseType}" listKey="code" listValue="name"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="bondedWarehouse" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="bondedWarehouse" theme="simple" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="certOfAuth" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="certOfAuth" theme="simple" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="underWritingCap" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="underWritingCap" theme="simple" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="tinNo" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="tinNo" theme="simple" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="sssNo" label="SSS Number" name="profile.sssIdNo" maxLength=17/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="sssNo" theme="simple" label="SSS Number" name="profile.sssIdNo" maxLength=17/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="passportNo" label="Passport Number" name="profile.passportIdNo" maxLength=17/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="passportNo" theme="simple" label="Passport Number" name="profile.passportIdNo" maxLength=17/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="driverLicenseNo" label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="driverLicenseNo" theme="simple" label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="prcIdNo" label="PRC Id Number" name="profile.prcIdNo" maxLength=17/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="prcIdNo" theme="simple" label="PRC Id Number" name="profile.prcIdNo" maxLength=17/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="importerTin" label="Importer TIN" name="profile.importerTin" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="importerTin" theme="simple" label="Importer TIN" name="profile.importerTin" maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="exporterTin" label="Exporter TIN" name="profile.exporterTin" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="exporterTin" theme="simple" label="Exporter TIN" name="profile.exporterTin" maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="primaryVASPNo" label="VASP Primary CCN" value="VA0000000116"
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="primaryVASPNo" theme="simple" label="VASP Primary CCN" value="VA0000000116"
                                                     name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="secondaryVASPNo" label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="secondaryVASPNo" theme="simple" label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="uniqueRefNo" label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="uniqueRefNo" theme="simple" label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="SECRegNo" label="SEC Registration Number" name="profile.secIdNo" maxLength=17/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="SECRegNo" theme="simple" label="SEC Registration Number" name="profile.secIdNo" maxLength=17/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="authCapitalStockAmount" label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="authCapitalStockAmount" theme="simple" label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="paidUpCapitalAmount" label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="paidUpCapitalAmount" theme="simple" label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="aabAssignedBankRefNo" label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="aabAssignedBankRefNo" theme="simple" label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="relatedCompany1" label="Related Company" name="profile.relatedCompanyName1" maxLength=100/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="relatedCompany1" theme="simple" label="Related Company" name="profile.relatedCompanyName1" maxLength=100/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="relatedCompany2" label="Related Company" name="profile.relatedCompanyName2" maxLength=100/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="relatedCompany2" theme="simple" label="Related Company" name="profile.relatedCompanyName2" maxLength=100/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="relatedCompany3" label="Related Company" name="profile.relatedCompanyName3" maxLength=100/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="relatedCompany3" theme="simple" label="Related Company" name="profile.relatedCompanyName3" maxLength=100/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="primaryBrokerTIN" label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="primaryBrokerTIN" theme="simple" label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="primaryBrokerCCN" label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="primaryBrokerCCN" theme="simple" label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="secondaryBrokerTIN" label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="secondaryBrokerTIN" theme="simple" label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12/>
                                                 </td></tr>
 
-                                            <tr class="managed-field"><td colspan="2">
-                                                    <@s.textfield id="secondaryBrokerCCN" label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12/>
+                                            <tr class="managed-field" style="display:none;"><td colspan="2">
+                                                    <@s.textfield id="secondaryBrokerCCN" theme="simple" label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12/>
                                                 </td></tr>
 
-<#--                                                    <@s.textfield id="clientType" cssClass="managed-field" label="Client Type" value="${clientType}" readonly="true"  />-->
+
+                                            <#--                                                    <@s.textfield id="clientType" cssClass="managed-field" label="Client Type" value="${clientType}" readonly="true"  />-->
 <#--                                                    &lt;#&ndash;<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />&ndash;&gt;-->
 <#--                                                    <@s.select id= "businessEntityType" cssClass="managed-field" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name"/>-->
 <#--                                                    &lt;#&ndash;		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />&ndash;&gt;-->
