@@ -1,4 +1,5 @@
 import {mainFieldMap, mainReqFieldMap, allFieldsList} from "./fieldMappings.js";
+import {toggleRequiredMarker, showElement} from "./formUtils.js";
 
 
 window.addEventListener("load", function () {
@@ -43,7 +44,7 @@ document.addEventListener('input', function (e) {
     if (el.tagName === 'INPUT') {
         const skipNames = ['profile.email','profile.website'];
         if (skipNames.includes(el.name)) return;
-        if (el.type.toLowerCase() === 'text' || el.type === '') {
+        if (!el.type || el.type.toLowerCase() === "text") {
             const start = el.selectionStart;
             const end = el.selectionEnd;
             el.value = el.value.toUpperCase();
@@ -61,13 +62,13 @@ document.addEventListener('input', function (e) {
 
 
 (function () {
-    function manageHidden(dropdown) {
+    function manageHiddenAfterBusinessTypeChange(dropdown) {
         const businessType = (dropdown?.value || "").trim().toUpperCase();
         const clientTypeEl = document.getElementById("clientType");
         const clientType = clientTypeEl ? clientTypeEl.value.trim().toUpperCase() : null;
 
         if (!clientType) {
-            console.warn("manageHidden: clientType not found");
+            console.warn("manageHiddenAfterBusinessTypeChange: clientType not found");
             return;
         }
 
@@ -75,7 +76,7 @@ document.addEventListener('input', function (e) {
         const clientReqMap = mainReqFieldMap.get(clientType);
 
         if (!clientMap) {
-            console.warn("manageHidden: no mapping found for clientType:", clientType);
+            console.warn("manageHiddenAfterBusinessTypeChange: no mapping found for clientType:", clientType);
             return;
         }
 
@@ -87,17 +88,17 @@ document.addEventListener('input', function (e) {
         const commonReq = clientReqMap ? (clientReqMap.get("common-fields") || []) : [];
         const uniqueReqForThisBT = clientReqMap ? (clientReqMap.get(businessType) || []) : [];
 
-        // Helper to find elements by shortId suffix (matches id or name)
-        const selectorForShortId = (shortId) => `[id$="${shortId}"], [name$="${shortId}"]`;
+        function isVisible(shortId){
+            return commonFields.includes(shortId) || visibleUniqueFields.has(shortId);
+        }
 
         // --- NEW: handle all fields (from allFieldsList) ---
         allFieldsList.forEach(shortId => {
-            const isVisible = commonFields.includes(shortId) || visibleUniqueFields.has(shortId);
-            const els = document.querySelectorAll(selectorForShortId(shortId));
+            const els = selectorForShortId(shortId);
 
             els.forEach(el => {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
-                if (isVisible) {
+                if (isVisible(shortId)) {
                     if (row) row.style.display = "";
                     el.disabled = false;
                     el.style.display = "";
@@ -114,49 +115,19 @@ document.addEventListener('input', function (e) {
         const mustBeRequired = new Set([...commonReq, ...uniqueReqForThisBT]);
 
         mustBeRequired.forEach(shortId => {
+            const els = selectorForShortId(shortId);
             // only if it’s currently visible
-            if (!commonFields.includes(shortId) && !visibleUniqueFields.has(shortId)) return;
-            document.querySelectorAll(selectorForShortId(shortId)).forEach(el => {
+            if (!isVisible(shortId)) return;
+            els.forEach(el => {
                 toggleRequiredMarker(el, true);
             });
         });
     }
 
     // expose globally if needed
-    window.manageHidden = manageHidden;
+    window.manageHiddenAfterBusinessTypeChange = manageHiddenAfterBusinessTypeChange;
 
-    function toggleRequiredMarker(el, isRequired) {
-        const label = document.querySelector(`label[for="${el.id}"]`);
-        if (!label) return;
 
-        let reqSpan = label.querySelector("span.required");
-
-        if (isRequired) {
-            el.setAttribute("required", "true");
-
-            if (!reqSpan) {
-                reqSpan = document.createElement("span");
-                reqSpan.className = "required";
-                reqSpan.textContent = "*";
-
-                const colonIndex = label.textContent.lastIndexOf(":");
-                if (colonIndex !== -1) {
-                    const textBeforeColon = label.textContent.slice(0, colonIndex).trimEnd();
-                    const textAfterColon = label.textContent.slice(colonIndex);
-                    label.textContent = textBeforeColon;
-                    label.appendChild(reqSpan);
-                    label.appendChild(document.createTextNode(textAfterColon));
-                } else {
-                    label.appendChild(reqSpan);
-                }
-            }
-        } else {
-            el.removeAttribute("required");
-            if (reqSpan && !reqSpan.dataset.fromStruts) {
-                reqSpan.remove();
-            }
-        }
-    }
 
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("label span.required").forEach(span => {
@@ -164,19 +135,109 @@ document.addEventListener('input', function (e) {
         });
     });
 
+    function manageHiddenAfterBusinessNatureChange(dropdown){
+        const businessNatureCode = (dropdown?.value || "").trim().toUpperCase();
+
+        const clientTypeEl = document.getElementById("clientType");
+        const clientType = clientTypeEl ? clientTypeEl.value.trim().toUpperCase() : null;
+
+        const prcIdNoEl = document.getElementById("prcIdNo");
+        const importerTin = document.getElementById("importerTin");
+        const exporterTin = document.getElementById("exporterTin");
+
+        const manageableElements = [prcIdNoEl, importerTin, exporterTin].filter(Boolean);
+
+        const prc = "prcIdNo";
+        const nonBr = "NONBROKER";
+
+        if (clientType === "BR") {
+            if (businessNatureCode === "0000") {
+                manageableElements.forEach(el => {
+                    showElement(el, true);
+                    toggleRequiredMarker(el, true);
+                    if (el.id === "prcIdNo") {
+                        if (!el.dataset.originalValue) {
+                            el.dataset.originalValue = el.value || "";
+                        }
+                        el.readOnly = true;
+                        el.value = nonBr;
+                    }
+                });
+            } else {
+                manageableElements.forEach(el => {
+                    if (el.id === prc) { //prcIdNo is required for BR regardless of businessNature
+                        showElement(el, true);
+                        el.readOnly = false;
+                        toggleRequiredMarker(el, true);
+                        if (el.value === nonBr)  el.value = el.dataset.savedValue || el.dataset.originalValue || "";
+
+                    } else {
+                        showElement(el, false);
+                        toggleRequiredMarker(el, false);
+                    }
+                });
+            }
+        }
+
+        if (businessNatureCode === "GO004") {
+            // TODO: handle GO004
+        }
+
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const prcIdNoEl = document.getElementById("prcIdNo");
+        if (prcIdNoEl) {
+            prcIdNoEl.addEventListener("input", e => {
+                if (e.target.value !== "NONBROKER") {
+                    e.target.dataset.savedValue = e.target.value;
+                }
+            });
+        }
+    });
+
+    // expose globally if needed
+    window.manageHiddenAfterBusinessNatureChange = manageHiddenAfterBusinessNatureChange ;
+
     function init() {
         console.log("init() running...");
-        const dropdown = document.getElementById("businessEntityType");
-        if (!dropdown) {
+        const businessTypeDropdown = document.getElementById("businessEntityType");
+        const businessNatureDropdown = document.getElementById("businessNature");
+        if (!businessTypeDropdown) {
             console.warn("Dropdown #businessEntityType not found");
             return;
         }
 
-        manageHidden(dropdown);
-        dropdown.addEventListener("change", () => manageHidden(dropdown));
+        if (!businessNatureDropdown) {
+            console.warn("Dropdown #businessNature not found");
+            return;
+        }
+
+        manageHiddenAfterBusinessTypeChange(businessTypeDropdown);
+        businessTypeDropdown.addEventListener("change", () => manageHiddenAfterBusinessTypeChange(businessTypeDropdown));
+        businessNatureDropdown.addEventListener("change", () => manageHiddenAfterBusinessNatureChange(businessNatureDropdown));
     }
 
     document.addEventListener("DOMContentLoaded", init);
+
+    //Helper to find elements by shortId suffix (matches id or name)
+    //currently this functions is able to return a list of nodes
+    //but, it is expected to return a list with 1 element only
+    //there will be a warning if list size > 1 or < 1
+    //id$= and name$= ($ === ends with) hence ids like clientType and businessType will be returned if the shortId is `type`
+    function selectorForShortId(shortId) {
+        const selector = `[id$="${shortId}"], [name$="${shortId}"]`;
+        const matches = document.querySelectorAll(selector);
+
+        if (matches.length > 1) {
+            console.warn(`⚠️ shortId "${shortId}" matched ${matches.length} elements.`, matches);
+        } else if (matches.length === 0) {
+            console.warn(`⚠️ shortId "${shortId}" did not match any element.`);
+        }
+
+        return matches; // return NodeList directly
+    }
+
 })();
 
 

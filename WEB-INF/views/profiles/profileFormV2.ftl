@@ -136,6 +136,8 @@
                                                     <@s.textfield id="passportNo" label="Passport Number" name="profile.passportIdNo" maxLength=17   />
                                                     <@s.textfield id="driverLicenseNo" label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17  />
                                                     <@s.textfield id="prcIdNo" label="PRC Id Number" name="profile.prcIdNo" maxLength=17/>
+                                                    <@s.textfield id="importerTin" label="Importer TIN" name="profile.importerTin" maxLength=12/>
+                                                    <@s.textfield id="exporterTin" label="Exporter TIN" name="profile.exporterTin" maxLength=12/>
                                                     <@s.textfield id="primaryVASPNo" label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
                                                     <@s.textfield id="secondaryVASPNo" label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12/>
                                                     <@s.textfield id="uniqueRefNo" label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
@@ -189,14 +191,14 @@
 <#--                                                    </@s.if>-->
 
                                                     <!-- todo -->
-                                                    <@s.if test="(clientType == 'BR')">
-                                                        <@s.if test="(clientType == 'BR' && natureOfBusiness == '0000' )">
-                                                            <@s.textfield label="PRC Id Number" value="NONBROKER" name="profile.prcIdNo" maxLength=17 required="true" readonly="true"    />
-                                                        </@s.if>
-                                                        <@s.else>
-                                                            <@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17 required="true"    />
-                                                        </@s.else>
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'BR')">-->
+<#--                                                        <@s.if test="(clientType == 'BR' && natureOfBusiness == '0000' )">-->
+<#--                                                            <@s.textfield label="PRC Id Number" value="NONBROKER" name="profile.prcIdNo" maxLength=17 required="true" readonly="true"    />-->
+<#--                                                        </@s.if>-->
+<#--                                                        <@s.else>-->
+<#--                                                            <@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17 required="true"    />-->
+<#--                                                        </@s.else>-->
+<#--                                                    </@s.if>-->
 
 <#--                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' )">-->
 <#--                                                        <@s.textfield label="PRC Id Number" name="profile.prcIdNo" maxLength=17    />-->
@@ -205,10 +207,10 @@
 <#--                                                    <@s.textfield label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12   />-->
 
                                                     <!-- added code by toqaf -->
-                                                    <@s.if test="(clientType == 'BR' && natureOfBusiness == '0000' )">
-                                                        <@s.textfield label="Importer TIN" name="profile.importerTin" maxLength=12 required="true"    />
-                                                        <@s.textfield label="Exporter TIN" name="profile.exporterTin" maxLength=12 required="true"    />
-                                                    </@s.if>
+<#--                                                    <@s.if test="(clientType == 'BR' && natureOfBusiness == '0000' )">-->
+<#--                                                        <@s.textfield label="Importer TIN" name="profile.importerTin" maxLength=12 required="true"    />-->
+<#--                                                        <@s.textfield label="Exporter TIN" name="profile.exporterTin" maxLength=12 required="true"    />-->
+<#--                                                    </@s.if>-->
                                                     <!-- added code by toqaf /-->
 
 <#--                                                    <@s.if test="(clientType != 'BR' && clientType != 'YI' && clientType != 'EX')">-->
@@ -306,6 +308,7 @@
 
 </div>
 <script src = "${base}/js/profile/fieldMappings.js" type="module"></script>
+<script src = "${base}/js/profile/formUtils.js" type="module"></script>
 <script src = "${base}/js/profile/profileForm.js" type="module"></script>
 <script>
     var natureOfBusinessFullNames = [
