@@ -85,7 +85,7 @@
 <@s.url id="removeImportedCommoditiesURL" action="removeProfileImportedCommodities">
     <@s.param name="id" value="id"/>
 </@s.url>
-<div class="profileForm">
+<div class="profileForm" style="visibility:hidden;">
 
     <table name="BodyBackground" align="center" cellspacing="5" cellpadding="5" border="0" bgcolor="#CCCCCC" ><tr ><td >
                 <#include "/WEB-INF/views/commons/profile_menu.ftl"/>
@@ -103,7 +103,7 @@
                                                         <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
                                                         <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
-                                                    <div id="profileFormFields" style="visibility:hidden;">
+                                                    <div id="profileFormFields">
 
                                                         <@s.textfield id="clientType" label="Client Type" value="${clientType}" readonly="true"  />
                                                         <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
@@ -320,7 +320,7 @@
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const form = document.querySelector("form"); // or by ID/class
+        const form = document.getElementById("formForm"); // or by ID/class
         if (form) {
             form.setAttribute("novalidate", "novalidate");
         }
