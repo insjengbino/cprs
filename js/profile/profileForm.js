@@ -99,11 +99,11 @@ document.addEventListener('input', function (e) {
             els.forEach(el => {
                 const row = el.closest("tr") || el.parentElement?.closest("tr");
                 if (isVisible(shortId)) {
-                    if (row) row.style.display = "";
+                    if (row) showElement(row, true);
                     el.disabled = false;
                     el.style.display = "";
                 } else {
-                    if (row) row.style.display = "none";
+                    if (row) showElement(row, false)
                     el.disabled = true;   // disable so it's not in payload
                 }
                 // reset required always

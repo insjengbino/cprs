@@ -31,12 +31,21 @@ function toggleRequiredMarker(el, isRequired) {
     }
 }
 
+/**
+ * showElement(el, show)
+ * - finds the enclosing <tr> (if any) and explicitly sets display so it overrides the
+ *   CSS rule tr.managed-field { display: none; }.
+ */
 function showElement(el, show) {
-    const row = el.closest("tr") || el.parentElement?.closest("tr");
-    if (row) row.style.display = show ? "" : "none";
+    const row = el?.closest("tr") || el?.parentElement?.closest("tr");
+    if (row) {
+        // for table rows explicitly set table-row so the inline style overrides CSS
+        row.style.display = show ? "table-row" : "none";
+    }
+
+    // element itself: inputs/selects — hide/show by inline style (let default display be used for show)
+    el.style.display = show ? "" : "none";
     el.disabled = !show;
-    el.style.display = show ? "" :"none";
 }
 
-export {toggleRequiredMarker, showElement};
-
+export { toggleRequiredMarker, showElement };
