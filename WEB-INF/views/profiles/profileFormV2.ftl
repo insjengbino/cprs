@@ -94,7 +94,6 @@
                                         <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
                                                     <@s.form method="POST" enctype="multipart/form-data" id="mainForm">
                                                     <@s.hidden name="id"/>
-                                                    <div id="profileFormFields" style="visibility:hidden;">
                                                         <h3>On going development, please ignore bugs</h3>
 
                                                         <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
@@ -104,6 +103,7 @@
                                                         <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
                                                         <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
+                                                    <div id="profileFormFields" style="visibility:hidden;">
 
                                                         <@s.textfield id="clientType" label="Client Type" value="${clientType}" readonly="true"  />
                                                         <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
