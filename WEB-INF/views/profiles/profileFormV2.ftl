@@ -308,6 +308,7 @@
     </@s.form>
 
 </div>
+<script src = "${base}/js/profile/actionNameMappings.js" type="module"></script>
 <script src = "${base}/js/profile/fieldMappings.js" type="module"></script>
 <script src = "${base}/js/profile/formUtils.js" type="module"></script>
 <script src = "${base}/js/profile/profileForm.js" type="module"></script>
