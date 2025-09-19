@@ -102,6 +102,10 @@ public class ProfilesController extends BaseController implements Preparable, Va
     private MessageGenerator generator;
     List<Profile> profileList = new ArrayList();
 
+    private String clientCode;
+
+    private String role;
+
     private String saveActionName;
 
     public byte[] getBytes() {
@@ -1194,7 +1198,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     public String listProfiles() {
         String currentSession = String.valueOf(this.getFromSession("clientCode"));
         if (null != currentSession && currentSession.length() != 0) {
-            String clientCode = this.getParameter("clientCode");
+            String clientCode = getCLientCode();
             if (clientCode == null) {
                 clientCode = (String)this.getFromSession("clientCode");
             }
@@ -1286,5 +1290,21 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
     public void setSaveActionName(String saveActionName) {
         this.saveActionName = saveActionName;
+    }
+
+    public void setClientCode(String clientCode){
+        this.clientCode = clientCode;
+    }
+
+    public String getCLientCode(){
+        return this.clientCode;
+    }
+
+    public void setRole(String role){
+        this.role = role;
+    }
+
+    public String getRole(){
+        return this.role;
     }
 }

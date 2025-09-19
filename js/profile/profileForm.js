@@ -1,5 +1,6 @@
 import {mainFieldMap, mainReqFieldMap, allFieldsList} from "./fieldMappings.js";
-import {toggleRequiredMarker, showElement} from "./formUtils.js";
+import {toggleRequiredMarker, showElement, setSaveBtnActionName} from "./formUtils.js";
+import {saveActionNameMap} from "./actionNameMappings";
 
 
 window.addEventListener("load", function () {
@@ -122,6 +123,17 @@ document.addEventListener('input', function (e) {
                 toggleRequiredMarker(el, true);
             });
         });
+
+        //set save button action depending on clientType and businessType
+        const saveActionNameHandler = saveActionNameMap[clientType];
+
+        if (saveActionNameHandler) {
+            setSaveBtnActionName("saveBtn", saveActionNameHandler(businessType));
+        } else {
+            console.warn(`No save action defined for client type: ${clientType} and businessType: ${businessType}`);
+            setSaveBtnActionName("saveBtn", ""); // optional fallback
+        }
+
     }
 
     // expose globally if needed

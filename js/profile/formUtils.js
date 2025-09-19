@@ -48,4 +48,10 @@ function showElement(el, show) {
     el.disabled = !show;
 }
 
-export { toggleRequiredMarker, showElement };
+
+function setSaveBtnActionName(elementId, actionName){
+    const element = document.getElementById(elementId);
+    element.setAttribute("action", actionName);
+}
+
+export { toggleRequiredMarker, showElement, setSaveBtnActionName};

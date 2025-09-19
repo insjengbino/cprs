@@ -305,7 +305,8 @@
 	
 	<field name="profile.importerTin">
         <field-validator type="requiredstring">
-            <message key="You can not leave this field empty."/>
+            <param name="expression">natureOfBusiness == 0000</param>
+            <message>You can not leave this field empty.</message>
         </field-validator>
 		<field-validator type="regex">
 			<param name="expression">[0-9]*</param>
@@ -321,7 +322,8 @@
 
 	<field name="profile.exporterTin">
         <field-validator type="requiredstring">
-            <message key="You can not leave this field empty."/>
+            <param name="expression">natureOfBusiness == 0000</param>
+            <message>You can not leave this field empty.</message>
         </field-validator>
 		<field-validator type="regex">
 			<param name="expression">[0-9]*</param>

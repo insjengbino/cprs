@@ -295,7 +295,7 @@
 
     <tr><td align=center>
 
-            <@s.submit value="Save" action="%{saveActionName}" theme="simple"/>
+            <@s.submit id="saveBtn" value="Save" action="%{saveActionName}" theme="simple"/>
 
             <button type="button" onclick="location.href='listProfiles.action'">Cancel</button>
 
