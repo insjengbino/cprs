@@ -1200,6 +1200,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
             clientCode = StringUtils.isNotEmpty(clientCode) ? clientCode : sessionClientCode;
             this.setInSession("clientCode", clientCode);
             this.profiles = this.profileService.listByClientCode(clientCode);
+            String savedAttr = String.valueOf(this.getFromSession("clientCode"));
+            log.debug("save attr in session: " + savedAttr);
+            log.debug("not in ins session: " +  insClientCodeNotInSession());
             return "success";
         } else {
             return "error";
