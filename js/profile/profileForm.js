@@ -1,5 +1,5 @@
 import {mainFieldMap, mainReqFieldMap, allFieldsList} from "./fieldMappings.js";
-import {toggleRequiredMarker, showElement, setSaveBtnActionName} from "./formUtils.js";
+import {toggleRequiredMarker, showElement, setSaveBtnActionName, setFormActionName} from "./formUtils.js";
 import {saveActionNameMap} from "./actionNameMappings.js";
 
 window.addEventListener("load", function () {
@@ -128,10 +128,11 @@ document.addEventListener('input', function (e) {
 
         if (saveActionNameHandler) {
             setSaveBtnActionName("saveBtn", saveActionNameHandler(businessType));
-            setSaveBtnActionName("mainForm", saveActionNameHandler(businessType));
+            setFormActionName("mainForm", saveActionNameHandler(businessType));
         } else {
             console.warn(`No save action defined for client type: ${clientType} and businessType: ${businessType}`);
             setSaveBtnActionName("saveBtn", ""); // optional fallback
+            setFormActionName("mainForm", "");
         }
 
     }

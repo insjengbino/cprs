@@ -54,4 +54,9 @@ function setSaveBtnActionName(elementId, actionName){
     element.setAttribute("name", `action:${actionName}`);
 }
 
-export { toggleRequiredMarker, showElement, setSaveBtnActionName};
+function setFormActionName(formName, actionName){
+    const form = document.getElementById(formName);
+    form.action = `/cprs/${actionName}.action`;
+}
+
+export { toggleRequiredMarker, showElement, setSaveBtnActionName, setFormActionName};
