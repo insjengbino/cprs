@@ -533,6 +533,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
         this.setSaveActionName("");
 
         if(StringUtils.isEmpty(clientType) || StringUtils.isEmpty(businessType)){
+            log.info("barney ==== client type: " + clientType
+                    + " &&  business  type: " + businessType);
+            log.info("ACTION NAME: " + this.getSaveActionName());
             return;
         }
 
