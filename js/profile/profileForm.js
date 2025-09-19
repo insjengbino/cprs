@@ -128,6 +128,7 @@ document.addEventListener('input', function (e) {
 
         if (saveActionNameHandler) {
             setSaveBtnActionName("saveBtn", saveActionNameHandler(businessType));
+            setSaveBtnActionName("mainForm", saveActionNameHandler(businessType));
         } else {
             console.warn(`No save action defined for client type: ${clientType} and businessType: ${businessType}`);
             setSaveBtnActionName("saveBtn", ""); // optional fallback
