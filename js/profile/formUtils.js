@@ -51,7 +51,7 @@ function showElement(el, show) {
 
 function setSaveBtnActionName(elementId, actionName){
     const element = document.getElementById(elementId);
-    element.setAttribute("action", actionName);
+    element.setAttribute("name", `action:${actionName}`);
 }
 
 export { toggleRequiredMarker, showElement, setSaveBtnActionName};

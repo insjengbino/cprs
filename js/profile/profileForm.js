@@ -1,7 +1,5 @@
 import {mainFieldMap, mainReqFieldMap, allFieldsList} from "./fieldMappings.js";
-import {toggleRequiredMarker, showElement, setSaveBtnActionName} from "./formUtils.js";
-import {saveActionNameMap} from "./actionNameMappings.js";
-
+import {toggleRequiredMarker, showElement} from "./formUtils.js";
 
 window.addEventListener("load", function () {
     limitPicSize();
