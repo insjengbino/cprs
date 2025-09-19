@@ -532,13 +532,6 @@ public class ProfilesController extends BaseController implements Preparable, Va
         String businessType = this.getBusinessType();
         this.setSaveActionName("");
 
-        if(StringUtils.isEmpty(clientType) || StringUtils.isEmpty(businessType)){
-            log.info("barney ==== client type: " + clientType
-                    + " &&  business  type: " + businessType);
-            log.info("ACTION NAME: " + this.getSaveActionName());
-            return;
-        }
-
         final HashMap<String, List<String>> clientTypeMap = new HashMap<String, List<String>>();
         ///             clientType            [0]: actionName1    [1]actionName2
         ///
