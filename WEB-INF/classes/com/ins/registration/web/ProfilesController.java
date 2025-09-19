@@ -529,10 +529,10 @@ public class ProfilesController extends BaseController implements Preparable, Va
      **/
     private void prepSaveActionName(){
         String clientType = this.getClientType();
-        String businessType = this.getParameter("businessType");
+        String businessType = this.getBusinessType();
         this.setSaveActionName("");
 
-        if(StringUtils.isEmpty(clientType) && StringUtils.isEmpty(businessType)){
+        if(StringUtils.isEmpty(clientType) || StringUtils.isEmpty(businessType)){
             return;
         }
 
