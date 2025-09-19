@@ -421,6 +421,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public boolean insClientCodeNotInSession() {
+        log.info("session check clt code: " + (this.getFromSession("clientCode") == null));
         return this.getFromSession("clientCode") == null;
     }
 
