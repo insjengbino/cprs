@@ -152,7 +152,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
         super.validate();
 
         //added on phase 3 of cprs enhancement
-        prepSaveActionName();
+//        prepSaveActionName();
 
         if (this.getActionName().startsWith("save") && !this.hasErrors()) {
             if (this.profile.getPicture() == null && this.profilePictureFile == null) {
