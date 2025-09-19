@@ -686,7 +686,8 @@ public class ProfilesController extends BaseController implements Preparable, Va
             Status status = this.statusService.findByName("Incomplete");
             this.profile.setStatus(status);
         }
-
+        log.info("clientCode in session::::: " + this.getFromSession("clientCode"));
+        log.info(insClientCodeNotInSession());
         this.profile.setLastDateOfTransaction(new Date());
         if (this.insClientCodeNotInSession()) {
             return "error";
