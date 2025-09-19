@@ -96,10 +96,10 @@
                                                     <@s.hidden name="id"/>
                                                         <h3>On going development, please ignore bugs</h3>
 
-                                                        <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
-<#--                                                        <input type="hidden" name="profile.businessType" value="${profile.businessType?if_exists}"/>-->
-                                                        <input type="hidden" name="profile.natureOfBusiness" value="${natureOfBusiness?if_exists}"/>
-                                                        <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
+                                                    <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
+                                                    <#--                                                    <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
+                                                    <input type="hidden" name="profile.businessType" value="${profile.businessType?if_exists}"/>
+                                                    <input type="hidden" name="profile.natureOfBusiness" value="${natureOfBusiness?if_exists}"/>                                                        <!--<input type="hidden" name="profile.insClientNo" value="${profile.insClientNo?if_exists}"/>-->
 
                                                         <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
                                                     <div id="profileFormFields" style="visibility:hidden;">
