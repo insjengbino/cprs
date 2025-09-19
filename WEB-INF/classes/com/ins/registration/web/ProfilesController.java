@@ -1200,7 +1200,8 @@ public class ProfilesController extends BaseController implements Preparable, Va
         String clientCode = this.getParameter("clientCode");
         String sessionClientCode = String.valueOf(this.getFromSession("clientCode"));
         if (StringUtils.isNotEmpty(clientCode) || StringUtils.isNotEmpty(sessionClientCode)) {
-            this.setInSession("clientCode", StringUtils.isNotEmpty(clientCode) ? clientCode : sessionClientCode );
+            clientCode = StringUtils.isNotEmpty(clientCode) ? clientCode : sessionClientCode;
+            this.setInSession("clientCode", clientCode);
             this.profiles = this.profileService.listByClientCode(clientCode);
             return "success";
         } else {
