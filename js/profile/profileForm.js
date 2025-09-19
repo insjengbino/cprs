@@ -1,6 +1,6 @@
 import {mainFieldMap, mainReqFieldMap, allFieldsList} from "./fieldMappings.js";
 import {toggleRequiredMarker, showElement, setSaveBtnActionName} from "./formUtils.js";
-import {saveActionNameMap} from "./actionNameMappings";
+import {saveActionNameMap} from "./actionNameMappings.js";
 
 
 window.addEventListener("load", function () {
