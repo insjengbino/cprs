@@ -82,7 +82,7 @@
 <!--            <result name="input" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>		-->
 <!--        </action>-->
         <action name="clientTypeForm" method="clientTypeForm" class="profilesController">
-            <result name="success" type="freemarker">
+            <result name="success" type="redirect-action">
                 <param name="actionName">profileForm</param>
                 <param name="namespace">/cprs</param>
             </result>
