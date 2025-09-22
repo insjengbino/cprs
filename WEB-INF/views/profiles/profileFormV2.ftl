@@ -104,7 +104,7 @@
                                                         <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
                                                     <div id="profileFormFields" style="visibility:hidden;">
 
-                                                        <@s.textfield id="clientType" label="Client Type" value="${clientType}" readonly="true"  />
+                                                        <@s.textfield id="clientTypeDisplay" label="Client Type" value="${clientType}" readonly="true"  />
                                                         <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
                                                         <@s.select id= "businessEntityType" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name"/>
                                                         <#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
@@ -117,7 +117,7 @@
                                                         <@s.textfield id= "lastName" label="Last Name " name="profile.lastName" maxLength=35/>
                                                         <@s.select id="citizenship" label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name"/>
                                                         <@s.textfield id="address" label="Address" name="profile.address" maxLength=70/>
-                                                        <@s.textfield id="city" label="City" name="profile.city" maxLength=25/>
+                                                        <@s.textfield id="cityAddress" label="City" name="profile.city" maxLength=25/>
                                                         <@s.textfield id="zipCode" label="Zip Code" type="number" name="profile.zipCode" maxlength="9"/>
                                                         <@s.select id="country" label="Country" name="profile.country" list="%{countries}" listKey="code" listValue="name"/>
                                                         <@s.textfield id="telNo" label="Telephone Number" name="profile.telephone" maxLength=15/>

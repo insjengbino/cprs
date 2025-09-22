@@ -99,14 +99,14 @@ ARMap.set("SPROP", [
 
 //COMMON
 ARMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -170,13 +170,14 @@ ARReqMap.set("SPROP", [
 
 //COMMON
 ARReqMap.set("common-fields", [
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -195,14 +196,14 @@ ARReqMap.set("common-fields", [
  * */
 
 AWMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -259,14 +260,14 @@ AWMap.set("IND", [
 // ****map required fields here****
 
 AWReqMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -316,14 +317,14 @@ AWReqMap.set("IND", [
  * Broker (BR)
  * */
 BRMap.set("common-fields",[
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -365,14 +366,14 @@ BRMap.set("SPROP", [
 
 
 BRReqMap.set("common-fields",[
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -411,14 +412,14 @@ BRReqMap.set("SPROP", [
  * CY-CFS Operator (CY)
  * */
 CYMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -475,14 +476,14 @@ CYMap.set("SPROP", [
 
 //******map required fields here*******
 CYReqMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -530,14 +531,14 @@ CYReqMap.set("SPROP", [
  * Exporter (EX)
  * */
 EXMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -599,14 +600,14 @@ EXMap.set("SPROP",[
 
 // *****map required fields here****
 EXReqMap.set("common-fields",[
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -659,14 +660,14 @@ EXReqMap.set("SPROP",[
  * Importer (IM)
  * */
 IMMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "insClientNo",
     "businessNature",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -729,14 +730,14 @@ IMMap.set("SPROP", [
 ]);
 
 IMReqMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -786,14 +787,14 @@ IMReqMap.set("SPROP", [
  * Surety (SU)
  * */
 SUMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "insClientNo",
     "businessNature",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -850,14 +851,14 @@ SUMap.set("SPROP", [
 
 //***** map required fields here******
 SUReqMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "insClientNo",
     "businessNature",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -908,14 +909,14 @@ SUReqMap.set("SPROP", [
  * */
 
 WOMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -977,14 +978,14 @@ WOMap.set("SPROP", [
 //******map reuqired fields here*******
 
 WOReqMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -1036,14 +1037,14 @@ WOReqMap.set("SPROP", [
  * Non-Regular Importer (YI) - previously labeled as 'Once A Year Importer'
  * */
 YIMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
@@ -1088,14 +1089,14 @@ YIMap.set("SPROP", [
 
 //*******map required fields here*****
 YIReqMap.set("common-fields", [
-    "clientType",
+    "clientTypeDisplay",
     "businessEntityType",
     "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
     "address",
-    "city",
+    "cityAddress",
     "zipCode",
     "country",
     "telNo",
