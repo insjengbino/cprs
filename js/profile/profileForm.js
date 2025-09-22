@@ -128,11 +128,11 @@ document.addEventListener('input', function (e) {
 
         if (saveActionNameHandler) {
             setSaveBtnActionName("saveBtn", saveActionNameHandler(businessType));
-            setFormActionName("profileForm", saveActionNameHandler(businessType));
+            // setFormActionName("profileForm", saveActionNameHandler(businessType));
         } else {
             console.warn(`No save action defined for client type: ${clientType} and businessType: ${businessType}`);
             setSaveBtnActionName("saveBtn", ""); // optional fallback
-            setFormActionName("profileForm", "");
+            // setFormActionName("profileForm", "");
         }
 
     }
