@@ -438,6 +438,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String clientTypeForm() {
+        this.setInSession("_client_type", this.clientType);
         return "success";
     }
 
