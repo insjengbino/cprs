@@ -85,14 +85,13 @@
 <@s.url id="removeImportedCommoditiesURL" action="removeProfileImportedCommodities">
     <@s.param name="id" value="id"/>
 </@s.url>
-<div class="profileForm">
 
     <table name="BodyBackground" align="center" cellspacing="5" cellpadding="5" border="0" bgcolor="#CCCCCC" ><tr ><td >
                 <#include "/WEB-INF/views/commons/profile_menu.ftl"/>
                 <table align="center" cellspacing="10" cellpadding="2" border="0" bgcolor="#6A639D" ><tr><td bgcolor="#FFFFFF" >
                             <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
                                         <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
-                                                    <@s.form method="POST" enctype="multipart/form-data" id="mainForm">
+                                                    <@s.form method="POST" enctype="multipart/form-data" id="profileForm">
                                                     <@s.hidden name="id"/>
                                                         <h3>On going development, please ignore bugs</h3>
 
@@ -306,7 +305,6 @@
     </td></tr></table>
     </@s.form>
 
-</div>
 <script src = "${base}/js/profile/actionNameMappings.js" type="module"></script>
 <script src = "${base}/js/profile/fieldMappings.js" type="module"></script>
 <script src = "${base}/js/profile/formUtils.js" type="module"></script>
