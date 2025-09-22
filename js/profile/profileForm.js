@@ -64,7 +64,7 @@ document.addEventListener('input', function (e) {
 (function () {
     function manageHiddenAfterBusinessTypeChange(dropdown) {
         const businessType = (dropdown?.value || "").trim().toUpperCase();
-        const clientTypeEl = document.getElementById("clientType");
+        const clientTypeEl = document.getElementById("clientTypeDisplay");
         const clientType = clientTypeEl ? clientTypeEl.value.trim().toUpperCase() : null;
 
         if (!clientType) {
@@ -151,7 +151,7 @@ document.addEventListener('input', function (e) {
     function manageHiddenAfterBusinessNatureChange(dropdown){
         const businessNatureCode = (dropdown?.value || "").trim().toUpperCase();
 
-        const clientTypeEl = document.getElementById("clientType");
+        const clientTypeEl = document.getElementById("clientTypeDisplay");
         const clientType = clientTypeEl ? clientTypeEl.value.trim().toUpperCase() : null;
 
         const prcIdNoEl = document.getElementById("prcIdNo");
