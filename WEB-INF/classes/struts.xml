@@ -77,9 +77,16 @@
             <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>			
         </action>
         
+<!--        <action name="clientTypeForm" method="clientTypeForm" class="profilesController">-->
+<!--            <result name="success" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>	-->
+<!--            <result name="input" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>		-->
+<!--        </action>-->
         <action name="clientTypeForm" method="clientTypeForm" class="profilesController">
-            <result name="success" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>	
-            <result name="input" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>		
+            <result name="success" type="freemarker">
+                <param name="actionName">profileForm</param>
+                <param name="namespace">/cprs</param>
+            </result>
+            <result name="input" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>
         </action>
 
         <action name="businessForm" method="businessForm" class="profilesController">
