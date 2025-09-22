@@ -74,7 +74,8 @@
     	</action> 
     	
         <action name="profileForm" method="profileForm" class="profilesController">
-            <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>			
+            <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
+            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
         </action>
         
         <action name="clientTypeForm" method="clientTypeForm" class="profilesController">
