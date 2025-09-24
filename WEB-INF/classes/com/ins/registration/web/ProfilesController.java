@@ -428,6 +428,12 @@ public class ProfilesController extends BaseController implements Preparable, Va
     public String profileForm() {
         this.log.warn(this.profile.getClientType());
         this.log.warn(this.profile.getBusinessType());
+        if(this.getClientType() == null || "".equals(this.getClientType()))
+            this.setClientType(String.valueOf(this.getFromSession("_client_type")));
+        if(this.getBusinessType() == null || "".equals(this.getBusinessType()))
+            this.setBusinessType(String.valueOf(this.getFromSession("business_type")));
+        if(this.getNatureOfBusiness() == null || "".equals(this.getNatureOfBusiness()))
+            this.setNatureOfBusiness(String.valueOf(this.getFromSession("nature_of_business")));
         this.setInSession("nature_of_business", this.natureOfBusiness);
         this.setInSession("business_type", this.businessType);
         this.setInSession("_client_type", this.clientType);
