@@ -113,7 +113,7 @@
 			<message key="Only alphanumeric characters are allowed. Other special characters as well as any non-English alphabet are not accepted."/>
 		</field-validator>
 		<field-validator type="stringlength">
-        	<param name="maxLength">4</param>
+        	<param name="maxLength">9</param>
         	<param name="trim">true</param>
         	<message>Exceeded maximum field length of ${maxLength} characters.</message>
         </field-validator>						

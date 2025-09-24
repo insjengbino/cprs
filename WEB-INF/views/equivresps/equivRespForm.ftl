@@ -82,7 +82,7 @@
 			<@s.textfield label="Area of Responsibility" name="equivRespOfficer.area" maxLength=35 required="true"  />
 			<@s.textfield label="Address" name="equivRespOfficer.address" maxLength=70 required="true"  />
 			<@s.textfield label="City" name="equivRespOfficer.city" maxLength=25 required="true"  />
-			<@s.textfield label="Zip Code" name="equivRespOfficer.zipCode" maxLength=4 required="true"  />
+			<@s.textfield label="Zip Code" name="equivRespOfficer.zipCode" maxLength=9 required="true"  />
 			
 			<@s.select label="Country" name="equivRespOfficer.country" 
 			list="%{countries}" listKey="code" listValue="name" required="true"/>
