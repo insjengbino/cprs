@@ -304,10 +304,10 @@
 	</field>
 	
 	<field name="profile.importerTin">
-<!--        <field-validator type="requiredstring">-->
-<!--            <param name="expression">natureOfBusiness == 0000</param>-->
-<!--            <message>You can not leave this field empty.</message>-->
-<!--        </field-validator>-->
+        <field-validator type="requiredstring">
+            <param name="expression">natureOfBusiness == 0000</param>
+            <message>You can not leave this field empty.</message>
+        </field-validator>
 		<field-validator type="regex">
 			<param name="expression">[0-9]*</param>
 			<message key="Only numeric characters are accepted. Do not use a dash to separate digits."/>
@@ -321,10 +321,10 @@
 	</field>
 
 	<field name="profile.exporterTin">
-<!--        <field-validator type="requiredstring">-->
-<!--            <param name="expression">natureOfBusiness == 0000</param>-->
-<!--            <message>You can not leave this field empty.</message>-->
-<!--        </field-validator>-->
+        <field-validator type="requiredstring">
+            <param name="expression">natureOfBusiness == 0000</param>
+            <message>You can not leave this field empty.</message>
+        </field-validator>
 		<field-validator type="regex">
 			<param name="expression">[0-9]*</param>
 			<message key="Only numeric characters are accepted. Do not use a dash to separate digits."/>
