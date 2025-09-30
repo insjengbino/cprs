@@ -76,7 +76,7 @@
         <action name="profileForm" method="profileForm" class="profilesController">
             <interceptor-ref name="crudStack"/>
             <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
-            <result name="input" type="freemarker">WEB-INF/views/profiles/clientTypeForm.ftl</result>
+            <result name="input" type="freemarker">WEB-INF/views/wizard/clientTypeForm.ftl</result>
         </action>
         
         <action name="clientTypeForm" method="clientTypeForm" class="profilesController">
