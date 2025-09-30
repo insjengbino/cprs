@@ -182,6 +182,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
             }
         }
 
+        log.debug(">>> action name: " + this.getActionName());
+        log.debug(">>> role: " + this.getRole());
+        log.debug(">>> clientType: "  + this.getClientType());
         if(this.getActionName().equals("profileForm")){
             if("2".equals(getRole()) && !"BR".equals(this.clientType)){
                 this.addFieldError("clientType", "Action not allowed. Your account is\n" +
