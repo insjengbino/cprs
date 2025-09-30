@@ -185,8 +185,12 @@ public class ProfilesController extends BaseController implements Preparable, Va
         log.debug(">>> action name: " + this.getActionName());
         log.debug(">>> role: " + this.getRole());
         log.debug(">>> clientType: "  + this.getClientType());
+        log.debug(">>> 1st condition: "+ (this.getActionName().equals("profileForm")));
+        log.debug(">>> 2nd condition: " + ("2".equals(getRole()) && !"BR".equals(this.clientType)));
         if(this.getActionName().equals("profileForm")){
+            log.debug(">>> inside 1st condition ");
             if("2".equals(getRole()) && !"BR".equals(this.clientType)){
+                log.debug(">>> inside 2nd condition ");
                 this.addFieldError("clientType", "Action not allowed. Your account is\n" +
                         "registered as a Broker. Adding other client types is not\n" +
                         "permitted for this account type.”");
