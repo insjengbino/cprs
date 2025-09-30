@@ -42,6 +42,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
+import javax.print.DocFlavor;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -1319,6 +1320,12 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String getRole(){
-        return this.role;
+        if(StringUtils.isNotEmpty(this.role)){
+            return this.role;
+        }else{
+            if(StringUtils.isNotEmpty(this.getFromSession("role").toString()))
+                return this.getFromSession("role").toString();
+            else return null;
+        }
     }
 }
