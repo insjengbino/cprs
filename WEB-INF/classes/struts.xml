@@ -19,7 +19,7 @@
 	    </result-types>
     	<interceptors>
 			<interceptor name="fieldInterceptor" class="com.ins.registration.misc.FieldInterceptor"/>		        
-			<interceptor name="importFileUpload" class="com.ins.registration.misc.ImportFileUploadInterceptor"/>		        
+			<interceptor name="importFileUpload" class="com.ins.registration.misc.ImportFileUploadInterceptor"/>
     		<interceptor-stack name="crudStack">
 				<interceptor-ref name="exception"/>
 		        <interceptor-ref name="alias"/>
@@ -37,7 +37,7 @@
 						text/plain,image/jpg,image/jpeg,image/png,image/gif,image/bmp,image/pjpeg
 					</param>
 					<param name="maximumSize">5000</param>
-				</interceptor-ref>		        
+				</interceptor-ref>
 		        <interceptor-ref name="checkbox"/>
 		        <interceptor-ref name="staticParams"/>
 		        <interceptor-ref name="params">
@@ -76,7 +76,7 @@
         <action name="profileForm" method="profileForm" class="profilesController">
             <interceptor-ref name="crudStack"/>
             <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
-            <result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
+            <result name="input" type="freemarker">WEB-INF/views/profiles/clientTypeForm.ftl</result>
         </action>
         
         <action name="clientTypeForm" method="clientTypeForm" class="profilesController">
