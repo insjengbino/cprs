@@ -94,6 +94,7 @@
                                                     <@s.form method="POST" enctype="multipart/form-data" id="profileForm">
                                                     <@s.hidden name="id"/>
                                                         <h3>On going development, please ignore bugs</h3>
+                                                    <@s.fielderror />
 
                                                     <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
                                                     <#--                                                    <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
