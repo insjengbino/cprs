@@ -8,7 +8,7 @@
 		</field-validator>	
 	</field>
 	
-	<field name="profile.company"> n
+	<field name="profile.company">
 		<field-validator type="requiredstring">
 			<message key="You can not leave this field empty."/>
 		</field-validator>
@@ -28,7 +28,7 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-ZÑ'.\- ]]*</param>
+			<param name="expression">[A-ZÑ'.\- ]*</param>
 			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
 		</field-validator>
 		<field-validator type="stringlength">
@@ -43,7 +43,7 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-ZÑ'.\- ]]*</param>
+			<param name="expression">[A-ZÑ'.\- ]*</param>
 			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
 		</field-validator>
 		<field-validator type="stringlength">
@@ -58,7 +58,7 @@
 			<message key="You can not leave this field empty."/>
 		</field-validator>	
 		<field-validator type="regex">
-			<param name="expression">[A-ZÑ'.\- ]]*</param>
+			<param name="expression">[A-ZÑ'.\- ]*</param>
 			<message key="Numeric and special characters are not accepted, as well as any non-English alphabet."/>
 		</field-validator>
 		<field-validator type="stringlength">

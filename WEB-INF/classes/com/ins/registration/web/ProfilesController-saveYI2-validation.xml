@@ -8,7 +8,7 @@
 		</field-validator>	
 	</field>
 	
-	<field name="profile.company"> n
+	<field name="profile.company">
 		<field-validator type="requiredstring">
 			<message key="You can not leave this field empty."/>
 		</field-validator>
