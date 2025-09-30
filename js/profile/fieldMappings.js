@@ -1059,15 +1059,11 @@ YIMap.set("common-fields", [
 ]);
 
 YIMap.set("PART", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+    //no unique fields
 ]);
 
 YIMap.set("CORP", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+    //no unique fields
 ]);
 
 YIMap.set("CMP", [
@@ -1106,15 +1102,11 @@ YIReqMap.set("common-fields", [
 ]);
 
 YIReqMap.set("PART", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+    //no unique fields
 ]);
 
 YIReqMap.set("CORP", [
-    "SECRegNo",
-    "authCapitalStockAmount",
-    "paidUpCapitalAmount"
+    //no unique fields
 ]);
 
 YIReqMap.set("CMP", [

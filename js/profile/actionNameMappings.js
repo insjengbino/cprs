@@ -28,8 +28,8 @@ export const saveActionNameMap = {
         else return "saveWarehouse2";
     },
     "YI": businessType => {
-        if("IND" === businessType || "SPROP" === businessType) return "YI1save";
-        else return "YI2save";
+        if("IND" === businessType || "SPROP" === businessType) return "saveYI1";
+        else return "saveYI2"; // businessType = CMP
     },
     "AR": businessType => {
         if("IND" === businessType || "SPROP" === businessType) return "saveArrastreOperator1";

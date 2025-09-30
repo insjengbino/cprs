@@ -271,9 +271,31 @@
             	<param name="location">http://www.intercommerce.com.ph/</param>
   				<param name="parse">false</param>
             </result>
-        </action>    
-                   
-        <action name="editProfile" method="editProfile" class="profilesController">
+        </action>
+
+		<action name="saveYI1" method="saveNonRegularImporter" class="profilesController">
+			<interceptor-ref name="crudStack"/>
+			<result name="success" type="redirect">listProfiles.action</result>
+			<result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
+
+			<result name="error" type="redirect">
+				<param name="location">http://www.intercommerce.com.ph/</param>
+				<param name="parse">false</param>
+			</result>
+		</action>
+
+		<action name="saveYI2" method="saveNonRegularImporter" class="profilesController">
+			<interceptor-ref name="crudStack"/>
+			<result name="success" type="redirect">listProfiles.action</result>
+			<result name="input" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>
+
+			<result name="error" type="redirect">
+				<param name="location">http://www.intercommerce.com.ph/</param>
+				<param name="parse">false</param>
+			</result>
+		</action>
+
+			<action name="editProfile" method="editProfile" class="profilesController">
             <result name="success" type="freemarker">WEB-INF/views/profiles/profileFormV2.ftl</result>	
 	    </action>
 	    

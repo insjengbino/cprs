@@ -157,7 +157,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
 //        prepSaveActionName();
 
         if (this.getActionName().startsWith("save") && !this.hasErrors()) {
-            if (this.profile.getPicture() == null && this.profilePictureFile == null) {
+            if (this.profile.getPicture() == null && this.profilePictureFile == null && !this.profile.getBusinessType().equals("YI")) {
                 this.addFieldError("profilePictureFile", "Please attach Scanned Photo");
             }
 
@@ -610,6 +610,26 @@ public class ProfilesController extends BaseController implements Preparable, Va
             this.profile.setSignature(this.readFully(this.profileSignatureFile));
         }
 
+        this.profile.setClientType((String)this.getFromSession("_client_type"));
+        this.profile.setBusinessType((String)this.getFromSession("business_type"));
+        this.profile.setInsClientNo((String)this.getFromSession("clientCode"));
+        this.profile.setNatureOfBusiness((String)this.getFromSession("nature_of_business"));
+        if (this.profile.getStatus() == null) {
+            Status status = this.statusService.findByName("Incomplete");
+            this.profile.setStatus(status);
+        }
+
+        this.profile.setLastDateOfTransaction(new Date());
+        this.profile.setPeriodOfEffectivity(this.periodOfEffectivity);
+        if (this.insClientCodeNotInSession()) {
+            return "error";
+        } else {
+            this.profileService.save(this.profile);
+            return "success";
+        }
+    }
+
+    public String saveNonRegularImporter() {
         this.profile.setClientType((String)this.getFromSession("_client_type"));
         this.profile.setBusinessType((String)this.getFromSession("business_type"));
         this.profile.setInsClientNo((String)this.getFromSession("clientCode"));
