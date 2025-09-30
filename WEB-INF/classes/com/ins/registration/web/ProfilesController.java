@@ -630,6 +630,18 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String saveNonRegularImporter() {
+        if (this.profile.getImportedCommodities() == null) {
+            this.profile.setImportedCommodities(new byte[0]);
+        }
+
+        if (this.profile.getPicture() == null) {
+            this.profile.setPicture(new byte[0]);
+        }
+
+        if (this.profile.getSignature() == null) {
+            this.profile.setSignature(new byte[0]);
+        }
+
         this.profile.setClientType((String)this.getFromSession("_client_type"));
         this.profile.setBusinessType((String)this.getFromSession("business_type"));
         this.profile.setInsClientNo((String)this.getFromSession("clientCode"));
