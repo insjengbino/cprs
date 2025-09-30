@@ -40,6 +40,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -426,6 +427,12 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public String profileForm() {
+        if("2".equals(getRole()) && !"BR".equals(this.clientType)){
+            this.addFieldError("clientType", "Action not allowed. Your account is\n" +
+                    "registered as a Broker. Adding other client types is not\n" +
+                    "permitted for this account type.”");
+            return INPUT;
+        }
         this.log.warn(this.profile.getClientType());
         this.log.warn(this.profile.getBusinessType());
         if(this.getClientType() == null || "".equals(this.getClientType()))
@@ -1299,6 +1306,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public void setClientCode(String clientCode){
         this.clientCode = clientCode;
+        this.setInSession("clientCode", role);
     }
 
     public String getCLientCode(){
@@ -1307,6 +1315,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public void setRole(String role){
         this.role = role;
+        this.setInSession("role", role);
     }
 
     public String getRole(){
