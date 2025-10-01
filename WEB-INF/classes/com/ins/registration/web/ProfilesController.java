@@ -196,6 +196,9 @@ public class ProfilesController extends BaseController implements Preparable, Va
             }
         }
 
+        //added on phase 3 enhancement
+        extraBrokerValidation();
+
     }
 
     public String execute() {
@@ -1366,6 +1369,23 @@ public class ProfilesController extends BaseController implements Preparable, Va
             if(StringUtils.isNotEmpty(this.getFromSession("role").toString()))
                 return this.getFromSession("role").toString();
             else return null;
+        }
+    }
+
+    /**
+     * this validation is only applicable for Broker profiles with business nature == declarant(0000)
+     * */
+     private void extraBrokerValidation(){
+        if((this.getActionName().equals("saveBroker1") || this.getActionName().equals("saveBroker2"))
+                && this.getNatureOfBusiness().equals("0000")){
+            //make importerTin and exporterTin required
+            if(StringUtils.isEmpty(this.profile.getImporterTin())){
+                this.addFieldError("profile.importerTin", "You can not leave this field empty.");
+            }
+
+            if(StringUtils.isEmpty(this.profile.getExporterTin())){
+                this.addFieldError("profile.exporterTin", "You can not leave this field empty.");
+            }
         }
     }
 }

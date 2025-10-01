@@ -1,12 +1,22 @@
 package com.ins.registration.model;
 
+import com.ins.registration.model.Commodity;
+import com.ins.registration.model.EquivRespOfficer;
+import com.ins.registration.model.Exporter;
+import com.ins.registration.model.Importer;
+import com.ins.registration.model.MajorClient;
+import com.ins.registration.model.MajorStockholder;
+import com.ins.registration.model.MajorSupplier;
+import com.ins.registration.model.PrincipalOfficer;
+import com.ins.registration.model.Profile;
+import com.ins.registration.model.Role;
+import com.ins.registration.model.Status;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import javax.management.relation.Role;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -52,60 +62,112 @@ import javax.persistence.Transient;
 )})
 public class Profile implements Serializable {
     private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue
     private Long id;
+
     private String clientType;
+
     private String clientCcn;
+
     private String insClientNo;
+
     private String tinNo;
+
     private String company;
+
     private String firstName;
+
     private String middleName;
+
     private String lastName;
+
     private String citizenship;
+
     private String address;
+
     private String city;
+
     private String zipCode;
+
     private String country;
+
     private String Telephone;
+
     private String altTelephone;
+
     private String fax;
+
     private String email;
+
     private String mobile;
+
     private String website;
+
     private String prcIdNo;
+
     private String sssIdNo;
+
     private String passportIdNo;
+
     private String driverLicenseIdNo;
+
     private String pezaIdNo;
+
     private String secIdNo;
+
     private String natureOfBusiness;
+
+    private String businessName;
+
     private String capitalStockAmount;
+
     private String paidUpCapitalAmount;
+
     private String businessType;
+
     private String aabAssignedBankRefNo;
+
     private String relatedCompanyName1;
+
     private String relatedCompanyName2;
+
     private String relatedCompanyName3;
+
     private String vaspPrimaryCcn;
+
     private String vaspSecondaryCcn;
+
     private String jo291;
+
     private String certificateOfAuthority;
+
     private String underWritingCapacity;
+
     private String priBrokerTaxpayerIdNo;
+
     private String priBrokerCCN;
+
     private String secBrokerTaxpayerIdNo;
+
     private String secBrokerCCN;
+
     private String customBondedWarehouse;
+
     private String customBondedWarehouseType;
+
     private String errorMessage;
+
     @ManyToOne
     private Status status;
+
     @Temporal(TemporalType.DATE)
     private Date periodOfEffectivity;
+
     @Temporal(TemporalType.DATE)
     private Date lastDateOfTransaction;
+
     @Temporal(TemporalType.DATE)
     private Date dateCreated;
     @OneToMany(
@@ -144,12 +206,20 @@ public class Profile implements Serializable {
             cascade = {CascadeType.ALL}
     )
     private List<Importer> importers;
+
+    @OneToMany(
+            targetEntity = Exporter.class,
+            mappedBy = "profile",
+            cascade = {CascadeType.ALL})
+    private List<Exporter> exporters;
+
     @OneToMany(
             targetEntity = Commodity.class,
             mappedBy = "profile",
             cascade = {CascadeType.ALL}
     )
     private List<Commodity> commodities;
+
     @OneToMany(
             targetEntity = ProfileHistory.class,
             mappedBy = "profile",
@@ -162,13 +232,21 @@ public class Profile implements Serializable {
     private List<Role> roles = new ArrayList();
     @Lob
     private byte[] importedCommodities;
+
     @Lob
     private byte[] picture;
+
     @Transient
     private InputStream pictureAsInputStream;
+
     @Lob
     private byte[] signature;
+
     private boolean stored = false;
+
+    private String importerTin;
+
+    private String exporterTin;
 
     public List<Role> getRoles() {
         return this.roles;
@@ -362,6 +440,14 @@ public class Profile implements Serializable {
         this.natureOfBusiness = natureOfBusiness;
     }
 
+    public String getBusinessName() {
+        return this.businessName;
+    }
+
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
+    }
+
     public String getCapitalStockAmount() {
         return this.capitalStockAmount;
     }
@@ -430,8 +516,16 @@ public class Profile implements Serializable {
         this.importers = importers;
     }
 
+    public void setExporters(List<Exporter> exporters) {
+        this.exporters = exporters;
+    }
+
     public List<Importer> getImporters() {
         return this.importers;
+    }
+
+    public List<Exporter> getExporters() {
+        return this.exporters;
     }
 
     public List<Commodity> getCommodities() {
@@ -554,32 +648,32 @@ public class Profile implements Serializable {
         this.clientType = clientType;
     }
 
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     public Date getPeriodOfEffectivity() {
         return this.periodOfEffectivity;
     }
 
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     public void setPeriodOfEffectivity(Date periodOfEffectivity) {
         this.periodOfEffectivity = periodOfEffectivity;
     }
 
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     public Date getDateCreated() {
         return this.dateCreated;
     }
 
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
 
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     public Date getLastDateOfTransaction() {
         return this.lastDateOfTransaction;
     }
 
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     public void setLastDateOfTransaction(Date lastDateOfTransaction) {
         this.lastDateOfTransaction = lastDateOfTransaction;
     }
@@ -617,7 +711,9 @@ public class Profile implements Serializable {
     }
 
     public byte[] getImportedCommodities() {
-        return this.importedCommodities != null && this.importedCommodities.length == 0 ? null : this.importedCommodities;
+        if (this.importedCommodities != null && this.importedCommodities.length == 0)
+            return null;
+        return this.importedCommodities;
     }
 
     public void setImportedCommodities(byte[] importedCommodities) {
@@ -625,7 +721,9 @@ public class Profile implements Serializable {
     }
 
     public byte[] getPicture() {
-        return this.picture != null && this.picture.length == 0 ? null : this.picture;
+        if (this.picture != null && this.picture.length == 0)
+            return null;
+        return this.picture;
     }
 
     public void setPictureAsInputStream(InputStream pictureAsInputStream) {
@@ -636,9 +734,8 @@ public class Profile implements Serializable {
         if (this.picture != null) {
             this.pictureAsInputStream = new ByteArrayInputStream(this.picture);
             return this.pictureAsInputStream;
-        } else {
-            return null;
         }
+        return null;
     }
 
     public void setPicture(byte[] picture) {
@@ -646,7 +743,9 @@ public class Profile implements Serializable {
     }
 
     public byte[] getSignature() {
-        return this.signature != null && this.signature.length == 0 ? null : this.signature;
+        if (this.signature != null && this.signature.length == 0)
+            return null;
+        return this.signature;
     }
 
     public void setSignature(byte[] signature) {
@@ -680,7 +779,7 @@ public class Profile implements Serializable {
     public int hashCode() {
         int prime = 31;
         int result = 1;
-        result = 31 * result + (this.id == null ? 0 : this.id.hashCode());
+        result = 31 * result + ((this.id == null) ? 0 : this.id.hashCode());
         return result;
     }
 
@@ -719,5 +818,21 @@ public class Profile implements Serializable {
 
     public void setStored(boolean stored) {
         this.stored = stored;
+    }
+
+    public void setImporterTin(String importer_tin) {
+        this.importerTin = importer_tin;
+    }
+
+    public String getImporterTin() {
+        return this.importerTin;
+    }
+
+    public void setExporterTin(String exporter_tin) {
+        this.exporterTin = exporter_tin;
+    }
+
+    public String getExporterTin() {
+        return this.exporterTin;
     }
 }
