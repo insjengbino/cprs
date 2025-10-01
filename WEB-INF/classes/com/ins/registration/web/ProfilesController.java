@@ -157,7 +157,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
 //        prepSaveActionName();
 
         if (this.getActionName().startsWith("save") && !this.hasErrors()) {
-            if (this.profile.getPicture() == null && this.profilePictureFile == null && !this.profile.getBusinessType().equals("YI")) {
+            if (this.profile.getPicture() == null && this.profilePictureFile == null && !this.getClientType().equals("YI")) {
                 this.addFieldError("profilePictureFile", "Please attach Scanned Photo");
             }
 
