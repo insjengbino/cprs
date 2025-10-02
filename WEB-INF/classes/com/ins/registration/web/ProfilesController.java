@@ -1227,14 +1227,19 @@ public class ProfilesController extends BaseController implements Preparable, Va
             } else if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
                 return true;
             }
-        } else if (profile.getClientType().equals("YI")) {
-            if (profile.getBusinessType().equals("IND")) {
-                if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
-                    return true;
-                }
-            } else if (profile.getMajorStockholders().size() > 0 && profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
-                return true;
-            }
+        }
+
+        else if (profile.getClientType().equals("YI")) {
+            return true;
+//            CPRS enhancement phase 3, OCT/02/2025
+//            hide sub profile creation for YI (Non Regular Importer) as per Business Solution Team : Justine
+//            if (profile.getBusinessType().equals("IND")) {
+//                if (profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
+//                    return true;
+//                }
+//            } else if (profile.getMajorStockholders().size() > 0 && profile.getPrincipalOfficers().size() > 0 && profile.getEquivRespOfficers().size() > 0 && profile.getImporters().size() > 0) {
+//                return true;
+//            }
         }
 
         return false;

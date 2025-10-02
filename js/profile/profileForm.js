@@ -31,12 +31,21 @@ function validateImageEvent(event) {
 
 document.addEventListener("DOMContentLoaded", function() {
     var select = document.getElementById("businessNature");
-    if (select) {
-        Array.from(select.options).forEach(function(opt, i) {
-            opt.title = natureOfBusinessFullNames[i];
-        });
+
+    if (!select) return; // dropdown not in DOM → skip
+
+    if (!Array.isArray(window.natureOfBusinessFullNames)) {
+        console.warn("⚠️ natureOfBusinessFullNames is missing or not an array.");
+        return;
     }
+
+    Array.from(select.options).forEach(function(opt, i) {
+        if (natureOfBusinessFullNames[i]) {
+            opt.title = natureOfBusinessFullNames[i];
+        }
+    });
 });
+
 
 document.addEventListener('input', function (e) {
     const el = e.target;

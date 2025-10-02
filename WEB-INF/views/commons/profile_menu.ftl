@@ -1,4 +1,7 @@
-<@s.if test="(profile.id != null )">
+<#-- CPRS enhancement phase 3, OCT/02/2025 -->
+<#-- hide sub profile creation for YI (Non Regular Importer) as per Business Solution Team : Justine-->
+
+<@s.if test="(profile.id != null ) && clientType != 'YI'">
 <table border=2 align=center rules=none frame=box  bgcolor="#7F8081" cellpadding=8>
 <tr><td>
 

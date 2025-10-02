@@ -1039,7 +1039,7 @@ WOReqMap.set("SPROP", [
 YIMap.set("common-fields", [
     "clientTypeDisplay",
     "businessEntityType",
-    "businessNature",
+    // "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
@@ -1048,14 +1048,16 @@ YIMap.set("common-fields", [
     "zipCode",
     "country",
     "telNo",
-    "altTelNo",
-    "fax",
+    // "altTelNo",
+    // "fax",
     "mobileNo",
     "email",
-    "website",
+    // "website",
     "tinNo",
     "primaryVASPNo",
-    "secondaryVASPNo"
+    // "secondaryVASPNo"
+    "primaryBrokerTIN",
+    "primaryBrokerCCN"
 ]);
 
 YIMap.set("PART", [
@@ -1087,7 +1089,7 @@ YIMap.set("SPROP", [
 YIReqMap.set("common-fields", [
     "clientTypeDisplay",
     "businessEntityType",
-    "businessNature",
+    // "businessNature",
     "insClientNo",
     "companyName",
     "citizenship",
@@ -1096,9 +1098,16 @@ YIReqMap.set("common-fields", [
     "zipCode",
     "country",
     "telNo",
+    // "altTelNo",
+    // "fax",
+    "mobileNo",
     "email",
+    // "website",
     "tinNo",
-    "primaryVASPNo"
+    "primaryVASPNo",
+    // "secondaryVASPNo"
+    "primaryBrokerTIN",
+    "primaryBrokerCCN"
 ]);
 
 YIReqMap.set("PART", [
