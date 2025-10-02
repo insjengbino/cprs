@@ -1,7 +1,8 @@
 <html>
 <head>
     <meta name="tab" content="profiles"/>
-    <link rel="stylesheet" href="/cprs/struts/xhtml/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="${base}/struts/xhtml/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="${base}/styles/profile/profileForm.css" type="text/css"/>
     <@jscalendar.head calendarcss="calendar-blue"/>
 </head>
 <body>
@@ -103,7 +104,7 @@
                                                         <#--<@s.textfield label="Customs Client Number" name="profile.clientCcn" readonly="true"  />-->
                                                     <div id="profileFormFields" style="visibility:hidden;">
 
-                                                        <@s.textfield id="clientTypeDisplay" label="Client Type" value="${clientType}" readonly="true"  />
+                                                        <@s.textfield class="profileForm-field" id="clientTypeDisplay" label="Client Type" value="${clientType}" readonly="true"  />
                                                         <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
                                                         <@s.select id= "businessEntityType" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name"/>
                                                         <#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
