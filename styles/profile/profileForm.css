@@ -18,4 +18,5 @@ td.tdLabel {
 
 .profileForm-field{
     width: 279px;
+    box-sizing: border-box;
 }

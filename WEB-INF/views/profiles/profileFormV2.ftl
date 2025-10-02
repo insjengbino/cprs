@@ -94,7 +94,6 @@
                                         <table align="center" cellspacing="2" cellpadding="2" border="0" bgcolor="#FFFFFF" ><tr><td bgcolor="#FFFFFF" >
                                                     <@s.form method="POST" enctype="multipart/form-data" id="profileForm">
                                                     <@s.hidden name="id"/>
-                                                        <h3>On going development, please ignore bugs</h3>
 
                                                     <input type="hidden" name="clientType" value="${clientType?if_exists}"/>
                                                     <#--                                                    <input type="hidden" name="businessType" value="${businessType?if_exists}"/>-->
@@ -106,51 +105,50 @@
 
                                                         <@s.textfield cssClass="profileForm-field" id="clientTypeDisplay" label="Client Type" value="${clientType}" readonly="true"  />
                                                         <#--<@s.textfield label="Type of Business Entity" value="%{businessType}" readonly="true"  />-->
-                                                        <@s.select id= "businessEntityType" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name"/>
+                                                        <@s.select cssClass="profileForm-field" id= "businessEntityType" label="Type of Business Entity" name="businessType" list="%{businessTypeList}" listKey="code" listValue="name"/>
                                                         <#--		  <@s.textfield label="Nature of Business" value="%{natureOfBusiness}" readonly="true"  />-->
-                                                        <@s.select id="businessNature" label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}" cssStyle="width: 279.33px;"/>
-                                                        <@s.textfield id="insClientNo" label="INS Client Number" name="profile.insClientNo" readonly="true"  />
-                                                        <!--<@s.textfield label="INS Client Number" value="%{profile.insClientNo}" readonly="true"  />-->
-                                                        <@s.textfield id="companyName" label="Business Name/Company Name" name="profile.company" maxLength=35/>
-                                                        <@s.textfield id="firstName" label="First Name" name="profile.firstName" maxLength=35/>
-                                                        <@s.textfield id="middleName" label="Middle Name" name="profile.middleName" maxLength=35/>
-                                                        <@s.textfield id= "lastName" label="Last Name " name="profile.lastName" maxLength=35/>
-                                                        <@s.select id="citizenship" label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name"/>
-                                                        <@s.textfield id="address" label="Address" name="profile.address" maxLength=70/>
-                                                        <@s.textfield id="cityAddress" label="City" name="profile.city" maxLength=25/>
-                                                        <@s.textfield id="zipCode" label="Zip Code" type="number" name="profile.zipCode" maxlength="9"/>
-                                                        <@s.select id="country" label="Country" name="profile.country" list="%{countries}" listKey="code" listValue="name"/>
-                                                        <@s.textfield id="telNo" label="Telephone Number" name="profile.telephone" maxLength=15/>
-                                                        <@s.textfield id="altTelNo" label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15  />
-                                                        <@s.textfield id="fax" label="Fax" name="profile.fax" maxLength=15  />
-                                                        <@s.textfield id="mobileNo" label="Mobile Number" name="profile.mobile" maxLength=15   />
-                                                        <@s.textfield id="email" label="Email Address" name="profile.email" maxLength=88/>
-                                                        <@s.textfield id="website" label="Website" name="profile.website" maxLength=100  />
-                                                        <@s.select id="bondedWarehouseType" label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}" listKey="code" listValue="name"/>
-                                                        <@s.textfield id="bondedWarehouse" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/> <!--not required-->
-                                                        <@s.textfield id="certOfAuth" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
-                                                        <@s.textfield id="underWritingCap" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 />
-                                                        <@s.textfield id="tinNo" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
-                                                        <@s.textfield id="sssNo" label="SSS Number" name="profile.sssIdNo" maxLength=17/>
-                                                        <@s.textfield id="passportNo" label="Passport Number" name="profile.passportIdNo" maxLength=17   />
-                                                        <@s.textfield id="driverLicenseNo" label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17  />
-                                                        <@s.textfield id="prcIdNo" label="PRC Id Number" name="profile.prcIdNo" maxLength=17/>
-                                                        <@s.textfield id="importerTin" label="Importer TIN" name="profile.importerTin" maxLength=12/>
-                                                        <@s.textfield id="exporterTin" label="Exporter TIN" name="profile.exporterTin" maxLength=12/>
-                                                        <@s.textfield id="primaryVASPNo" label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
-                                                        <@s.textfield id="secondaryVASPNo" label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12/>
-                                                        <@s.textfield id="uniqueRefNo" label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
-                                                        <@s.textfield id="SECRegNo" label="SEC Registration Number" name="profile.secIdNo" maxLength=17/>
-                                                        <@s.textfield id="authCapitalStockAmount" label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18/>
-                                                        <@s.textfield id="paidUpCapitalAmount" label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18/>
-                                                        <@s.textfield id="aabAssignedBankRefNo" label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"   />
-                                                        <@s.textfield id="relatedCompany1" label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />
-                                                        <@s.textfield id= "relatedCompany2" label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />
-                                                        <@s.textfield id="relatedCompany3" label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />
-                                                        <@s.textfield id="primaryBrokerTIN" label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12/>
-                                                        <@s.textfield id="primaryBrokerCCN" label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12/>
-                                                        <@s.textfield id="secondaryBrokerTIN" label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12  />
-                                                        <@s.textfield id="secondaryBrokerCCN"  label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12  />
+                                                        <@s.select cssClass="profileForm-field" id="businessNature" label="Nature of Business" name="natureOfBusiness" list="%{naturesOfBusiness}" listKey="code" listValue="%{(name.length() > 40 ? name.substring(0,40) + '...' : name) + ' (' + code + ')'}" cssStyle="width: 279.33px;"/>
+                                                        <@s.textfield cssClass="profileForm-field" id="insClientNo" label="INS Client Number" name="profile.insClientNo" readonly="true"  />
+                                                        <@s.textfield cssClass="profileForm-field" id="companyName" label="Business Name/Company Name" name="profile.company" maxLength=35/>
+                                                        <@s.textfield cssClass="profileForm-field" id="firstName" label="First Name" name="profile.firstName" maxLength=35/>
+                                                        <@s.textfield cssClass="profileForm-field" id="middleName" label="Middle Name" name="profile.middleName" maxLength=35/>
+                                                        <@s.textfield cssClass="profileForm-field" id= "lastName" label="Last Name " name="profile.lastName" maxLength=35/>
+                                                        <@s.select cssClass="profileForm-field" id="citizenship" label="Country of Citizenship" name="profile.citizenship" list="%{countries}" listKey="code" listValue="name"/>
+                                                        <@s.textfield cssClass="profileForm-field" id="address" label="Address" name="profile.address" maxLength=70/>
+                                                        <@s.textfield cssClass="profileForm-field" id="cityAddress" label="City" name="profile.city" maxLength=25/>
+                                                        <@s.textfield cssClass="profileForm-field" id="zipCode" label="Zip Code" type="number" name="profile.zipCode" maxlength="9"/>
+                                                        <@s.select cssClass="profileForm-field" id="country" label="Country" name="profile.country" list="%{countries}" listKey="code" listValue="name"/>
+                                                        <@s.textfield cssClass="profileForm-field" id="telNo" label="Telephone Number" name="profile.telephone" maxLength=15/>
+                                                        <@s.textfield cssClass="profileForm-field" id="altTelNo" label="Alternate Telephone Number" name="profile.altTelephone" maxLength=15  />
+                                                        <@s.textfield cssClass="profileForm-field" id="fax" label="Fax" name="profile.fax" maxLength=15  />
+                                                        <@s.textfield cssClass="profileForm-field" id="mobileNo" label="Mobile Number" name="profile.mobile" maxLength=15   />
+                                                        <@s.textfield cssClass="profileForm-field" id="email" label="Email Address" name="profile.email" maxLength=88/>
+                                                        <@s.textfield cssClass="profileForm-field" id="website" label="Website" name="profile.website" maxLength=100  />
+                                                        <@s.select cssClass="profileForm-field" id="bondedWarehouseType" label="Custom Bonded Warehouse Type" name="profile.customBondedWarehouseType" list="%{customBondedWarehouseType}" listKey="code" listValue="name"/>
+                                                        <@s.textfield cssClass="profileForm-field" id="bondedWarehouse" label="Warehouse Code" name="profile.CustomBondedWarehouse" maxLength=15/> <!--not required-->
+                                                        <@s.textfield cssClass="profileForm-field" id="certOfAuth" label="Certificate of Authority" name="profile.certificateOfAuthority" maxLength=18/>
+                                                        <@s.textfield cssClass="profileForm-field" id="underWritingCap" label="Under Writing Capacity" name="profile.underWritingCapacity" maxLength=16 />
+                                                        <@s.textfield cssClass="profileForm-field" id="tinNo" label="TIN" name="profile.tinNo" minLength=12 maxLength=12/>
+                                                        <@s.textfield cssClass="profileForm-field" id="sssNo" label="SSS Number" name="profile.sssIdNo" maxLength=17/>
+                                                        <@s.textfield cssClass="profileForm-field" id="passportNo" label="Passport Number" name="profile.passportIdNo" maxLength=17   />
+                                                        <@s.textfield cssClass="profileForm-field" id="driverLicenseNo" label="Driver's License" name="profile.driverLicenseIdNo" maxLength=17  />
+                                                        <@s.textfield cssClass="profileForm-field" id="prcIdNo" label="PRC Id Number" name="profile.prcIdNo" maxLength=17/>
+                                                        <@s.textfield cssClass="profileForm-field" id="importerTin" label="Importer TIN" name="profile.importerTin" maxLength=12/>
+                                                        <@s.textfield cssClass="profileForm-field" id="exporterTin" label="Exporter TIN" name="profile.exporterTin" maxLength=12/>
+                                                        <@s.textfield cssClass="profileForm-field" id="primaryVASPNo" label="VASP Primary CCN" value="VA0000000116" name="profile.vaspPrimaryCcn" maxLength=12 required="true" readonly="true"/>
+                                                        <@s.textfield cssClass="profileForm-field" id="secondaryVASPNo" label="VASP Secondary CCN" name="profile.vaspSecondaryCcn" maxLength=12/>
+                                                        <@s.textfield cssClass="profileForm-field" id="uniqueRefNo" label="Unique Reference Number" name="profile.pezaIdNo" maxLength=17/>
+                                                        <@s.textfield cssClass="profileForm-field" id="SECRegNo" label="SEC Registration Number" name="profile.secIdNo" maxLength=17/>
+                                                        <@s.textfield cssClass="profileForm-field" id="authCapitalStockAmount" label="Authorized Capital Stock Amount" name="profile.capitalStockAmount" maxLength=18/>
+                                                        <@s.textfield cssClass="profileForm-field" id="paidUpCapitalAmount" label="Paid Up Capital Amount" name="profile.paidUpCapitalAmount" type="number" maxLength=18/>
+                                                        <@s.textfield cssClass="profileForm-field" id="aabAssignedBankRefNo" label="AAB Assigned Bank Reference No." name="profile.aabAssignedBankRefNo" readonly="true"   />
+                                                        <@s.textfield cssClass="profileForm-field" id="relatedCompany1" label="Related Company" name="profile.relatedCompanyName1"  maxLength=100   />
+                                                        <@s.textfield cssClass="profileForm-field" id= "relatedCompany2" label="Related Company" name="profile.relatedCompanyName2"  maxLength=100   />
+                                                        <@s.textfield cssClass="profileForm-field" id="relatedCompany3" label="Related Company" name="profile.relatedCompanyName3"  maxLength=100   />
+                                                        <@s.textfield cssClass="profileForm-field" id="primaryBrokerTIN" label="Primary Broker TIN" name="profile.priBrokerTaxpayerIdNo" maxLength=12/>
+                                                        <@s.textfield cssClass="profileForm-field" id="primaryBrokerCCN" label="Primary Broker CCN" name="profile.priBrokerCCN" maxLength=12/>
+                                                        <@s.textfield cssClass="profileForm-field" id="secondaryBrokerTIN" label="Secondary Broker TIN" name="profile.secBrokerTaxpayerIdNo" maxLength=12  />
+                                                        <@s.textfield cssClass="profileForm-field" id="secondaryBrokerCCN"  label="Secondary Broker CCN" name="profile.secBrokerCCN" maxLength=12  />
                                                     </div>
                                                      <#--                                                 custom fields based on clientType and businessType and other fields-->
 
