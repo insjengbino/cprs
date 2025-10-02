@@ -129,7 +129,11 @@ public class ProfilesController extends BaseController implements Preparable, Va
             this.profile = this.profileService.findByID(this.getId());
             this.clientType = this.profile.getClientType();
             this.businessType = this.profile.getBusinessType();
-            this.natureOfBusiness = this.profile.getNatureOfBusiness();
+            //cprs enhancement phase 3, removed natureOfBusiness field for YI
+            if(this.getActionName().equals("saveYI1") || this.getActionName().equals("saveYI2")){
+                this.natureOfBusiness = "";
+            } else
+                this.natureOfBusiness = this.profile.getNatureOfBusiness();
             this.setPeriodOfEffectivity(this.profile.getPeriodOfEffectivity());
         } else {
             String temp = this.getActionName();
@@ -648,7 +652,8 @@ public class ProfilesController extends BaseController implements Preparable, Va
         this.profile.setClientType((String)this.getFromSession("_client_type"));
         this.profile.setBusinessType((String)this.getFromSession("business_type"));
         this.profile.setInsClientNo((String)this.getFromSession("clientCode"));
-        this.profile.setNatureOfBusiness((String)this.getFromSession("nature_of_business"));
+        //cprs enhancement phase 3, removed natureOfBusiness field for YI
+        this.profile.setNatureOfBusiness("");
         if (this.profile.getStatus() == null) {
             Status status = this.statusService.findByName("Incomplete");
             this.profile.setStatus(status);
