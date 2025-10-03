@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SoleProReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="11111111-2222-3333-4444-555555555555">
+	<queryString/>
+	<title>
+		<band height="80">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="30" uuid="t1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text>Client Profile Registration Form (ONE TIME IMPORTER)</text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="800">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="14" uuid="line-0"/>
+				<textElement markup="none"/>
+				<text>CLIENT PROFILE REGISTRATION SHEET</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="14" width="555" height="14" uuid="line-1"/>
+				<textElement markup="none"/>
+				<text>INSTRUCTIONS: Please provide the following required information according to your client type by filling out table cells</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="28" width="555" height="14" uuid="line-2"/>
+				<textElement markup="none"/>
+				<text>or ticking off appropriate boxes in the 2nd column. Mandatory fields are written in bold type marked with asterisk(*).</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="555" height="14" uuid="line-3"/>
+				<textElement markup="none"/>
+				<text>Items in the 2nd column with asterisks(*) and not in bold type are optional but become mandatory when one of them in</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="56" width="555" height="14" uuid="line-4"/>
+				<textElement markup="none"/>
+				<text>the same optional group is being filled out. Figures in parentheses indicate the exact/maximum number of characters</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="555" height="14" uuid="line-5"/>
+				<textElement markup="none"/>
+				<text>allowed for the corresponding field.</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="84" width="555" height="14" uuid="line-6"/>
+				<textElement markup="none"/>
+				<text>CLIENT TYPE: ONCE A YEAR IMPORTER</text>
+			</staticText>
+
+			<!--label-->
+			<staticText>
+				<reportElement x="0" y="98" width="555" height="14" uuid="line-7"/>
+				<textElement markup="none"/>
+				<text>BUSINESS ENTITY:</text>
+			</staticText>
+			<!--value-->
+			<textField isBlankWhenNull="true" hyperlinkType="None">
+				<reportElement key="textField" mode="Opaque" x="556" y="98" width="357" height="14" backcolor="#CCFFFF"/>
+				<box>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[businessType]]></textFieldExpression>
+			</textField>
+
+			<staticText>
+				<reportElement x="0" y="112" width="555" height="14" uuid="line-8"/>
+				<textElement markup="none"/>
+				<text>BUSINESS/COMPANY NAME: TEST</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="126" width="555" height="14" uuid="line-9"/>
+				<textElement markup="none"/>
+				<text>TAX IDENTIFICATION NUMBER: 111111111111</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="555" height="14" uuid="line-10"/>
+				<textElement markup="none"/>
+				<text>COUNTRY OF CITIZENSHIP: PH</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="154" width="555" height="14" uuid="line-11"/>
+				<textElement markup="none"/>
+				<text>ADDRESS: TEST ADDRESS, TAGUIG CITY</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="168" width="555" height="14" uuid="line-12"/>
+				<textElement markup="none"/>
+				<text>ZIP CODE: 1634</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="182" width="555" height="14" uuid="line-13"/>
+				<textElement markup="none"/>
+				<text>COUNTRY: PH</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="196" width="555" height="14" uuid="line-14"/>
+				<textElement markup="none"/>
+				<text>TELEPHONE NUMBER: <![CDATA[telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="555" height="14" uuid="line-15"/>
+				<textElement markup="none"/>
+				<text>MOBILE NUMBER: 09171730214</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="224" width="555" height="14" uuid="line-16"/>
+				<textElement markup="none"/>
+				<text>EMAIL ADDRESS: mgt@iphoenixcorp.com</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="238" width="555" height="14" uuid="line-17"/>
+				<textElement markup="none"/>
+				<text>I certify that the foregoing information are true and correct to the best of my knowledge.</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="252" width="555" height="14" uuid="line-18"/>
+				<textElement markup="none"/>
+				<text>_________________________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="266" width="555" height="14" uuid="line-19"/>
+				<textElement markup="none"/>
+				<text>(Signature over Printed Name)</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="280" width="555" height="14" uuid="line-20"/>
+				<textElement markup="none"/>
+				<text>Date Signed :______________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="294" width="555" height="14" uuid="line-21"/>
+				<textElement markup="none"/>
+				<text>REPUBLIC OF THE PHILIPPINES</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="308" width="555" height="14" uuid="line-22"/>
+				<textElement markup="none"/>
+				<text>___________________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="322" width="555" height="14" uuid="line-23"/>
+				<textElement markup="none"/>
+				<text>Before me, a Notary Public for and in the _______________________, this_______ day of _________, 2025</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="336" width="555" height="14" uuid="line-24"/>
+				<textElement markup="none"/>
+				<text>personally appeared the following:</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="350" width="555" height="14" uuid="line-25"/>
+				<textElement markup="none"/>
+				<text>NAME CTC/PASSPORT NO. DATE/PLACE ISSUED</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="364" width="555" height="14" uuid="line-26"/>
+				<textElement markup="none"/>
+				<text>________________________________ ________________________________ ________________________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="378" width="555" height="14" uuid="line-27"/>
+				<textElement markup="none"/>
+				<text>________________________________ ________________________________ ________________________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="392" width="555" height="14" uuid="line-28"/>
+				<textElement markup="none"/>
+				<text>Known to me to be the same persons who executed the foregoing instrument and the acknowledged to me</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="406" width="555" height="14" uuid="line-29"/>
+				<textElement markup="none"/>
+				<text>that the same are their free and voluntary acts and deeds</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="420" width="555" height="14" uuid="line-30"/>
+				<textElement markup="none"/>
+				<text>This Client Profile Registration Form consisting of 1 pages, including the page on which this Acknowledgement</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="434" width="555" height="14" uuid="line-31"/>
+				<textElement markup="none"/>
+				<text>is written. has been signed on the left margin of each and every page and at the bottom of this instrument by</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="448" width="555" height="14" uuid="line-32"/>
+				<textElement markup="none"/>
+				<text>the parties and their respective witnesses.</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="462" width="555" height="14" uuid="line-33"/>
+				<textElement markup="none"/>
+				<text>WITNESS MY HAND AND NOTARIAL SEAL ON THE THE DAY, YEAR AND PLACE ABOVE-WRITTEN.</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="476" width="555" height="14" uuid="line-34"/>
+				<textElement markup="none"/>
+				<text>Doc. No: ______________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="490" width="555" height="14" uuid="line-35"/>
+				<textElement markup="none"/>
+				<text>Page No: ______________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="504" width="555" height="14" uuid="line-36"/>
+				<textElement markup="none"/>
+				<text>Book No: ______________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="518" width="555" height="14" uuid="line-37"/>
+				<textElement markup="none"/>
+				<text>Series of ______________________</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="532" width="555" height="14" uuid="line-38"/>
+				<textElement markup="none"/>
+				<text>Powered by TCPDF (www.tcpdf.org) Client Profile Registration Form(ONE TIME IMPORTER) - 4496888775</text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="546" width="555" height="14" uuid="line-39"/>
+				<textElement markup="none"/>
+				<text>Page1/1</text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20" uuid="footer-1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text>Generated from SOLE PRO.pdf</text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

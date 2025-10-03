@@ -625,6 +625,14 @@
 			<param name="documentName">Client_Profile_Information_Sheet_Warehouse_Operator</param>
 			<param name="format">PDF</param>
 			</result>
+
+			<result name="YI" type="jasper">
+				<param name="location">/reports/profileNonRegular.jasper</param>
+				<param name="dataSource">profileList</param>
+				<param name="contentDisposition">Client_Profile_Information_Sheet_Once_A_Year_Importer.pdf</param>
+				<param name="documentName">Client_Profile_Information_Sheet_Once_A_Year_Importer</param>
+				<param name="format">PDF</param>
+			</result>
 			
 			<result name="BR_0000">
 			<param name="location">WEB-INF/views/brokerDeclarant/brokerDeclarant.jsp</param>
