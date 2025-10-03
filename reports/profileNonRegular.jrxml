@@ -17,15 +17,35 @@
         whenNoDataType="NoPages"
         isTitleNewPage="false"
         isSummaryNewPage="false">
+
+    <parameter name="reportDirectory" isForPrompting="false" class="java.io.File"/>
+
+    <!--Field Declarations-->
     <field name="businessType" class="java.lang.String"/>
     <field name="company" class="java.lang.String"/>
+
     <title>
         <band height="80">
             <staticText>
                 <reportElement x="0" y="0" width="555" height="30"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                <text>Client Profile Registration Form (ONE TIME IMPORTER)</text>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <text>CLIENT PROFILE REGISTRATION SHEET</text>
             </staticText>
+
+            <image  evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+                <reportElement
+                        x="490"
+                        y="-10"
+                        width="45"
+                        height="45"
+                        key="image-1"/>
+                <box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+                <graphicElement stretchType="NoStretch"/>
+                <imageExpression class="java.lang.String"><![CDATA[$P{reportDirectory}.getCanonicalPath() + java.io.File.separator + "e2mlogo.jpg"]]></imageExpression>
+            </image>
         </band>
     </title>
     <detail>
@@ -69,7 +89,6 @@
             <!--label-->
             <staticText>
                 <reportElement x="0" y="98" width="555" height="14"/>
-
                 <text>BUSINESS ENTITY:</text>
             </staticText>
             <!--value-->
