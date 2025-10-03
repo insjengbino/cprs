@@ -27,25 +27,37 @@
     <title>
         <band height="80">
             <staticText>
-                <reportElement x="0" y="0" width="555" height="30"/>
-                <textElement textAlignment="Center" verticalAlignment="Middle"/>
-                <textElement>
-                    <font size="12"/>
+                <reportElement x="0" y="-5" width="555" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size = "12"/>
                 </textElement>
                 <text>CLIENT PROFILE REGISTRATION SHEET</text>
             </staticText>
 
+            <!--boc logo-->
+            <image  evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+                <reportElement
+                        x="0"
+                        y="0"
+                        width="45"
+                        height="45"
+                        key="image-2"/>
+                <graphicElement stretchType="NoStretch"/>
+                <imageExpression class="java.lang.String"><![CDATA[$P{reportDirectory}.getCanonicalPath() + java.io.File.separator + "boclogo.jpg"]]></imageExpression>
+            </image>
+
+            <!--e2m logo-->
             <image  evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
                 <reportElement
                         x="490"
-                        y="-10"
+                        y="0"
                         width="45"
                         height="45"
                         key="image-1"/>
-                <box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
                 <graphicElement stretchType="NoStretch"/>
                 <imageExpression class="java.lang.String"><![CDATA[$P{reportDirectory}.getCanonicalPath() + java.io.File.separator + "e2mlogo.jpg"]]></imageExpression>
             </image>
+
         </band>
     </title>
     <detail>
