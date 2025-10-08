@@ -33,10 +33,8 @@
 		        <interceptor-ref name="modelDriven"/>
 		        <interceptor-ref name="fieldInterceptor"/>
 		        <interceptor-ref name="importFileUpload">
-					<param name="allowedTypes">
-						text/plain,image/jpg,image/jpeg,image/png,image/gif,image/bmp,image/pjpeg
-					</param>
-					<param name="maximumSize">5000</param>
+                    <param name="allowedTypes">text/plain,image/jpg,image/jpeg,image/png,image/gif,image/bmp,image/pjpeg</param>
+                    <param name="maximumSize">5000</param>
 				</interceptor-ref>
 		        <interceptor-ref name="checkbox"/>
 		        <interceptor-ref name="staticParams"/>

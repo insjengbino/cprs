@@ -185,7 +185,7 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
      */
     private static boolean containsItem(java.util.Collection itemCollection, String key) {
         if (key == null) return false;
-        String lw = key.toLowerCase();
+        String lw = key.toLowerCase().trim();
         java.util.Iterator it = itemCollection.iterator();
         while (it.hasNext()) {
             Object o = it.next();
