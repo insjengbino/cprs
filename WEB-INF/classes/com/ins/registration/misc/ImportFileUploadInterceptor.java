@@ -69,7 +69,7 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
             if (!containsItem(this.allowedTypesSet, normalizedContentType)) {
                 String logMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
                         new Object[] { inputName, file.getName(), normalizedContentType }, locale);
-                String errMsg = "Content-type not allowed.";
+                String errMsg = "File extension not allowed.";
                 if (validation != null) {
                     validation.addFieldError(inputName, errMsg);
                 }
