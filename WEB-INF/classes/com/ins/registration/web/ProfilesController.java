@@ -97,7 +97,11 @@ public class ProfilesController extends BaseController implements Preparable, Va
     @Autowired
     private ProfileHistoryService profileHistoryService;
     private File profilePictureFile;
+    private String profilePictureFileContentType;
+    private String profilePictureFileFileName;
     private File profileSignatureFile;
+    private String profileSignatureFileContentType;
+    private String profileSignatureFileFileName;
     private File profileImportedCommoditiesFile;
     private byte[] buffer;
     @Autowired
@@ -1397,5 +1401,37 @@ public class ProfilesController extends BaseController implements Preparable, Va
                 this.addFieldError("profile.exporterTin", "You can not leave this field empty.");
             }
         }
+    }
+
+    private String getProfilePictureFileContentType(){
+        return this.profilePictureFileContentType;
+    }
+
+    private void setProfilePictureFileContentType(String contentType){
+         this.profilePictureFileContentType = contentType;
+    }
+
+    private String getProfilePictureFileFileName(){
+        return this.profilePictureFileFileName;
+    }
+
+    private void setProfileSignatureFileFileName(String fileName){
+         this.profilePictureFileFileName = fileName;
+    }
+
+    private String getProfileSignatureFileContentType(){
+        return this.profileSignatureFileContentType;
+    }
+
+    private void setProfileSignatureFileContentType(String contentType){
+         this.profileSignatureFileContentType = contentType;
+    }
+
+    private String getProfileSignatureFileFileName(){
+        return this.profileSignatureFileFileName;
+    }
+
+    private void setProfilePictureFileFileName(String fileName){
+         this.profilePictureFileFileName = fileName;
     }
 }

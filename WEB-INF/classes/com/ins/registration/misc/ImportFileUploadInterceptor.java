@@ -46,6 +46,7 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
 
     protected boolean acceptFile(File file, String contentType, String inputName, ValidationAware validation, Locale locale) {
         boolean fileIsAcceptable = false;
+        log.debug("File name: " + file.getName() + ", contentType: " + contentType + ", size: " + file.length());
 
         if (file == null) {
             String errMsg = this.getTextMessage("struts.messages.error.uploading", new Object[]{inputName}, locale);
