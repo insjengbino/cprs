@@ -451,7 +451,7 @@
 			<param name="expression">[0-9]*</param>
 			<message key="Invalid input." />
 		</field-validator>	
-		<field-validator type="long">
+		<field-validator type="double">
 			<param name="minInclusive">-99999999999999</param>
         	<param name="maxInclusive">99999999999999</param>
 			<message key="Invalid field length." />
@@ -466,7 +466,7 @@
 			<param name="expression">[0-9]*</param>
 			<message key="Invalid input." />
 		</field-validator>	
-		<field-validator type="long">
+		<field-validator type="double">
 			<param name="minInclusive">-99999999999999</param>
         	<param name="maxInclusive">99999999999999</param>
 			<message key="Invalid field length." />
