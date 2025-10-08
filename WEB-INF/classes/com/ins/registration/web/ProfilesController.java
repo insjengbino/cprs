@@ -1403,35 +1403,35 @@ public class ProfilesController extends BaseController implements Preparable, Va
         }
     }
 
-    private String getProfilePictureFileContentType(){
+    public String getProfilePictureFileContentType(){
         return this.profilePictureFileContentType;
     }
 
-    private void setProfilePictureFileContentType(String contentType){
+    public void setProfilePictureFileContentType(String contentType){
          this.profilePictureFileContentType = contentType;
     }
 
-    private String getProfilePictureFileFileName(){
+    public String getProfilePictureFileFileName(){
         return this.profilePictureFileFileName;
     }
 
-    private void setProfilePictureFileFileName(String fileName){
+    public void setProfilePictureFileFileName(String fileName){
          this.profilePictureFileFileName = fileName;
     }
 
-    private String getProfileSignatureFileContentType(){
+    public String getProfileSignatureFileContentType(){
         return this.profileSignatureFileContentType;
     }
 
-    private void setProfileSignatureFileContentType(String contentType){
+    public void setProfileSignatureFileContentType(String contentType){
          this.profileSignatureFileContentType = contentType;
     }
 
-    private String getProfileSignatureFileFileName(){
+    public String getProfileSignatureFileFileName(){
         return this.profileSignatureFileFileName;
     }
 
-    private void setProfileSignatureFileFileName(String fileName){
+    public void setProfileSignatureFileFileName(String fileName){
          this.profileSignatureFileFileName = fileName;
     }
 }

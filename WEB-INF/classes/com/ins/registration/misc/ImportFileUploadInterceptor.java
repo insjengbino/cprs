@@ -36,6 +36,7 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
     private static final String DEFAULT_MESSAGE = "no.message.found";
     private static final Set<String> ALLOWED_EXTENSIONS = new HashSet<String>();
     private static final int MAX_RESIZE_PASSES = 1; // limit resizing to avoid potential abuse
+    private Set allowedTypesSet = new HashSet();
 
     static {
         // extension list is lower-case
@@ -333,5 +334,10 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         int dot = filename.lastIndexOf('.');
         if (dot == -1) return null;
         return filename.substring(dot + 1).toLowerCase();
+    }
+
+    public void setAllowedTypes(String allowedTypes) {
+        this.allowedTypesSet = getDelimitedValues(allowedTypes);
+        this.log.debug("Allowed types: " + this.allowedTypesSet);
     }
 }
