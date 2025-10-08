@@ -263,7 +263,7 @@
                                                     <@s.a href="${removePictureURL}" onclick="return confirm('This will permanently remove your picture. Are you sure you want to remove this?')"> Remove </@s.a>
                                                 </td></tr>
                                             <#else/>
-                                                <@s.file name="profilePictureFile" label="Scanned Picture" accept="image/*" size="35" required="true" />
+                                                <@s.file name="profilePictureFile" label="Scanned Picture" accept=".jpg,.jpeg,.png" size="35" required="true" />
                                             </#if>
 
                                             <#if profile.signature?exists>
@@ -274,7 +274,7 @@
                                                         <@s.a href="${removeSignatureURL}" onclick="return confirm('This will permanently remove your signature. Are you sure you want to remove this?')"> Remove </@s.a>
                                                     </td></tr>
                                             <#else/>
-                                                <@s.file name="profileSignatureFile" label="Scanned Signature/s" accept="image/*" size="35"  />
+                                                <@s.file name="profileSignatureFile" label="Scanned Signature/s" accept=".jpg,.jpeg,.png" size="35"  />
                                             </#if>
                                             </@s.if>
 
