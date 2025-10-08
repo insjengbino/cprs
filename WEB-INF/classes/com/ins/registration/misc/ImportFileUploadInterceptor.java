@@ -45,6 +45,11 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         ALLOWED_EXTENSIONS.add("png");
     }
 
+    public ImportFileUploadInterceptor() {
+        log.info("ImportFileUploadInterceptor initialized");
+    }
+
+
     protected boolean acceptFile(File file, String contentType, String inputName, ValidationAware validation, Locale locale) {
         boolean fileIsAcceptable = false;
         log.debug("File name: " + file.getName() + ", contentType: " + contentType + ", size: " + file.length());
@@ -195,20 +200,17 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         return false;
     }
 
-    private static Set getDelimitedValues(String delimitedString) {
-        Set delimitedValues = new HashSet();
-        if (delimitedString != null) {
-            StringTokenizer stringTokenizer = new StringTokenizer(delimitedString, ",");
-
-            while (stringTokenizer.hasMoreTokens()) {
-                String nextToken = stringTokenizer.nextToken().toLowerCase().trim();
-                if (nextToken.length() > 0) {
-                    delimitedValues.add(nextToken);
+    private Set<String> getDelimitedValues(String str) {
+        Set<String> set = new HashSet<String>();
+        if (str != null) {
+            String[] values = str.split("[,\\s]+");
+            for (String val : values) {
+                if (val != null && val.trim().length() > 0) {
+                    set.add(val.trim().toLowerCase());
                 }
             }
         }
-
-        return delimitedValues;
+        return set;
     }
 
     private static boolean isNonEmpty(Object[] objArray) {
