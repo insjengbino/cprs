@@ -195,7 +195,11 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         java.util.Iterator it = itemCollection.iterator();
         while (it.hasNext()) {
             Object o = it.next();
-            if (o != null && o.toString().toLowerCase().equals(lw)) return true;
+            if (o != null) {
+                String candidate = o.toString().toLowerCase().trim();
+                if (lw.startsWith(candidate) || lw.equals(candidate)) return true;
+            }
+
         }
         return false;
     }
