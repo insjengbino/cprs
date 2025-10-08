@@ -1415,7 +1415,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
         return this.profilePictureFileFileName;
     }
 
-    private void setProfileSignatureFileFileName(String fileName){
+    private void setProfilePictureFileFileName(String fileName){
          this.profilePictureFileFileName = fileName;
     }
 
@@ -1431,7 +1431,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
         return this.profileSignatureFileFileName;
     }
 
-    private void setProfilePictureFileFileName(String fileName){
-         this.profilePictureFileFileName = fileName;
+    private void setProfileSignatureFileFileName(String fileName){
+         this.profileSignatureFileFileName = fileName;
     }
 }
