@@ -2,7 +2,7 @@
 // - No try-with-resources
 // - No Java 7+ APIs
 // - Preserves Struts2 FileUploadInterceptor contract
-// author: Jem
+// author: Jem (fixed)
 
 package com.ins.registration.misc;
 
@@ -11,7 +11,6 @@ import com.opensymphony.xwork2.util.LocalizedTextUtil;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,11 +19,9 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
-import java.util.StringTokenizer;
 import javax.imageio.ImageIO;
 import javax.imageio.stream.ImageInputStream;
 import org.apache.commons.logging.Log;
@@ -34,91 +31,78 @@ import org.apache.struts2.interceptor.FileUploadInterceptor;
 public class ImportFileUploadInterceptor extends FileUploadInterceptor {
     private final Log log = LogFactory.getLog(this.getClass());
     private static final String DEFAULT_MESSAGE = "no.message.found";
-    private static final Set<String> ALLOWED_EXTENSIONS = new HashSet<String>();
     private static final int MAX_RESIZE_PASSES = 1; // limit resizing to avoid potential abuse
-    private Set allowedTypesSet = new HashSet();
 
-    static {
-        // extension list is lower-case
-        ALLOWED_EXTENSIONS.add("jpg");
-        ALLOWED_EXTENSIONS.add("jpeg");
-        ALLOWED_EXTENSIONS.add("png");
-    }
+    // allowed types set is instance-level because it is configured per-interceptor instance
+    private Set<String> allowedTypesSet = new HashSet<String>();
 
     public ImportFileUploadInterceptor() {
         log.info("ImportFileUploadInterceptor initialized");
     }
 
-
     protected boolean acceptFile(File file, String contentType, String inputName, ValidationAware validation, Locale locale) {
         boolean fileIsAcceptable = false;
-        log.debug("File name: " + file.getName() + ", contentType: " + contentType + ", size: " + file.length());
 
         if (file == null) {
-            String errMsg = this.getTextMessage("struts.messages.error.uploading", new Object[]{inputName}, locale);
+            String errMsg = this.getTextMessage("struts.messages.error.uploading", new Object[] { inputName }, locale);
             if (validation != null) {
                 validation.addFieldError(inputName, errMsg);
             }
-
             this.log.error(errMsg);
             return false;
         }
 
+        log.debug("File name: " + file.getName() + ", raw contentType: " + contentType + ", size: " + file.length());
+
+        // Normalize contentType (strip parameters and trim)
+        String normalizedContentType = "";
+        if (contentType != null) {
+            String tmp = contentType.toLowerCase().trim();
+            String[] parts = tmp.split(";");
+            normalizedContentType = (parts.length > 0) ? parts[0].trim() : tmp;
+        }
+        log.debug("Normalized content type: [" + normalizedContentType + "]");
+
         // 1) Basic content-type whitelist check if configured (keeps original behaviour)
         if (this.allowedTypesSet != null && !this.allowedTypesSet.isEmpty()) {
-            String normalized = "";
-            if(contentType != null) {
-                normalized = contentType.toLowerCase().trim().split(";")[0];
-            }
-            if (!containsItem(this.allowedTypesSet, normalized)) {
-                log.debug("Checking contentType=[" + normalized + "] against allowed=" + this.allowedTypesSet);
-                String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed", new Object[]{inputName, file.getName(), normalized}, locale);
+            log.debug("Allowed types: " + this.allowedTypesSet);
+            if (!containsItem(this.allowedTypesSet, normalizedContentType)) {
+                String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
+                        new Object[] { inputName, file.getName(), normalizedContentType }, locale);
                 if (validation != null) {
                     validation.addFieldError(inputName, errMsg);
                 }
-
                 this.log.error(errMsg);
                 return false;
             }
         }
 
-        // 2) Filename sanitization (never trust original filename)
+        // 2) filename sanitization (still log only; do not rely on temp name for extension)
         String sanitized = sanitizeFilename(file.getName());
         if (!sanitized.equals(file.getName())) {
             this.log.warn("Filename sanitized from '" + file.getName() + "' to '" + sanitized + "'");
         }
 
-        // 3) Ensure extension is allowed
-        if (!hasAllowedExtension(file)) {
-            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed", new Object[]{inputName, file.getName(), contentType}, locale);
-            if (validation != null) {
-                validation.addFieldError(inputName, errMsg);
-            }
-
-            this.log.error(errMsg);
-            return false;
-        }
-
-        // 4) Validate actual image headers (magic bytes) using ImageIO readers
+        // 3) Validate actual image headers (magic bytes) using ImageIO readers
+        //    This is the authoritative check whether the file is an image.
         if (!isValidImage(file)) {
-            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed", new Object[]{inputName, file.getName(), contentType}, locale);
+            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
+                    new Object[] { inputName, file.getName(), normalizedContentType }, locale);
             if (validation != null) {
                 validation.addFieldError(inputName, errMsg);
             }
-
             this.log.error("File failed image header validation: " + file.getName());
             return false;
         }
 
-        // 5) Size handling
+        // 4) Size handling
         if (this.maximumSize != null && this.maximumSize < file.length()) {
-            // If it's a text type, reject early with original message
-            if (contentType != null && contentType.startsWith("text")) {
-                String errMsg = this.getTextMessage("struts.messages.error.file.too.large", new Object[]{this.maximumSize, file.length()}, locale);
+            if (normalizedContentType.startsWith("text")) {
+                String errMsg = this.getTextMessage("struts.messages.error.file.too.large",
+                        new Object[] { this.maximumSize, file.length() }, locale);
                 if (validation != null) {
                     validation.addFieldError(inputName, errMsg);
                 }
-
                 this.log.error(errMsg);
                 return false;
             }
@@ -128,17 +112,16 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
             try {
                 resized = resizeImageFile(file, this.maximumSize, MAX_RESIZE_PASSES);
             } catch (IOException e) {
-                // log and continue to rejection below
                 this.log.debug("Error while attempting to resize: " + e.getMessage(), e);
                 resized = false;
             }
 
             if (this.maximumSize != null && this.maximumSize < file.length()) {
-                String errMsg = this.getTextMessage("struts.messages.error.file.too.large", new Object[]{this.maximumSize, file.length()}, locale);
+                String errMsg = this.getTextMessage("struts.messages.error.file.too.large",
+                        new Object[] { this.maximumSize, file.length() }, locale);
                 if (validation != null) {
                     validation.addFieldError(inputName, errMsg);
                 }
-
                 this.log.error(errMsg);
                 return false;
             } else {
@@ -147,7 +130,7 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
 
         } else {
             // For text files: light validation for CSV-like content (preserve original behaviour but safer)
-            if (contentType != null && contentType.startsWith("text")) {
+            if (normalizedContentType.startsWith("text")) {
                 BufferedReader reader = null;
                 try {
                     reader = new BufferedReader(new FileReader(file));
@@ -156,11 +139,11 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
                         // split on comma, keep empty tokens
                         String[] tokens = s.split(",", -1);
                         if (tokens.length < 3) {
-                            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed", new Object[]{inputName, file.getName(), contentType}, locale);
+                            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
+                                    new Object[] { inputName, file.getName(), normalizedContentType }, locale);
                             if (validation != null) {
                                 validation.addFieldError(inputName, errMsg);
                             }
-
                             this.log.error(errMsg);
                             return false;
                         }
@@ -192,7 +175,7 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
     }
 
     /**
-     * Check whether collection contains the key (case-insensitive)
+     * Case-insensitive contains check
      */
     private boolean containsItem(Set<String> set, String value) {
         if (set == null || value == null) return false;
@@ -205,12 +188,12 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         return false;
     }
 
-
     private Set<String> getDelimitedValues(String str) {
         Set<String> set = new HashSet<String>();
         if (str != null) {
             String[] values = str.split("[,\\s]+");
-            for (String val : values) {
+            for (int i = 0; i < values.length; i++) {
+                String val = values[i];
                 if (val != null && val.trim().length() > 0) {
                     set.add(val.trim().toLowerCase());
                 }
@@ -221,13 +204,11 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
 
     private static boolean isNonEmpty(Object[] objArray) {
         boolean result = false;
-
         for (int index = 0; index < objArray.length && !result; ++index) {
             if (objArray[index] != null) {
                 result = true;
             }
         }
-
         return result;
     }
 
@@ -245,14 +226,6 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         String name = filename.replaceAll("[\\\\/]+", "_");
         name = name.replaceAll("[^a-zA-Z0-9._-]", "_");
         return name;
-    }
-
-    private boolean hasAllowedExtension(File file) {
-        String name = file.getName();
-        int dot = name.lastIndexOf('.');
-        if (dot == -1) return false;
-        String ext = name.substring(dot + 1).toLowerCase();
-        return ALLOWED_EXTENSIONS.contains(ext);
     }
 
     private boolean isValidImage(File file) {
@@ -292,27 +265,23 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
             BufferedImage dest = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_RGB);
             Graphics2D g = dest.createGraphics();
             try {
-                // high-quality scaling hints could be set here (but keep compatibility)
                 g.drawImage(src.getScaledInstance(newW, newH, Image.SCALE_SMOOTH), 0, 0, null);
             } finally {
                 g.dispose();
             }
 
             // write to temporary file to avoid partial writes
-            String ext = getExtension(file.getName());
-            if (ext == null) ext = "jpg";
+            String ext = "jpg"; // fallback
             File tmp = File.createTempFile("upload_resize_", "." + ext);
-            FileOutputStream fos = null;
             try {
-                ImageIO.write(dest, ext.equals("png") ? "png" : "jpg", tmp);
+                ImageIO.write(dest, "jpg", tmp);
             } finally {
-                // no streams from ImageIO.write to close here, but ensure existence
+                // no streams from ImageIO.write to close here
             }
 
             // replace original file (try simple rename; if fails, copy bytes)
             boolean replaced = tmp.renameTo(file);
             if (!replaced) {
-                // fallback: copy bytes
                 InputStream in = null;
                 FileOutputStream out = null;
                 try {
@@ -326,7 +295,6 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
                 } finally {
                     if (in != null) try { in.close(); } catch (IOException e) { this.log.debug(e); }
                     if (out != null) try { out.close(); } catch (IOException e) { this.log.debug(e); }
-                    // attempt to delete tmp
                     try { tmp.delete(); } catch (SecurityException se) { /* ignore */ }
                 }
             }
@@ -344,11 +312,12 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         return filename.substring(dot + 1).toLowerCase();
     }
 
+    // Struts setter invoked from XML param
     public void setAllowedTypes(String allowedTypes) {
         this.allowedTypesSet = getDelimitedValues(allowedTypes);
         this.log.debug("Allowed types: " + this.allowedTypesSet);
-        for (Object type : this.allowedTypesSet) {
-            log.debug("Allowed type token='" + type.toString() + "'");
+        for (String type : this.allowedTypesSet) {
+            log.debug("Allowed type token='" + type + "'");
         }
     }
 }
