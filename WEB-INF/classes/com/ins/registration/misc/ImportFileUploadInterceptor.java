@@ -66,8 +66,13 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
 
         // 1) Basic content-type whitelist check if configured (keeps original behaviour)
         if (this.allowedTypesSet != null && !this.allowedTypesSet.isEmpty()) {
-            if (!containsItem(this.allowedTypesSet, contentType)) {
-                String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed", new Object[]{inputName, file.getName(), contentType}, locale);
+            String normalized = "";
+            if(contentType != null) {
+                normalized = contentType.toLowerCase().trim().split(";")[0];
+            }
+            if (!containsItem(this.allowedTypesSet, normalized)) {
+                log.debug("Checking contentType=[" + normalized + "] against allowed=" + this.allowedTypesSet);
+                String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed", new Object[]{inputName, file.getName(), normalized}, locale);
                 if (validation != null) {
                     validation.addFieldError(inputName, errMsg);
                 }
@@ -189,20 +194,17 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
     /**
      * Check whether collection contains the key (case-insensitive)
      */
-    private static boolean containsItem(java.util.Collection itemCollection, String key) {
-        if (key == null) return false;
-        String lw = key.toLowerCase().trim();
-        java.util.Iterator it = itemCollection.iterator();
-        while (it.hasNext()) {
-            Object o = it.next();
-            if (o != null) {
-                String candidate = o.toString().toLowerCase().trim();
-                if (lw.startsWith(candidate) || lw.equals(candidate)) return true;
+    private boolean containsItem(Set<String> set, String value) {
+        if (set == null || value == null) return false;
+        String lw = value.toLowerCase().trim();
+        for (String o : set) {
+            if (o != null && lw.equals(o.toLowerCase().trim())) {
+                return true;
             }
-
         }
         return false;
     }
+
 
     private Set<String> getDelimitedValues(String str) {
         Set<String> set = new HashSet<String>();
@@ -345,5 +347,8 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
     public void setAllowedTypes(String allowedTypes) {
         this.allowedTypesSet = getDelimitedValues(allowedTypes);
         this.log.debug("Allowed types: " + this.allowedTypesSet);
+        for (Object type : this.allowedTypesSet) {
+            log.debug("Allowed type token='" + type.toString() + "'");
+        }
     }
 }
