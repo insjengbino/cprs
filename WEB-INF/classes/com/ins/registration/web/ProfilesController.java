@@ -1434,4 +1434,13 @@ public class ProfilesController extends BaseController implements Preparable, Va
     public void setProfileSignatureFileFileName(String fileName){
          this.profileSignatureFileFileName = fileName;
     }
+
+    public String getBusinessTypeName(){
+        if (this.businessType.equals("IND")) return "Individual";
+        else if (this.businessType.equals("SPROP")) return "Sole Proprietor";
+        else if (this.businessType.equals("CORP")) return "Corporation";
+        else if (this.businessType.equals("PART")) return "Partnership";
+        else if (this.businessType.equals("CMP")) return "Company";
+        else return this.businessType;
+    }
 }
