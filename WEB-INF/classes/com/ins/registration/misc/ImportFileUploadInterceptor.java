@@ -67,12 +67,13 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         if (this.allowedTypesSet != null && !this.allowedTypesSet.isEmpty()) {
             log.debug("Allowed types: " + this.allowedTypesSet);
             if (!containsItem(this.allowedTypesSet, normalizedContentType)) {
-                String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
+                String logMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
                         new Object[] { inputName, file.getName(), normalizedContentType }, locale);
+                String errMsg = "Content-type not allowed.";
                 if (validation != null) {
                     validation.addFieldError(inputName, errMsg);
                 }
-                this.log.error(errMsg);
+                this.log.error(logMsg);
                 return false;
             }
         }
@@ -86,11 +87,13 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
         // 3) Validate actual image headers (magic bytes) using ImageIO readers
         //    This is the authoritative check whether the file is an image.
         if (!isValidImage(file)) {
-            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
+            String logMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
                     new Object[] { inputName, file.getName(), normalizedContentType }, locale);
+            String errMsg = "The uploaded image appears to be invalid or corrupted. Please use a valid JPG or PNG image.";
             if (validation != null) {
                 validation.addFieldError(inputName, errMsg);
             }
+            this.log.error(logMsg);
             this.log.error("File failed image header validation: " + file.getName());
             return false;
         }
@@ -139,12 +142,13 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
                         // split on comma, keep empty tokens
                         String[] tokens = s.split(",", -1);
                         if (tokens.length < 3) {
-                            String errMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
+                            String logMsg = this.getTextMessage("struts.messages.error.content.type.not.allowed",
                                     new Object[] { inputName, file.getName(), normalizedContentType }, locale);
+                            String errMsg = "Invalid file type.";
                             if (validation != null) {
                                 validation.addFieldError(inputName, errMsg);
                             }
-                            this.log.error(errMsg);
+                            this.log.error(logMsg);
                             return false;
                         }
                         // additional safety: reject lines that contain angle brackets or suspicious sequences
@@ -315,9 +319,5 @@ public class ImportFileUploadInterceptor extends FileUploadInterceptor {
     // Struts setter invoked from XML param
     public void setAllowedTypes(String allowedTypes) {
         this.allowedTypesSet = getDelimitedValues(allowedTypes);
-        this.log.debug("Allowed types: " + this.allowedTypesSet);
-        for (String type : this.allowedTypesSet) {
-            log.debug("Allowed type token='" + type + "'");
-        }
     }
 }
