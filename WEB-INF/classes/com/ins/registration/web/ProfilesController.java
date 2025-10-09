@@ -310,9 +310,10 @@ public class ProfilesController extends BaseController implements Preparable, Va
     }
 
     public boolean hasDuplicateTINV2() {
-        return !this.profileService.checkDuplicateByTinINSClientNo(
+        return !this.profileService.checkDuplicateByTinINSClientNoClientType(
                 this.profile.getTinNo(),
-                this.profile.getInsClientNo()).isEmpty() ;
+                this.profile.getInsClientNo(),
+                this.clientType).isEmpty() ;
     }
 
     public List<Profile> getProfiles() {

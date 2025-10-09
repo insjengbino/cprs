@@ -145,10 +145,11 @@ public class ProfileServiceImpl implements ProfileService {
     }
 
     @Transactional(readOnly = true)
-    public List<Profile> checkDuplicateByTinINSClientNo(String tin, String insClientNo) {
-        Query q = this.em.createQuery("select t from Profile t where t.insClientNo <>:insClientNo and t.tinNo = :tinNo");
+    public List<Profile> checkDuplicateByTinINSClientNoClientType(String tin, String insClientNo, String clientType) {
+        Query q = this.em.createQuery("select t from Profile t where t.insClientNo <>:insClientNo and t.tinNo = :tinNo and t.clientType = :clientType");
         q.setParameter("insClientNo", insClientNo);
         q.setParameter("tinNo", tin);
+        q.setParameter("clientType", clientType);
         log.debug("checkDUUUUUPEEE::" + q.getResultList());
         return q.getResultList();
     }

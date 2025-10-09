@@ -21,15 +21,26 @@
     <parameter name="reportDirectory" isForPrompting="false" class="java.io.File"/>
 
     <!--Field Declarations-->
-    <field name="businessType" class="java.lang.String"/>
+    <field name="businessTypeName" class="java.lang.String"/>
     <field name="company" class="java.lang.String"/>
+    <field name="tinNo" class="java.lang.String"/>
+    <field name="citizenship" class="java.lang.String"/>
+    <field name="address" class="java.lang.String"/>
+    <field name="city" class="java.lang.String"/>
+    <field name="zipCode" class="java.lang.String"/>
+    <field name="country" class="java.lang.String"/>
+    <field name="telephone" class="java.lang.String"/>
+    <field name="mobile" class="java.lang.String"/>
+    <field name="email" class="java.lang.String"/>
+
+
 
     <title>
-        <band height="80">
+        <band height="45">
             <staticText>
-                <reportElement x="0" y="-5" width="555" height="30"/>
+                <reportElement x="0" y="0" width="555" height="30"/>
                 <textElement textAlignment="Center" verticalAlignment="Middle">
-                    <font size = "12"/>
+                    <font  pdfFontName = "Helvetica-Bold" size = "16"/>
                 </textElement>
                 <text>CLIENT PROFILE REGISTRATION SHEET</text>
             </staticText>
@@ -61,240 +72,350 @@
         </band>
     </title>
     <detail>
-        <band height="600">
+        <band height="670">
             <staticText>
-                <reportElement x="0" y="0" width="555" height="14"/>
-
-                <text>CLIENT PROFILE REGISTRATION SHEET</text>
+                <reportElement x="0" y="10" width="555" height="9"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size = "7"/>
+                </textElement>
+                <text>INSTRUCTIONS: Please provide the following required information according to your client type by filling out table cells or ticking off appropriate boxes in the 2nd column.</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="14" width="555" height="14"/>
-
-                <text>INSTRUCTIONS: Please provide the following required information according to your client type by filling out table cells</text>
+                <reportElement x="0" y="20" width="555" height="9"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size = "7"/>
+                </textElement>
+                <text>Mandatory fields are written in bold type marked with asterisk(*). Items in the 2nd column with asterisks(*) and not in bold type are optional but become mandatory when one </text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="28" width="555" height="14"/>
-
-                <text>or ticking off appropriate boxes in the 2nd column. Mandatory fields are written in bold type marked with asterisk(*).</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="42" width="555" height="14"/>
-
-                <text>Items in the 2nd column with asterisks(*) and not in bold type are optional but become mandatory when one of them in</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="56" width="555" height="14"/>
-
-                <text>the same optional group is being filled out. Figures in parentheses indicate the exact/maximum number of characters</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="70" width="555" height="14"/>
-
-                <text>allowed for the corresponding field.</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="84" width="555" height="14"/>
-
-                <text>CLIENT TYPE: ONCE A YEAR IMPORTER</text>
+                <reportElement x="0" y="30" width="555" height="9"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size = "7"/>
+                </textElement>
+                <text>of them in the same optional group is being filled out. Figures in parentheses indicate the exact/maximum number of characters allowed for the corresponding field.</text>
             </staticText>
 
-            <!--label-->
+            <!-- CLIENT TYPE label -->
             <staticText>
-                <reportElement x="0" y="98" width="555" height="14"/>
+                <reportElement x="0" y="60" width="555" height="14"/>
+                <text>CLIENT TYPE: </text>
+            </staticText>
+
+            <!-- CLIENT TYPE value -->
+            <staticText>
+                <reportElement x="275" y="60" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <text>ONCE A YEAR IMPORTER</text>
+            </staticText>
+
+
+            <!-- BUSINESS ENTITY label -->
+            <staticText>
+                <reportElement x="0" y="74" width="555" height="14"/>
                 <text>BUSINESS ENTITY:</text>
             </staticText>
-            <!--value-->
+
+            <!-- BUSINESS ENTITY value -->
             <textField isBlankWhenNull="true" hyperlinkType="None">
-                <reportElement key="textField" mode="Opaque" x="275" y="98" width="355" height="14"/>
+                <reportElement key="textField" mode="Opaque" x="275" y="74" width="355" height="14"/>
                 <textElement>
-                    <font size="8"/>
+                    <font pdfFontName = "Helvetica-Bold"/>
                 </textElement>
-                <textFieldExpression><![CDATA[$F{businessType}]]></textFieldExpression>
+                <textFieldExpression><![CDATA[$F{businessTypeName}]]></textFieldExpression>
             </textField>
 
             <!-- company label -->
             <staticText>
-                <reportElement x="0" y="112" width="555" height="14" />
+                <reportElement x="0" y="88" width="555" height="14" />
                 <text>BUSINESS/COMPANY NAME: </text>
             </staticText>
+
             <!-- company value -->
             <textField isBlankWhenNull="true" hyperlinkType="None">
-                <reportElement key="textField" mode="Opaque" x="275" y="112" width="355" height="14"/>
+                <reportElement key="textField" mode="Opaque" x="275" y="88" width="355" height="14"/>
                 <textElement>
-                    <font size="8"/>
+                    <font pdfFontName = "Helvetica-Bold"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
             </textField>
 
+            <!-- TIN label -->
+            <staticText>
+                <reportElement x="0" y="102" width="555" height="14"/>
+                <text>TAX IDENTIFICATION NUMBER:</text>
+            </staticText>
+
+            <!-- TIN value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="102" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tinNo}]]></textFieldExpression>
+            </textField>
+
+            <!-- CITIZENSHIP label -->
+            <staticText>
+                <reportElement x="0" y="116" width="555" height="14"/>
+                <text>COUNTRY OF CITIZENSHIP:</text>
+            </staticText>
+            <!-- CITIZENSHIP value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="116" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{citizenship}]]></textFieldExpression>
+            </textField>
+
+
+            <!-- ADDRESS + CITY label -->
+            <staticText>
+                <reportElement x="0" y="130" width="555" height="14"/>
+                <text>ADDRESS:</text>
+            </staticText>
+
+            <!-- ADDRESS + CITY value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="130" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{address} + ", " + $F{city}]]></textFieldExpression>
+            </textField>
+
+            <!-- ZIP CODE label -->
+            <staticText>
+                <reportElement x="0" y="144" width="555" height="14"/>
+                <text>ZIP CODE:</text>
+            </staticText>
+
+            <!-- ZIP CODE value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="144" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{zipCode}]]></textFieldExpression>
+            </textField>
+
+            <!-- COUNTRY label -->
+            <staticText>
+                <reportElement x="0" y="158" width="555" height="14"/>
+                <text>COUNTRY:</text>
+            </staticText>
+
+            <!-- COUNTRY value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="158" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{country}]]></textFieldExpression>
+            </textField>
+
+            <!-- TELEPHONE NUMBER label -->
+            <staticText>
+                <reportElement x="0" y="172" width="555" height="14"/>
+                <text>TELEPHONE NUMBER:</text>
+            </staticText>
+
+            <!-- TELEPHONE NUMBER value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="172" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{telephone}]]></textFieldExpression>
+            </textField>
+
+            <!-- MOBILE NUMBER label -->
+            <staticText>
+                <reportElement x="0" y="186" width="555" height="14"/>
+                <text>MOBILE NUMBER:</text>
+            </staticText>
+
+            <!-- MOBILE NUMBER value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="186" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+            </textField>
+
+            <!-- EMAIL label -->
+            <staticText>
+                <reportElement x="0" y="200" width="555" height="14"/>
+                <text>EMAIL:</text>
+            </staticText>
+
+            <!-- MOBILE NUMBER value -->
+            <textField isBlankWhenNull="true" hyperlinkType="None">
+                <reportElement key="textField" mode="Opaque" x="275" y="200" width="355" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+            </textField>
 
             <staticText>
-                <reportElement x="0" y="126" width="555" height="14"/>
-
-                <text>TAX IDENTIFICATION NUMBER: 111111111111</text>
+                <reportElement x="0" y="214" width="555" height="14"/>
+                <text>_________________________________________________________________________________________________________________________________</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="140" width="555" height="14"/>
 
-                <text>COUNTRY OF CITIZENSHIP: PH</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="154" width="555" height="14"/>
 
-                <text>ADDRESS: TEST ADDRESS, TAGUIG CITY</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="168" width="555" height="14"/>
-
-                <text>ZIP CODE: 1634</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="182" width="555" height="14"/>
-
-                <text>COUNTRY: PH</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="196" width="555" height="14"/>
-
-                <text>TELEPHONE NUMBER: <![CDATA[telephone]]></text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="210" width="555" height="14"/>
-
-                <text>MOBILE NUMBER: 09171730214</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="224" width="555" height="14"/>
-
-                <text>EMAIL ADDRESS: mgt@iphoenixcorp.com</text>
-            </staticText>
             <staticText>
                 <reportElement x="0" y="238" width="555" height="14"/>
-
                 <text>I certify that the foregoing information are true and correct to the best of my knowledge.</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="252" width="555" height="14"/>
 
-                <text>_________________________________</text>
+            <staticText>
+                <reportElement x="0" y="268" width="555" height="14"/>
+                <textElement textAlignment="Left" verticalAlignment="Top">
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <text>_______________________________</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="266" width="555" height="14"/>
 
+            <staticText>
+                <reportElement x="0" y="282" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
                 <text>(Signature over Printed Name)</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="280" width="555" height="14"/>
 
-                <text>Date Signed :______________________</text>
+            <staticText>
+                <reportElement x="0" y="296" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <text>Date Signed :_____________________</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="294" width="555" height="14"/>
 
+            <staticText>
+                <reportElement x="0" y="340" width="555" height="14"/>
+                <textElement verticalAlignment="Bottom">
+                    <font pdfFontName = "Helvetica-Bold" />
+                </textElement>
                 <text>REPUBLIC OF THE PHILIPPINES</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="308" width="555" height="14"/>
-
-                <text>___________________________</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="322" width="555" height="14"/>
-
-                <text>Before me, a Notary Public for and in the _______________________, this_______ day of _________, 2025</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="336" width="555" height="14"/>
-
-                <text>personally appeared the following:</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="350" width="555" height="14"/>
-
-                <text>NAME CTC/PASSPORT NO. DATE/PLACE ISSUED</text>
-            </staticText>
-            <staticText>
                 <reportElement x="0" y="364" width="555" height="14"/>
-
-                <text>________________________________ ________________________________ ________________________________</text>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold" />
+                </textElement>
+                <text>_______________________________</text>
             </staticText>
             <staticText>
                 <reportElement x="0" y="378" width="555" height="14"/>
-
-                <text>________________________________ ________________________________ ________________________________</text>
+                <text>Before me, a Notary Public for and in the _______________________, this_______ day of _________, year _______</text>
             </staticText>
             <staticText>
                 <reportElement x="0" y="392" width="555" height="14"/>
 
+                <text>personally appeared the following:</text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="426" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
+                <text>NAME                                                       CTC/PASSPORT NO.                             DATE/PLACE ISSUED</text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="440" width="555" height="14"/>
+                <text>______________________________     ______________________________     ______________________________</text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="454" width="555" height="14"/>
+
+                <text>______________________________     ______________________________     ______________________________</text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="478" width="555" height="14"/>
+
                 <text>Known to me to be the same persons who executed the foregoing instrument and the acknowledged to me</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="406" width="555" height="14"/>
+                <reportElement x="0" y="492" width="555" height="14"/>
 
                 <text>that the same are their free and voluntary acts and deeds</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="420" width="555" height="14"/>
+                <reportElement x="0" y="526" width="555" height="14"/>
 
                 <text>This Client Profile Registration Form consisting of 1 pages, including the page on which this Acknowledgement</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="434" width="555" height="14"/>
+                <reportElement x="0" y="540" width="555" height="14"/>
 
                 <text>is written. has been signed on the left margin of each and every page and at the bottom of this instrument by</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="448" width="555" height="14"/>
+                <reportElement x="0" y="554" width="555" height="14"/>
 
                 <text>the parties and their respective witnesses.</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="462" width="555" height="14"/>
 
+            <staticText>
+                <reportElement x="0" y="578" width="555" height="14"/>
                 <text>WITNESS MY HAND AND NOTARIAL SEAL ON THE THE DAY, YEAR AND PLACE ABOVE-WRITTEN.</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="476" width="555" height="14"/>
 
+            <staticText>
+                <reportElement x="0" y="602" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
                 <text>Doc. No: ______________________</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="490" width="555" height="14"/>
 
+            <staticText>
+                <reportElement x="0" y="616" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
                 <text>Page No: ______________________</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="504" width="555" height="14"/>
-
+                <reportElement x="0" y="630" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
                 <text>Book No: ______________________</text>
             </staticText>
             <staticText>
-                <reportElement x="0" y="518" width="555" height="14"/>
-
+                <reportElement x="0" y="644" width="555" height="14"/>
+                <textElement>
+                    <font pdfFontName = "Helvetica-Bold"/>
+                </textElement>
                 <text>Series of ______________________</text>
             </staticText>
-            <staticText>
-                <reportElement x="0" y="532" width="555" height="14"/>
 
-                <text>Powered by TCPDF (www.tcpdf.org) Client Profile Registration Form(ONE TIME IMPORTER) - 4496888775</text>
-            </staticText>
-            <staticText>
-                <reportElement x="0" y="546" width="555" height="14"/>
 
-                <text>Page1/1</text>
-            </staticText>
         </band>
     </detail>
     <pageFooter>
-        <band height="20">
+        <band height="40">
             <staticText>
-                <reportElement x="0" y="0" width="555" height="20"/>
-                <textElement textAlignment="Left" verticalAlignment="Middle"/>
-                <text>Generated from SOLE PRO.pdf</text>
+                <reportElement x="0" y="0" width="555" height="8"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size = "6"/>
+                </textElement>
+                <text>Client Profile Registration Form(ONE TIME IMPORTER)</text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="8" width="555" height="8"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size = "6"/>
+                </textElement>
+                <text>Page1/1</text>
             </staticText>
         </band>
     </pageFooter>
-    <summary>
-        <band height="0"  isSplitAllowed="true" >
-        </band>
-    </summary>
+
 </jasperReport>
