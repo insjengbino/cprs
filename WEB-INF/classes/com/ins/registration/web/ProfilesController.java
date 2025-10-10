@@ -154,6 +154,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
                 this.profile.setCountry(country);
                 this.profile.setCitizenship(country);
             }
+            if("YI".equals(this.clientType)) this.natureOfBusiness = "";
         }
 
     }
