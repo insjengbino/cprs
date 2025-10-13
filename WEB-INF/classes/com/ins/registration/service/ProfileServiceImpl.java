@@ -150,7 +150,6 @@ public class ProfileServiceImpl implements ProfileService {
         q.setParameter("insClientNo", insClientNo);
         q.setParameter("tinNo", tin);
         q.setParameter("clientType", clientType);
-        log.debug("checkDUUUUUPEEE::" + q.getResultList().toString());
         log.debug(">>> checkDUUUUUPEEE insclientNo: " + insClientNo + " clientType: " + clientType + "tinno: " + tin);
         return q.getResultList();
     }
