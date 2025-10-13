@@ -292,7 +292,9 @@
 
     <tr><td align=center>
 
-            <@s.submit id="saveBtn" value="Save" action="%{saveActionName}" theme="simple"/>
+            <@s.if test="(clientType != ''AR )">
+                <@s.submit id="saveBtn" value="Save" action="%{saveActionName}" theme="simple"/>
+            </@s.if>
 
             <button type="button" onclick="location.href='listProfiles.action'">Cancel</button>
 
