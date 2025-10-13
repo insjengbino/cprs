@@ -292,7 +292,7 @@
 
     <tr><td align=center>
 
-            <@s.if test="(clientType != ''AR )">
+            <@s.if test="(clientType != 'AR' )">
                 <@s.submit id="saveBtn" value="Save" action="%{saveActionName}" theme="simple"/>
             </@s.if>
 
