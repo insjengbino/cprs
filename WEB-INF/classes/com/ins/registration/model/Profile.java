@@ -15,6 +15,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -834,5 +835,79 @@ public class Profile implements Serializable {
 
     public String getExporterTin() {
         return this.exporterTin;
+    }
+
+    @Override
+    public String toString() {
+        return "Profile{" +
+                "id=" + id +
+                ", clientType='" + clientType + '\'' +
+                ", clientCcn='" + clientCcn + '\'' +
+                ", insClientNo='" + insClientNo + '\'' +
+                ", tinNo='" + tinNo + '\'' +
+                ", company='" + company + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", citizenship='" + citizenship + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                ", country='" + country + '\'' +
+                ", Telephone='" + Telephone + '\'' +
+                ", altTelephone='" + altTelephone + '\'' +
+                ", fax='" + fax + '\'' +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", website='" + website + '\'' +
+                ", prcIdNo='" + prcIdNo + '\'' +
+                ", sssIdNo='" + sssIdNo + '\'' +
+                ", passportIdNo='" + passportIdNo + '\'' +
+                ", driverLicenseIdNo='" + driverLicenseIdNo + '\'' +
+                ", pezaIdNo='" + pezaIdNo + '\'' +
+                ", secIdNo='" + secIdNo + '\'' +
+                ", natureOfBusiness='" + natureOfBusiness + '\'' +
+                ", businessName='" + businessName + '\'' +
+                ", capitalStockAmount='" + capitalStockAmount + '\'' +
+                ", paidUpCapitalAmount='" + paidUpCapitalAmount + '\'' +
+                ", businessType='" + businessType + '\'' +
+                ", aabAssignedBankRefNo='" + aabAssignedBankRefNo + '\'' +
+                ", relatedCompanyName1='" + relatedCompanyName1 + '\'' +
+                ", relatedCompanyName2='" + relatedCompanyName2 + '\'' +
+                ", relatedCompanyName3='" + relatedCompanyName3 + '\'' +
+                ", vaspPrimaryCcn='" + vaspPrimaryCcn + '\'' +
+                ", vaspSecondaryCcn='" + vaspSecondaryCcn + '\'' +
+                ", jo291='" + jo291 + '\'' +
+                ", certificateOfAuthority='" + certificateOfAuthority + '\'' +
+                ", underWritingCapacity='" + underWritingCapacity + '\'' +
+                ", priBrokerTaxpayerIdNo='" + priBrokerTaxpayerIdNo + '\'' +
+                ", priBrokerCCN='" + priBrokerCCN + '\'' +
+                ", secBrokerTaxpayerIdNo='" + secBrokerTaxpayerIdNo + '\'' +
+                ", secBrokerCCN='" + secBrokerCCN + '\'' +
+                ", customBondedWarehouse='" + customBondedWarehouse + '\'' +
+                ", customBondedWarehouseType='" + customBondedWarehouseType + '\'' +
+                ", errorMessage='" + errorMessage + '\'' +
+                ", status=" + status +
+                ", periodOfEffectivity=" + periodOfEffectivity +
+                ", lastDateOfTransaction=" + lastDateOfTransaction +
+                ", dateCreated=" + dateCreated +
+                ", majorStockholders=" + majorStockholders +
+                ", principalOfficers=" + principalOfficers +
+                ", equivRespOfficers=" + equivRespOfficers +
+                ", majorSuppliers=" + majorSuppliers +
+                ", majorClients=" + majorClients +
+                ", importers=" + importers +
+                ", exporters=" + exporters +
+                ", commodities=" + commodities +
+                ", profileHistoryList=" + profileHistoryList +
+                ", roles=" + roles +
+                ", importedCommodities=" + Arrays.toString(importedCommodities) +
+                ", picture=" + Arrays.toString(picture) +
+                ", pictureAsInputStream=" + pictureAsInputStream +
+                ", signature=" + Arrays.toString(signature) +
+                ", stored=" + stored +
+                ", importerTin='" + importerTin + '\'' +
+                ", exporterTin='" + exporterTin + '\'' +
+                '}';
     }
 }
