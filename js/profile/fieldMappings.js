@@ -1056,8 +1056,8 @@ YIMap.set("common-fields", [
     "tinNo",
     "primaryVASPNo",
     // "secondaryVASPNo"
-    // "primaryBrokerTIN",
-    // "primaryBrokerCCN"
+    "primaryBrokerTIN",
+    "primaryBrokerCCN"
 ]);
 
 YIMap.set("PART", [
@@ -1106,8 +1106,8 @@ YIReqMap.set("common-fields", [
     "tinNo",
     "primaryVASPNo",
     // "secondaryVASPNo"
-    // "primaryBrokerTIN",
-    // "primaryBrokerCCN"
+    "primaryBrokerTIN",
+    "primaryBrokerCCN"
 ]);
 
 YIReqMap.set("PART", [
