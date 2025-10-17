@@ -54,7 +54,7 @@ function resetInactivityTimer() {
 
 function logoutUser() {
     alert('Your session has expired due to inactivity. Please log in again.');
-    window.location.href = 'http://cprs.intercommerce.com.ph/cprs/logout.action';
+    window.location.href = 'https://www.intercommerce.com.ph/cprs/logout.action';
 }
 
 // User activity events to track
