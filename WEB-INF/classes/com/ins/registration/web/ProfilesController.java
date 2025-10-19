@@ -1371,7 +1371,7 @@ public class ProfilesController extends BaseController implements Preparable, Va
 
     public void setClientCode(String clientCode){
         this.clientCode = clientCode;
-        this.setInSession("clientCode", role);
+        this.setInSession("clientCode", clientCode);
     }
 
     public String getCLientCode(){
