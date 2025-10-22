@@ -297,15 +297,15 @@
         </field-validator>
     </field>
 
-    <field name="profile.secIdNo">
-        <field-validator type="requiredstring">
-            <message key="You can not leave this field empty."/>
-        </field-validator>
-        <field-validator type="regex">
-            <param name="expression">[A-Za-z0-9]*</param>
-            <message key="Only alphanumeric characters are allowed. Other special characters as well as any non-English alphabet are not accepted."/>
-        </field-validator>
-    </field>
+<!--    <field name="profile.secIdNo">-->
+<!--        <field-validator type="requiredstring">-->
+<!--            <message key="You can not leave this field empty."/>-->
+<!--        </field-validator>-->
+<!--        <field-validator type="regex">-->
+<!--            <param name="expression">[A-Za-z0-9]*</param>-->
+<!--            <message key="Only alphanumeric characters are allowed. Other special characters as well as any non-English alphabet are not accepted."/>-->
+<!--        </field-validator>-->
+<!--    </field>-->
 
     <field name="profile.pezaIdNo">
         <field-validator type="regex">
@@ -443,37 +443,37 @@
         </field-validator>
     </field>
 
-    <field name="profile.capitalStockAmount">
-        <field-validator type="requiredstring">
-            <message key="You can not leave this field empty."/>
-        </field-validator>
-        <field-validator type="regex">
-            <param name="expression">[0-9]*</param>
-            <message key="Invalid input." />
-        </field-validator>
-        <field-validator type="double">
-            <param name="minInclusive">-99999999999999</param>
-            <param name="maxInclusive">99999999999999</param>
-            <message key="Invalid field length." />
-        </field-validator>
-    </field>
+<!--    <field name="profile.capitalStockAmount">-->
+<!--        <field-validator type="requiredstring">-->
+<!--            <message key="You can not leave this field empty."/>-->
+<!--        </field-validator>-->
+<!--        <field-validator type="regex">-->
+<!--            <param name="expression">[0-9]*</param>-->
+<!--            <message key="Invalid input." />-->
+<!--        </field-validator>-->
+<!--        <field-validator type="double">-->
+<!--            <param name="minInclusive">-99999999999999</param>-->
+<!--            <param name="maxInclusive">99999999999999</param>-->
+<!--            <message key="Invalid field length." />-->
+<!--        </field-validator>-->
+<!--    </field>-->
 
-    <field name="profile.paidUpCapitalAmount">
-        <field-validator type="requiredstring">
-            <message key="You can not leave this field empty."/>
-        </field-validator>
-        <field-validator type="regex">
-            <param name="expression">[0-9]*</param>
-            <message key="Invalid input." />
-        </field-validator>
-        <field-validator type="double">
-            <param name="minInclusive">-99999999999999</param>
-            <param name="maxInclusive">99999999999999</param>
-            <message key="Invalid field length." />
-        </field-validator>
-        <field-validator type="fieldexpression">
-            <param name="expression"><![CDATA[profile.paidUpCapitalAmount < profile.capitalStockAmount]]></param>
-            <message>Amount must be less than or equal to the Amount of Authorized Capital Stock. </message>
-        </field-validator>
-    </field>
+<!--    <field name="profile.paidUpCapitalAmount">-->
+<!--        <field-validator type="requiredstring">-->
+<!--            <message key="You can not leave this field empty."/>-->
+<!--        </field-validator>-->
+<!--        <field-validator type="regex">-->
+<!--            <param name="expression">[0-9]*</param>-->
+<!--            <message key="Invalid input." />-->
+<!--        </field-validator>-->
+<!--        <field-validator type="double">-->
+<!--            <param name="minInclusive">-99999999999999</param>-->
+<!--            <param name="maxInclusive">99999999999999</param>-->
+<!--            <message key="Invalid field length." />-->
+<!--        </field-validator>-->
+<!--        <field-validator type="fieldexpression">-->
+<!--            <param name="expression"><![CDATA[profile.paidUpCapitalAmount < profile.capitalStockAmount]]></param>-->
+<!--            <message>Amount must be less than or equal to the Amount of Authorized Capital Stock. </message>-->
+<!--        </field-validator>-->
+<!--    </field>-->
 </validators>
